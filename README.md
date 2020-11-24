@@ -2,8 +2,6 @@ Personal test page
 
 个人测试页面
 
-个人测试页面
-
 Persönliche Testseite
 
 Page de test personnelle
