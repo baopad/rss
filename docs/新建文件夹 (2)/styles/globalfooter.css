@@ -1,0 +1,240 @@
+@charset "utf-8"; /* CSS Document */
+#gf-menustates {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: none
+}
+#globalfooter {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(240, 240, 242, 1.00)
+}
+#globalfooter a, #globalfooter a:link, #globalfooter a:visited, globalfooter a:hover, #globalfooter a:active {
+    margin: 0;
+    padding: 0;
+    color: rgba(16, 16, 16, 1);
+    text-decoration: none;
+}
+#globalfooter a:hover, #globalfooter a:active {
+    color: rgba(64, 64, 64, .95);
+    text-decoration: underline;
+}
+#globalfooter .gf-content {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1236px;
+}
+#globalfooter .gf-content::before, #globalfooter .gf-content::after {
+    content: ' ';
+    display: table;
+}
+#globalfooter .gf-content::after {
+    clear: both;
+}
+#globalfooter .gf-directory {
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #A8A8A8;
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-directory {
+        flex-direction: column;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+}
+#globalfooter .gf-directory-column {
+    margin: 0;
+    padding: 0;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-directory-column {
+        flex-basis: auto;
+    }
+}
+#globalfooter #gf-menustate-one, #globalfooter #gf-menustate-2, #globalfooter #gf-menustate-3, #globalfooter #gf-menustate-4, #globalfooter #gf-menustate-5 {
+    display: none
+}
+#globalfooter .gf-directory-section {
+    margin: 0;
+    padding: 0;
+    /*    border: 1px solid #008;*/
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-directory-section {
+        border-bottom: 1px solid #A8A8A8
+    }
+}
+#globalfooter .gf-menustate-label {
+    margin: 0;
+    padding: 0;
+}
+#globalfooter .gf-directory-title {
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-directory-title {
+        font-weight: 400;
+        cursor: pointer;
+    }
+    #globalfooter .gf-directory-title:after {
+        content: '+';
+        float: right;
+        font-size: 18px;
+        transition: transform .3s ease;
+        transition: transform .3s ease;
+    }
+}
+#globalfooter .gf-directory-list {
+    margin: 0;
+    padding: 0;
+    margin-top: -2px;
+    padding-bottom: 4px;
+    list-style: none;
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-directory-list {
+        visibility: hidden;
+        display: none;
+        transform: translateY(-0px);
+    }
+    #gf-menustate-one:checked ~ .gf-directory-section .gf-directory-list, #gf-menustate-one:checked ~ .gf-directory-section .gf-directory-list, #gf-menustate-5:checked ~ .gf-directory-section .gf-directory-list, #gf-menustate-5:checked ~ .gf-directory-section .gf-directory-list {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.2);
+        transition: .44s;
+    }
+}
+#globalfooter .gf-directory-list a {
+    font-size: .875em;
+    line-height: 1.5;
+    padding: 0 12px;
+}
+#globalfooter .gf-directory-item {
+    margin: 0;
+    padding: 0 4px;
+    list-style: none;
+}
+#globalfooter .gf-footer {
+    margin: 0;
+    padding: 0 0px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+#globalfooter .gf-footer-lang {
+    margin: 0;
+    box-sizing: border-box padding: 4px;
+    margin-right: 16px;
+    float: right;
+    white-space: nowrap;
+    height: 1.8125em;
+}
+#globalfooter .gf-footer-lang-selector {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    font-size: 1em;
+    width: 180px;
+    margin: 0;
+    padding: 0px;
+    border: 2px solid rgba(200, 200, 200, 0.5);
+    text-overflow: ellipsis;
+    border-radius: 1px;
+}
+#globalfooter .gf-footer-lang-selector:hover, #globalfooter .gf-footer-lang-selector:focus, #globalfooter .gf-footer-lang-selector:active {
+    border: 2px solid rgba(200, 200, 200, 1);
+}
+#globalfooter .gf-footer-lang-selector option {
+    /*    font-weight: normal;
+
+    white-space: pre;*/
+}
+#globalfooter .gf-footer-legal {
+    margin: 0;
+    padding: 0;
+}
+#globalfooter .gf-footer-legal::after {
+    content: ' ';
+    height: 0;
+    display: table;
+    clear: both;
+}
+#globalfooter .gf-footer-legal {
+    color: rgba(64, 64, 64, 1.00);
+    font-size: 1em;
+    line-height: 1.8;
+}
+#globalfooter .gf-footer-copyright {
+    margin: 0;
+    padding: 0px 8px;
+    display: block;
+    float: left;
+}
+@media only screen and (max-width: 980px) {
+    #globalfooter .gf-footer-copyright {
+        float: none;
+    }
+}
+#globalfooter .gf-footer-links {
+    margin: 0;
+    padding: 0px 8px;
+    display: inline-block;
+}
+@media only screen and (max-width: 767px) {
+    #globalfooter .gf-footer-links {}
+}
+#globalfooter .gf-footer-links a {
+    padding-right: .8em;
+}
+.khhhfuy {
+    width: 300px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #f8f9fa;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzU0NTQ1NCI+PHBhdGggZD0iTTcgMTBsNSA1IDUtNXoiPjwvcGF0aD48L3N2Zz4=);
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #5f6368;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 22px;
+    margin: 0;
+    padding: 0 24px 0 2px;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: pre-wrap;
+}
+.khhhfuy option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+div {
+    display:
+}
