@@ -458,7 +458,6 @@
     }
     #gn-secondstates:checked ~ #gn-content .gn-second, #gn-secondstates:target ~ #gn-content .gn-second {
         display: block;
-       
     }
 }
 #globalnav .gn-second a, #globalnav .gn-second span {
@@ -480,88 +479,95 @@
 }
 @media only screen and (max-width: 767px) {
     #globalnav .gn-second-box {
-        display: flex;        
+        display: flex;
         flex-direction: column;
-		border-radius: 0;
+        border-radius: 0;
         background-color: rgba(154, 154, 154, 1.00);
     }
 }
 #globalnav .gn-second-product {
     padding: 0;
-    display: block;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     /*    border: 1px solid #B5114E;*/
 }
 @media only screen and (max-width: 767px) {
-    #globalnav .gn-second-product {}
+    #globalnav .gn-second-product {
+        display: block;
+    }
 }
-#globalnav .gn-second-product-title {margin: 0;
-	padding: 0 8px;
+#globalnav .gn-second-product-title {
+    margin: 0;
+    padding: 0 8px;
     display: block;
 }
 #globalnav .gn-second-product-link {
     cursor: pointer;
 }
 #globalnav .gn-second-product-list {
-	margin: 0;
-	
-	padding: 0 12px;
-	
+    margin: 0;
+    padding: 0 12px;
     display: none;
     position: absolute;
     list-style: none;
     top: 100%;
     background-color: rgba(221, 0, 221, 1.00);
-    right: 0;
     width: 200px;
     z-index: 1000;
 }
 #gn-secondproduct:checked ~ #gn-content .gn-second-product-list, #gn-secondproduct:target ~ #gn-content .gn-second-product-list {
-    display: flex;top:auto;
+    display: flex;
     flex-direction: column;
 }
 @media only screen and (max-width: 767px) {
     #globalnav .gn-second-product-list {
         display: flex;
-        flex-direction: column;width: auto;
+        flex-direction: column;
+        width: auto;
         position: static;
     }
 }
 #globalnav .gn-second-id {
     padding: 0;
-    display: block;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 @media only screen and (max-width: 767px) {
-    #globalnav .gn-second-id {}
+    #globalnav .gn-second-id {
+        display: block;
+    }
 }
-#globalnav .gn-second-id-title {margin: 0;
-	padding: 0 8px;
+#globalnav .gn-second-id-title {
+    margin: 0;
+    padding: 0 8px;
     cursor: pointer;
 }
 #globalnav .gn-second-id-link {
     cursor: pointer;
 }
 #globalnav .gn-second-id-list {
-		margin: 0;
-	padding: 0 12px;
-	
+    margin: 0;
+    padding: 0 12px;
     display: none;
     position: absolute;
     list-style: none;
     top: 100%;
     background-color: rgba(221, 0, 221, 1.00);
-    right: 0;
     width: 200px;
     z-index: 1000;
 }
 #gn-secondid:checked ~ #gn-content .gn-second-id-list, #gn-secondid:target ~ #gn-content .gn-second-id-list {
-    display: flex;top:auto;
+    display: flex;
     flex-direction: column;
 }
 @media only screen and (max-width: 767px) {
     #globalnav .gn-second-id-list {
-        display: flex;width: auto;
+        display: flex;
+        width: auto;
         flex-direction: column;
         position: static;
     }
