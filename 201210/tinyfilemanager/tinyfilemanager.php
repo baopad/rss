@@ -2059,32 +2059,27 @@ $tableTheme = ( FM_THEME == "dark" ) ? "text-white bg-dark table-dark" : "bg-whi
                     ?>
                 </table>
             </div>
+            <!--********************内容脚本操作************************-->
             <div class="lo-footer">
-                <div class="row" style="display: -ms-flexbox;    display: flex;    -ms-flex-wrap: wrap;    flex-wrap: wrap;    margin-right: -15px;    margin-left: -15px">
-                    <?php if (!FM_READONLY): ?>
-                    <div class="col-xs-12 col-sm-9">
-                        <ul class="list-inline footer-action">
-                            <li class="list-inline-item"><a href="#/select-all" class="btn btn-small btn-outline-primary btn-2" onclick="select_all();return false;"><i class="fa fa-check-square"></i><?php echo lng('SelectAll') ?></a></li>
-                            <li class="list-inline-item"><a href="#/unselect-all" class="btn btn-small btn-outline-primary btn-2" onclick="unselect_all();return false;"><i class="fa fa-window-close"></i><?php echo lng('UnSelectAll') ?></a></li>
-                            <li class="list-inline-item"><a href="#/invert-all" class="btn btn-small btn-outline-primary btn-2" onclick="invert_all();return false;"><i class="fa fa-th-list"></i><?php echo lng('InvertSelection') ?></a></li>
-                            <li class="list-inline-item">
-                                <input type="submit" class="hidden" name="delete" id="a-delete" value="Delete" onclick="return confirm('Delete selected files and folders?')">
-                                <a href="javascript:document.getElementById('a-delete').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-trash"></i><?php echo lng('Delete') ?></a></li>
-                            <li class="list-inline-item">
-                                <input type="submit" class="hidden" name="zip" id="a-zip" value="zip" onclick="return confirm('Create archive?')">
-                                <a href="javascript:document.getElementById('a-zip').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-file-archive-o"></i><?php echo lng('Zip') ?></a></li>
-                            <li class="list-inline-item">
-                                <input type="submit" class="hidden" name="tar" id="a-tar" value="tar" onclick="return confirm('Create archive?')">
-                                <a href="javascript:document.getElementById('a-tar').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-file-archive-o"></i><?php echo lng('Tar') ?></a></li>
-                            <li class="list-inline-item">
-                                <input type="submit" class="hidden" name="copy" id="a-copy" value="Copy">
-                                <a href="javascript:document.getElementById('a-copy').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-files-o"></i><?php echo lng('Copy') ?></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3 d-none d-sm-block"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Tiny File Manager<?php echo VERSION; ?></a></div>
-                    <?php else: ?>
-                    <div class="col-12"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Tiny File Manager<?php echo VERSION; ?></a></div>
-                    <?php endif; ?>
+                <div class="lo-footer-case" style="display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px">
+                    <ul class="list-inline footer-action">
+                        <li class="list-inline-item"><a href="#/select-all" onclick="select_all();return false;"><i class="fa fa-check-square"></i><?php echo lng('SelectAll') ?></a></li>
+                        <li class="list-inline-item"><a href="#/unselect-all" onclick="unselect_all();return false;"><i class="fa fa-window-close"></i><?php echo lng('UnSelectAll') ?></a></li>
+                        <li class="list-inline-item"><a href="#/invert-all" onclick="invert_all();return false;"><i class="fa fa-th-list"></i><?php echo lng('InvertSelection') ?></a></li>
+                        <li class="list-inline-item">
+                            <input type="submit" class="hidden" name="delete" id="a-delete" value="Delete" onclick="return confirm('Delete selected files and folders?')">
+                            <a href="javascript:document.getElementById('a-delete').click();"><i class="fa fa-trash"></i><?php echo lng('Delete') ?></a></li>
+                        <li class="list-inline-item">
+                            <input type="submit" class="hidden" name="zip" id="a-zip" value="zip" onclick="return confirm('Create archive?')">
+                            <a href="javascript:document.getElementById('a-zip').click();"><i class="fa fa-file-archive-o"></i><?php echo lng('Zip') ?></a></li>
+                        <li class="list-inline-item">
+                            <input type="submit" class="hidden" name="tar" id="a-tar" value="tar" onclick="return confirm('Create archive?')">
+                            <a href="javascript:document.getElementById('a-tar').click();"><i class="fa fa-file-archive-o"></i><?php echo lng('Tar') ?></a></li>
+                        <li class="list-inline-item">
+                            <input type="submit" class="hidden" name="copy" id="a-copy" value="Copy">
+                            <a href="javascript:document.getElementById('a-copy').click();"><i class="fa fa-files-o"></i><?php echo lng('Copy') ?></a></li>
+                    </ul>
+                    <div class=" "><a href="https://" target="_blank" class="float-right text-muted">File Manager</a></div>
                 </div>
             </div>
         </form>
