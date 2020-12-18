@@ -1,0 +1,118 @@
+@charset "utf-8"; /* CSS Document */
+/*#cc-menustates {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: none
+}
+#localoverview {
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 1);
+    display: block;
+    pointer-events: auto;
+}
+#localoverview #cc-content {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding-bottom: 1.25em;
+}
+#localoverview a, #localoverview a:link, #localoverview a:visited, #localoverview a:hover, #localoverview a:active {
+    color: #101010;
+    text-decoration: none;
+}
+#localoverview a:hover, #localoverview a:active {
+    color: #404040;
+    text-decoration: underline;
+}
+#localoverview .cc-header {
+    margin: 0 auto;
+    padding: 0;
+}
+#localoverview .cc-header-case {
+    margin: 0 auto;
+    padding: 0 32px;
+	border-bottom: 1px solid #808080;
+	max-width: 980px;
+}@media only screen and (max-width: 767px) {
+    #localoverview .cc-header-case {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+}
+#localoverview .cc-list {
+    margin: 0;
+    padding: 0;
+    
+}
+#localoverview .cc-list-case {
+    margin: 0 auto;
+    padding: 0 32px;
+    margin-top: 1em;
+    max-width: 980px;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .cc-list-case {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+}
+#localoverview .cc-list-item {
+    margin: 0;
+    border-bottom: 1px solid #808080;
+    padding: 0;
+    min-width: 50%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .cc-list-item {
+        padding: 0;
+    }
+}
+#localoverview .cc-list-item-case {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    width: 90%;
+    width: calc(100% - 3.2em);
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .cc-list-item-case {
+        width: auto;
+    }
+}
+#localoverview .cc-list-item-img {
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+	max-width: 320px;
+    height: 96px;
+}
+#localoverview .cc-list-item-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2.25;
+}
+#localoverview .cc-footer {
+    margin: 0 auto;
+    padding: 0;
+}
+#localoverview .cc-footer-case {
+    margin: 0 auto;
+    padding: 0;
+}*/
+
