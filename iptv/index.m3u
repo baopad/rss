@@ -1,4 +1,56 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-1_Logo.png",CCTV-1
+http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-2_Logo.png",CCTV-2
+http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-3_Logo.png",CCTV-3HD
+http://39.135.34.150:8080/000000001000/1000000001000011218/1.m3u8?xtkg
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-4_Logo.png",CCTV-4
+http://cctvalih5ca.v.myalicdn.com/live/cctv4_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-5_Logo.png",CCTV-5
+http://cctvalih5ca.v.myalicdn.com/live/cctv5_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-5+_Logo.png",CCTV-5+
+http://117.136.154.98/PLTV/88888888/224/3221225512/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-6_Logo.png",CCTV-6
+http://cctvalih5ca.v.myalicdn.com/live/cctv6_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-7_Logo.png",CCTV-7
+http://cctvalih5ca.v.myalicdn.com/live/cctv7_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-8_Logo.png",CCTV-8
+http://cctvalih5ca.v.myalicdn.com/live/cctv8_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-9_Logo.png",CCTV-9
+http://cctvalih5ca.v.myalicdn.com/live/cctv9_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-10_Logo.png",CCTV-10
+http://cctvalih5ca.v.myalicdn.com/live/cctv10_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-11_Logo.png",CCTV-11
+http://cctvalih5ca.v.myalicdn.com/live/cctv11_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-12_Logo.png",CCTV-12
+http://cctvalih5ca.v.myalicdn.com/live/cctv12_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-13_Logo.png",CCTV-13
+http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-14_Logo.png",CCTV-14
+http://cctvalih5ca.v.myalicdn.com/live/cctv14_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-15_Logo.png",CCTV-15
+http://cctvalih5ca.v.myalicdn.com/live/cctv15_2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-16_Logo.png",CCTV-16
+http://cctvalih5ca.v.myalicdn.com/live/cctv16_2/index.m3u8
+
 #EXTINF:-1 tvg-id="BesTVChaoJi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",BesTV超级
 http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226942/index.m3u8
 #EXTINF:-1 tvg-id="BlueMeiJu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="https://parco-zh.github.io/demo/BLUE.png" group-title="",Blue 美剧 (360p)
