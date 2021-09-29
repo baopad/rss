@@ -60,6 +60,12 @@ http://cnhls.ntdtv.com/cn/live400/playlist.m3u8
 #EXTINF:-1 tvg-id="ID" tvg-country="US" tvg-language="ZH-CN" tvg-logo="https://parco-zh.github.io/demo/BLUE.png" group-title="",香港卫视
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 
+#EXTINF:-1 ,澳亚卫视
+http://stream.mastvnet.com/MASTV/sd/live.m3u8
+#EXTINF:-1 ,澳门卫视
+http://stream.mastvnet.com/MSTV/SD/live.m3u8
+#EXTINF:-1 ,阳光卫视
+https://stream.chinasuntv.com/680k/mid_video_index.m3u8
 
 #EXTINF:-1 tvg-id="CCTVPlus1.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",CCTV+ 1 (720p)
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
