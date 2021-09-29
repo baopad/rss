@@ -54,8 +54,12 @@ http://cctvalih5ca.v.myalicdn.com/live/cctv16_2/index.m3u8
 #EXTINF:-1 tvg-id="BesTVChaoJi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",BesTV超级
 http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226942/index.m3u8
 
-#EXTINF:-1 tvg-id="BlueMeiJu.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="https://parco-zh.github.io/demo/BLUE.png" group-title="",新唐人中国
+#EXTINF:-1 tvg-id="ID" tvg-country="US" tvg-language="ZH-CN" tvg-logo="https://parco-zh.github.io/demo/BLUE.png" group-title="",新唐人中国
 http://cnhls.ntdtv.com/cn/live400/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ID" tvg-country="US" tvg-language="ZH-CN" tvg-logo="https://parco-zh.github.io/demo/BLUE.png" group-title="",香港卫视
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+
 
 #EXTINF:-1 tvg-id="CCTVPlus1.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",CCTV+ 1 (720p)
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
