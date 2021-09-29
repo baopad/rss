@@ -3,7 +3,7 @@
 #EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-1_Logo.png" group-title="中央台",CCTV-1
 http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-2_Logo.png",CCTV-2
+#EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-2_Logo.png",CCTV-2
 http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-3_Logo.png",CCTV-3HD
@@ -48,7 +48,7 @@ http://cctvalih5ca.v.myalicdn.com/live/cctv14_2/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-15_Logo.png",CCTV-15
 http://cctvalih5ca.v.myalicdn.com/live/cctv15_2/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-16_Logo.png" group-title="",CCTV-16
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-16_Logo.png" group-title="CCC",CCTV-16
 http://cctvalih5ca.v.myalicdn.com/live/cctv16_2/index.m3u8
 
 #EXTINF:-1 tvg-id="BesTVChaoJi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",BesTV超级
