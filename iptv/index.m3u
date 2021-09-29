@@ -1,6 +1,6 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-1_Logo.png" group-title="CCTV",CCTV-1
+#EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-1_Logo.png" group-title="CC0TV",CCTV-1
 http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-2_Logo.png",CCTV-2
