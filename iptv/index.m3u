@@ -1,15 +1,15 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="ID" tvg-country="CN" tvg-language="ZH-CN" tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-1_Logo.png" group-title="中央台",CCTV-1综合
+#EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-1_Logo.png" group-title="中央台",CCTV-1综合
 http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8
 
-#EXTINF:-1 tvg-id="ID" tvg-country="CN" tvg-language="ZH-CN" tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-2_Logo.png" group-title="中央台",CCTV-2财经
+#EXTINF:-1 tvg-logo="https://rss.paotung.org/iptv/logo/CCTV-2_Logo.png" group-title="中央台",CCTV-2财经
 http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8
 
-#EXTINF:-1 tvg-id="ID" tvg-country="CN" tvg-language="ZH-CN" tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-3_Logo.png" group-title="中央台",CCTV-3综艺
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-3_Logo.png" group-title="中央台",CCTV-3综艺
 http://39.135.34.150:8080/000000001000/1000000001000011218/1.m3u8?xtkg
 
-#EXTINF:-1 tvg-id="ID" tvg-country="CN" tvg-language="ZH-CN" tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-4_Logo.png" group-title="中央台",CCTV-4中文国际
+#EXTINF:-1 tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-4_Logo.png" group-title="中央台",CCTV-4中文国际
 http://cctvalih5ca.v.myalicdn.com/live/cctv4_1/index.m3u8
 
 #EXTINF:-1 tvg-id="ID" tvg-country="CN" tvg-language="ZH-CN" tvg-logo="https://www.paotung.org/rss/iptv/logo/CCTV-5_Logo.png" group-title="中央台",CCTV-5体育
