@@ -15,5 +15,5 @@ Persönliche Testseite(https://raw.githubusercontent.com/v2fly/v2ray-core/master
 - Página de teste pessoal
 
 صفحه آزمون شخصی
-## 联系方式
+## Contact Information
 Email: info@paotung.org
