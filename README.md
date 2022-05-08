@@ -11,6 +11,9 @@ The purpose of this project is to collect subscription resources and network too
 ### IPTV
 - Pahina ng pansariling pagsubok
 - Página de teste pessoal
+### SwitchyOmega
+- Online recovery: https://rss.paotung.org/switchyomega
+- Página de teste pessoal
 
 صفحه آزمون شخصی
 ## Contact Information
