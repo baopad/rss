@@ -1,4 +1,5 @@
-## Personal test page
+## RSS
+
 
 ### 个人测试页面
 
@@ -6,7 +7,8 @@
 
 [The MIT License (MIT)](https://raw.githubusercontent.com/v2fly/v2ray-core/master/LICENSE)
 
-Persönliche Testseite
+Persönliche Testseite(https://raw.githubusercontent.com/v2fly/v2ray-core/master/LICENSE)
+
 
 Page de test personnelle
 
