@@ -1,10 +1,7 @@
 ## RSS
 The purpose of this project is to collect subscription resources and network tools for administrators to use.
 
-### 个人测试页面
-
 ### License
-
 [The MIT License (MIT)](https://raw.githubusercontent.com/v2fly/v2ray-core/master/LICENSE)
 
 Persönliche Testseite(https://raw.githubusercontent.com/v2fly/v2ray-core/master/LICENSE)
