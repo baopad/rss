@@ -13,8 +13,8 @@ The purpose of this project is to collect subscription resources and network too
 - Página de teste pessoal
 ### SwitchyOmega
 - Online recovery: https://rss.paotung.org/switchyomega
-- Página de teste pessoal
+- Rules list URL: https://rss.paotung.org/switchyomega/gfwlist.txt
 
-صفحه آزمون شخصی
+
 ## Contact Information
 Email: info@paotung.org
