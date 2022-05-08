@@ -9,7 +9,7 @@ The purpose of this project is to collect subscription resources and network too
 - Pagina di test personale
 - ကိုယ်ပိုင်စမ်းသပ်စာမျက်နှာ
 ### IPTV
-- Online recovery: https://rss.paotung.org/IPTV%20Pro%206.1.9_112441.apk
+- Online recovery: https://rss.paotung.org/iptv/IPTV%20Pro%206.1.9_112441.apk
 - Pahina ng pansariling pagsubok
 - Página de teste pessoal
 ### SwitchyOmega
