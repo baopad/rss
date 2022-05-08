@@ -1,5 +1,5 @@
 ## RSS
-
+The purpose of this project is to collect subscription resources and network tools for administrators to use.
 
 ### 个人测试页面
 
