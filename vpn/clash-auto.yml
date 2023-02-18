@@ -217,7 +217,7 @@ proxy-groups:
   - name: ♻️ Automatically choose
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 1000
     proxies:
       - Cloudcone SNAP1
       - Cloudcone SNAP2
