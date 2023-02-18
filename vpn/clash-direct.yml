@@ -125,9 +125,6 @@ proxies:
         Host: lay.donpau.com
 proxy-groups:
   - name: ♻️ Direct selection
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 1000
     proxies:
       - Cloudcone L.A.
       - Cloudcone (nerd)
@@ -138,4 +135,5 @@ proxy-groups:
       - Racknerd (cone)
       - Racknerd (CF)
       - Oracle (nerd)
+    type: select
 rules: null
