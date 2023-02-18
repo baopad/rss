@@ -214,10 +214,10 @@ proxies:
       headers:
         Host: nerd.paotung.org
 proxy-groups:
-  - name: ♻️ Automatically choose
+  - name: ♻️ Automatic selection
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 1000
+    interval: 300
     proxies:
       - Cloudcone SNAP1
       - Cloudcone SNAP2
