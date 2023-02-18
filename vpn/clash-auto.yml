@@ -16,8 +16,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP2
     type: vmess
     server: cone.paotung.org
@@ -29,8 +27,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP3
     type: vmess
     server: cone.paotung.org
@@ -42,8 +38,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP4
     type: vmess
     server: cone.paotung.org
@@ -55,8 +49,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP5
     type: vmess
     server: cone.paotung.org
@@ -68,8 +60,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP6
     type: vmess
     server: cone.paotung.org
@@ -81,8 +71,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP7
     type: vmess
     server: cone.paotung.org
@@ -94,8 +82,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Cloudcone SNAP8
     type: vmess
     server: cone.paotung.org
@@ -107,8 +93,6 @@ proxies:
     network: ws
     ws-opts:
       path: /
-      headers:
-        Host: cone.paotung.org
   - name: Racknerd SNAP1
     type: vmess
     server: nerd.paotung.org
@@ -120,8 +104,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP2
     type: vmess
     server: nerd.paotung.org
@@ -133,8 +115,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP3
     type: vmess
     server: nerd.paotung.org
@@ -146,8 +126,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP4
     type: vmess
     server: nerd.paotung.org
@@ -159,8 +137,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP5
     type: vmess
     server: nerd.paotung.org
@@ -172,8 +148,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP6
     type: vmess
     server: nerd.paotung.org
@@ -185,8 +159,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP7
     type: vmess
     server: nerd.paotung.org
@@ -198,8 +170,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
   - name: Racknerd SNAP8
     type: vmess
     server: nerd.paotung.org
@@ -211,8 +181,6 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-      headers:
-        Host: nerd.paotung.org
 proxy-groups:
   - name: ♻️ Automatic selection
     type: url-test
