@@ -177,7 +177,7 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
-  - name: Load balancing
+  - name: ⚖️ Load balancing
     proxies:
       - Cloudcone Snap1
       - Cloudcone Snap2
