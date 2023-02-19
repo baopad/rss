@@ -210,28 +210,6 @@ proxy-groups:
       - ♻️ Automatic selection
       - Manual selection
     type: select
-  - name: Manual selection
-    proxies:
-      - Cloudcone Snap1
-      - Cloudcone Snap2
-      - Cloudcone Snap3
-      - Cloudcone Snap4
-      - Cloudcone Snap5
-      - Cloudcone Snap6
-      - Cloudcone Snap7
-      - Cloudcone Snap8
-      - Cloudcone Snap9
-      - Racknerd Snap1
-      - Racknerd Snap2
-      - Racknerd Snap3
-      - Racknerd Snap4
-      - Racknerd Snap5
-      - Racknerd Snap6
-      - Racknerd Snap7
-      - Racknerd Snap8
-      - Racknerd Snap9
-    type: select
-    _index: 3
   - name: ♻️ Automatic selection
     proxies:
       - Cloudcone Snap1
@@ -278,6 +256,28 @@ proxy-groups:
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
+    _index: 3
+  - name: Manual selection
+    proxies:
+      - Cloudcone Snap1
+      - Cloudcone Snap2
+      - Cloudcone Snap3
+      - Cloudcone Snap4
+      - Cloudcone Snap5
+      - Cloudcone Snap6
+      - Cloudcone Snap7
+      - Cloudcone Snap8
+      - Cloudcone Snap9
+      - Racknerd Snap1
+      - Racknerd Snap2
+      - Racknerd Snap3
+      - Racknerd Snap4
+      - Racknerd Snap5
+      - Racknerd Snap6
+      - Racknerd Snap7
+      - Racknerd Snap8
+      - Racknerd Snap9
+    type: select
     _index: 3
 rules:
   - MATCH,Global setting
