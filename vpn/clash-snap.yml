@@ -142,7 +142,7 @@ proxy-groups:
     proxies:
       - Manual selection
       - ♻️ Automatic selection
-      - Load balancing
+      - ⚖️ Load balancing
     type: select
   - name: Manual selection
     proxies:
