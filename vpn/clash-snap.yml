@@ -140,8 +140,8 @@ proxies:
 proxy-groups:
   - name: Global setting
     proxies:
-      - ♻️ Automatic selection
       - Manual selection
+      - ♻️ Automatic selection
       - Load balancing
     type: select
   - name: Manual selection
@@ -195,4 +195,5 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     _index: 3
-rules: null
+rules:
+  - MATCH,Global setting
