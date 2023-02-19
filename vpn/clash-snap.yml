@@ -208,7 +208,7 @@ proxy-groups:
     proxies:
       - ⚖️ Load balancing
       - ♻️ Automatic selection
-      - Manual selection
+      - 🔰 Manual selection
     type: select
   - name: ♻️ Automatic selection
     proxies:
@@ -257,7 +257,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
     _index: 3
-  - name: Manual selection
+  - name: 🔰 Manual selection
     proxies:
       - Cloudcone Snap1
       - Cloudcone Snap2
@@ -278,6 +278,5 @@ proxy-groups:
       - Racknerd Snap8
       - Racknerd Snap9
     type: select
-    _index: 3
 rules:
   - MATCH,Global setting
