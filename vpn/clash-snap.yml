@@ -71,6 +71,39 @@ proxies:
     network: ws
     ws-opts:
       path: /
+  - name: Cloudcone Snap7
+    type: vmess
+    server: cone.paotung.org
+    port: "7000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Cloudcone Snap8
+    type: vmess
+    server: cone.paotung.org
+    port: "8000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+  - name: Cloudcone Snap9
+    type: vmess
+    server: cone.paotung.org
+    port: "9000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
   - name: Racknerd Snap1
     type: vmess
     server: nerd.paotung.org
@@ -137,12 +170,45 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
+  - name: Racknerd Snap7
+    type: vmess
+    server: nerd.paotung.org
+    port: "7000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /cone
+  - name: Racknerd Snap8
+    type: vmess
+    server: nerd.paotung.org
+    port: "8000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /cone
+  - name: Racknerd Snap9
+    type: vmess
+    server: nerd.paotung.org
+    port: "9000"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /cone
 proxy-groups:
   - name: Global setting
     proxies:
-      - Manual selection
-      - ♻️ Automatic selection
       - ⚖️ Load balancing
+      - ♻️ Automatic selection
+      - Manual selection
     type: select
   - name: Manual selection
     proxies:
@@ -152,12 +218,18 @@ proxy-groups:
       - Cloudcone Snap4
       - Cloudcone Snap5
       - Cloudcone Snap6
+      - Cloudcone Snap7
+      - Cloudcone Snap8
+      - Cloudcone Snap9
       - Racknerd Snap1
       - Racknerd Snap2
       - Racknerd Snap3
       - Racknerd Snap4
       - Racknerd Snap5
       - Racknerd Snap6
+      - Racknerd Snap7
+      - Racknerd Snap8
+      - Racknerd Snap9
     type: select
     _index: 3
   - name: ♻️ Automatic selection
@@ -168,12 +240,18 @@ proxy-groups:
       - Cloudcone Snap4
       - Cloudcone Snap5
       - Cloudcone Snap6
+      - Cloudcone Snap7
+      - Cloudcone Snap8
+      - Cloudcone Snap9
       - Racknerd Snap1
       - Racknerd Snap2
       - Racknerd Snap3
       - Racknerd Snap4
       - Racknerd Snap5
       - Racknerd Snap6
+      - Racknerd Snap7
+      - Racknerd Snap8
+      - Racknerd Snap9
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
@@ -185,12 +263,18 @@ proxy-groups:
       - Cloudcone Snap4
       - Cloudcone Snap5
       - Cloudcone Snap6
+      - Cloudcone Snap7
+      - Cloudcone Snap8
+      - Cloudcone Snap9
       - Racknerd Snap1
       - Racknerd Snap2
       - Racknerd Snap3
       - Racknerd Snap4
       - Racknerd Snap5
       - Racknerd Snap6
+      - Racknerd Snap7
+      - Racknerd Snap8
+      - Racknerd Snap9
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
