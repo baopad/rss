@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - name: Cloudcone Snap1
+  - name: Cloudcone L.A. Snap1
     type: vmess
     server: cone.paotung.org
     port: "1000"
@@ -16,7 +16,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap2
+  - name: Cloudcone L.A. Snap2
     type: vmess
     server: cone.paotung.org
     port: "2000"
@@ -27,7 +27,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap3
+  - name: Cloudcone L.A. Snap3
     type: vmess
     server: cone.paotung.org
     port: "3000"
@@ -38,7 +38,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap4
+  - name: Cloudcone L.A. Snap4
     type: vmess
     server: cone.paotung.org
     port: "4000"
@@ -49,7 +49,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap5
+  - name: Cloudcone L.A. Snap5
     type: vmess
     server: cone.paotung.org
     port: "5000"
@@ -60,7 +60,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap6
+  - name: Cloudcone L.A. Snap6
     type: vmess
     server: cone.paotung.org
     port: "6000"
@@ -71,7 +71,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap7
+  - name: Cloudcone L.A. Snap7
     type: vmess
     server: cone.paotung.org
     port: "7000"
@@ -82,7 +82,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap8
+  - name: Cloudcone L.A. Snap8
     type: vmess
     server: cone.paotung.org
     port: "8000"
@@ -93,7 +93,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Cloudcone Snap9
+  - name: Cloudcone L.A. Snap9
     type: vmess
     server: cone.paotung.org
     port: "9000"
@@ -104,7 +104,7 @@ proxies:
     network: ws
     ws-opts:
       path: /
-  - name: Racknerd Snap1
+  - name: Racknerd Seattle Snap1
     type: vmess
     server: nerd.paotung.org
     port: "1000"
@@ -115,7 +115,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap2
+  - name: Racknerd Seattle Snap2
     type: vmess
     server: nerd.paotung.org
     port: "2000"
@@ -126,7 +126,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap3
+  - name: Racknerd Seattle Snap3
     type: vmess
     server: nerd.paotung.org
     port: "3000"
@@ -137,7 +137,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap4
+  - name: Racknerd Seattle Snap4
     type: vmess
     server: nerd.paotung.org
     port: "4000"
@@ -148,7 +148,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap5
+  - name: Racknerd Seattle Snap5
     type: vmess
     server: nerd.paotung.org
     port: "5000"
@@ -159,7 +159,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap6
+  - name: Racknerd Seattle Snap6
     type: vmess
     server: nerd.paotung.org
     port: "6000"
@@ -170,7 +170,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap7
+  - name: Racknerd Seattle Snap7
     type: vmess
     server: nerd.paotung.org
     port: "7000"
@@ -181,7 +181,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap8
+  - name: Racknerd Seattle Snap8
     type: vmess
     server: nerd.paotung.org
     port: "8000"
@@ -192,7 +192,7 @@ proxies:
     network: ws
     ws-opts:
       path: /cone
-  - name: Racknerd Snap9
+  - name: Racknerd Seattle Snap9
     type: vmess
     server: nerd.paotung.org
     port: "9000"
@@ -212,71 +212,71 @@ proxy-groups:
     type: select
   - name: ♻️ Automatic selection
     proxies:
-      - Cloudcone Snap1
-      - Cloudcone Snap2
-      - Cloudcone Snap3
-      - Cloudcone Snap4
-      - Cloudcone Snap5
-      - Cloudcone Snap6
-      - Cloudcone Snap7
-      - Cloudcone Snap8
-      - Cloudcone Snap9
-      - Racknerd Snap1
-      - Racknerd Snap2
-      - Racknerd Snap3
-      - Racknerd Snap4
-      - Racknerd Snap5
-      - Racknerd Snap6
-      - Racknerd Snap7
-      - Racknerd Snap8
-      - Racknerd Snap9
+      - Cloudcone L.A. Snap1
+      - Cloudcone L.A. Snap2
+      - Cloudcone L.A. Snap3
+      - Cloudcone L.A. Snap4
+      - Cloudcone L.A. Snap5
+      - Cloudcone L.A. Snap6
+      - Cloudcone L.A. Snap7
+      - Cloudcone L.A. Snap8
+      - Cloudcone L.A. Snap9
+      - Racknerd Seattle Snap1
+      - Racknerd Seattle Snap2
+      - Racknerd Seattle Snap3
+      - Racknerd Seattle Snap4
+      - Racknerd Seattle Snap5
+      - Racknerd Seattle Snap6
+      - Racknerd Seattle Snap7
+      - Racknerd Seattle Snap8
+      - Racknerd Seattle Snap9
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
   - name: ⚖️ Load balancing
     proxies:
-      - Cloudcone Snap1
-      - Cloudcone Snap2
-      - Cloudcone Snap3
-      - Cloudcone Snap4
-      - Cloudcone Snap5
-      - Cloudcone Snap6
-      - Cloudcone Snap7
-      - Cloudcone Snap8
-      - Cloudcone Snap9
-      - Racknerd Snap1
-      - Racknerd Snap2
-      - Racknerd Snap3
-      - Racknerd Snap4
-      - Racknerd Snap5
-      - Racknerd Snap6
-      - Racknerd Snap7
-      - Racknerd Snap8
-      - Racknerd Snap9
+      - Cloudcone L.A. Snap1
+      - Cloudcone L.A. Snap2
+      - Cloudcone L.A. Snap3
+      - Cloudcone L.A. Snap4
+      - Cloudcone L.A. Snap5
+      - Cloudcone L.A. Snap6
+      - Cloudcone L.A. Snap7
+      - Cloudcone L.A. Snap8
+      - Cloudcone L.A. Snap9
+      - Racknerd Seattle Snap1
+      - Racknerd Seattle Snap2
+      - Racknerd Seattle Snap3
+      - Racknerd Seattle Snap4
+      - Racknerd Seattle Snap5
+      - Racknerd Seattle Snap6
+      - Racknerd Seattle Snap7
+      - Racknerd Seattle Snap8
+      - Racknerd Seattle Snap9
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
     _index: 3
   - name: 🔰 Manual selection
     proxies:
-      - Cloudcone Snap1
-      - Cloudcone Snap2
-      - Cloudcone Snap3
-      - Cloudcone Snap4
-      - Cloudcone Snap5
-      - Cloudcone Snap6
-      - Cloudcone Snap7
-      - Cloudcone Snap8
-      - Cloudcone Snap9
-      - Racknerd Snap1
-      - Racknerd Snap2
-      - Racknerd Snap3
-      - Racknerd Snap4
-      - Racknerd Snap5
-      - Racknerd Snap6
-      - Racknerd Snap7
-      - Racknerd Snap8
-      - Racknerd Snap9
+      - Cloudcone L.A. Snap1
+      - Cloudcone L.A. Snap2
+      - Cloudcone L.A. Snap3
+      - Cloudcone L.A. Snap4
+      - Cloudcone L.A. Snap5
+      - Cloudcone L.A. Snap6
+      - Cloudcone L.A. Snap7
+      - Cloudcone L.A. Snap8
+      - Cloudcone L.A. Snap9
+      - Racknerd Seattle Snap1
+      - Racknerd Seattle Snap2
+      - Racknerd Seattle Snap3
+      - Racknerd Seattle Snap4
+      - Racknerd Seattle Snap5
+      - Racknerd Seattle Snap6
+      - Racknerd Seattle Snap7
+      - Racknerd Seattle Snap8
+      - Racknerd Seattle Snap9
     type: select
 rules:
   - MATCH,Global setting
