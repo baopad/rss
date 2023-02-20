@@ -77,7 +77,7 @@ proxies:
     ws-opts:
       path: /cone
 proxy-groups:
-  - name: Global setting
+  - name: Global
     proxies:
       - ⚖️ Loadbalanc
       - ♻️ Automatic
@@ -115,4 +115,4 @@ proxy-groups:
       - Racknerd Seattle Snap-2
     type: select
 rules:
-  - MATCH,Global setting
+  - MATCH,Global
