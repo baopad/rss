@@ -85,34 +85,34 @@ proxy-groups:
     type: select
   - name: ♻️ Automatic
     proxies:
+      - Cloudcone L.A. Snap-CF
       - Cloudcone L.A. Snap-1
       - Cloudcone L.A. Snap-2
-      - Cloudcone L.A. Snap-CF
+      - Racknerd Seattle Snap-CF
       - Racknerd Seattle Snap-1
       - Racknerd Seattle Snap-2
-      - Racknerd Seattle Snap-CF
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
   - name: ⚖️ Loadbalanc
     proxies:
+      - Cloudcone L.A. Snap-CF
       - Cloudcone L.A. Snap-1
       - Cloudcone L.A. Snap-2
-      - Cloudcone L.A. Snap-CF
+      - Racknerd Seattle Snap-CF
       - Racknerd Seattle Snap-1
       - Racknerd Seattle Snap-2
-      - Racknerd Seattle Snap-CF
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
   - name: 🔰 Manual
     proxies:
+      - Cloudcone L.A. Snap-CF
       - Cloudcone L.A. Snap-1
       - Cloudcone L.A. Snap-2
-      - Cloudcone L.A. Snap-CF
+      - Racknerd Seattle Snap-CF
       - Racknerd Seattle Snap-1
       - Racknerd Seattle Snap-2
-      - Racknerd Seattle Snap-CF
     type: select
 rules:
   - MATCH,Global setting
