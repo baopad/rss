@@ -17,4 +17,4 @@ The purpose of this project is to collect subscription resources and network too
 ## Contact Information
 Email: info@paotung.org
 ## License
-[The MIT License (MIT)](https://github.com/baopad/RSS/blob/main/LICENSE)
+[The MIT License (MIT)](https://github.com/baopad/rss/blob/main/LICENSE)
