@@ -1,8 +1,7 @@
 ## RSS
 The purpose of this project is to collect subscription resources and network tools for administrators to use.
 
-## License
-[The MIT License (MIT)](https://github.com/baopad/RSS/blob/main/LICENSE)
+
 
 ## RSS List
 ### VPN
@@ -17,3 +16,5 @@ The purpose of this project is to collect subscription resources and network too
 
 ## Contact Information
 Email: info@paotung.org
+## License
+[The MIT License (MIT)](https://github.com/baopad/RSS/blob/main/LICENSE)
