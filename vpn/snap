@@ -10,10 +10,10 @@ mode: Rule
 log-level: none
 external-controller: :9090
 proxies:
-  - name: cone.paotung.org
+  - name: www.baopad.eu.org
     type: vmess
-    server: cone.paotung.org
-    port: "1443"
+    server: www.baopad.eu.org
+    port: "443"
     uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
     alterId: 0
     cipher: auto
@@ -21,10 +21,9 @@ proxies:
     network: ws
     ws-opts:
       path: ""
-    _index: 0
-  - name: ccdn.paotung.org
+  - name: cdn.baopad.eu.org
     type: vmess
-    server: ccdn.paotung.org
+    server: cdn.baopad.eu.org
     port: "443"
     uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
     alterId: "0"
@@ -33,21 +32,9 @@ proxies:
     network: ws
     ws-opts:
       path: ""
-    _index: 1
-  - name: oci.donpau.com/hub
+  - name: ged.baopad.eu.org
     type: vmess
-    server: oci.donpau.com
-    port: "443"
-    uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hub
-  - name: aws.paotung.org
-    type: vmess
-    server: aws.paotung.org
+    server: ged.baopad.eu.org
     port: "443"
     uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
     alterId: 0
@@ -56,8 +43,7 @@ proxies:
     network: ws
     ws-opts:
       path: ""
-    _index: 3
-  - name: snap.paotung.org/hub
+  - name: snap.paotung.org
     type: vmess
     server: snap.paotung.org
     port: "443"
@@ -67,59 +53,24 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /hub
-    _index: 4
-  - name: gcore.donpau.com
-    type: vmess
-    server: 2a03:90c0:f1:2801::9999
-    port: "443"
-    uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
       path: ""
-      headers:
-        Host: gcore.donpau.com
-    _index: 5
 proxy-groups:
-  - name: Global
-    proxies:
-      - ♻️ Automatic
-      - ⚖️ Balance
-      - 🔰 Manual
-    type: select
-  - name: ♻️ Automatic
-    proxies:
-      - cone.paotung.org
-      - ccdn.paotung.org
-      - oci.donpau.com/hub
-      - aws.paotung.org
-      - snap.paotung.org/hub
-      - gcore.donpau.com
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: "600"
   - name: ⚖️ Balance
     proxies:
-      - cone.paotung.org
-      - ccdn.paotung.org
-      - oci.donpau.com/hub
-      - aws.paotung.org
-      - snap.paotung.org/hub
-      - gcore.donpau.com
+      - www.baopad.eu.org
+      - cdn.baopad.eu.org
+      - ged.baopad.eu.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
-  - name: 🔰 Manual
+  - name: ♻️ Automatic
     proxies:
-      - cone.paotung.org
-      - ccdn.paotung.org
-      - oci.donpau.com/hub
-      - aws.paotung.org
-      - snap.paotung.org/hub
-      - gcore.donpau.com
-    type: select
+      - www.baopad.eu.org
+      - cdn.baopad.eu.org
+      - ged.baopad.eu.org
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: "600"
 rules:
-  - MATCH,Global
+  - MATCH,♻️ Automatic
+  - MATCH,⚖️ Balance
