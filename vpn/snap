@@ -23,7 +23,7 @@ proxies:
       path: ""
   - name: baopad.eu.org
     type: vmess
-    server: www.baopad.eu.org
+    server: baopad.eu.org
     port: "443"
     uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666
     alterId: 0
@@ -57,7 +57,7 @@ proxies:
 proxy-groups:
   - name: ⚖️ Balance
     proxies:
-      - www.baopad.eu.org
+      - baopad.eu.org
       - cdn.baopad.eu.org
       - ged.baopad.eu.org
     type: load-balance
@@ -65,7 +65,7 @@ proxy-groups:
     interval: 600
   - name: ♻️ Automatic
     proxies:
-      - www.baopad.eu.org
+      - baopad.eu.org
       - cdn.baopad.eu.org
       - ged.baopad.eu.org
     type: url-test
