@@ -21,7 +21,7 @@ proxies:
     network: ws
     ws-opts:
       path: ""
-  - name: www.baopad.eu.org
+  - name: baopad.eu.org
     type: vmess
     server: www.baopad.eu.org
     port: "443"
