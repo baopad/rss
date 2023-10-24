@@ -1,56 +1,129 @@
 ####################################
 # Creator:baopad
 # client:Clash
-# Mail:info@baopad.eu.org
+# Mail:baopad@yahoo.com
 ####################################
 port: 7890
 socks-port: 7891
 allow-lan: true
-mode: Rule
+mode: Global
 log-level: none
 external-controller: :9090
 proxies:
-  - name: baopad.eu.org
+  - name: hub.paotung.org
     type: vmess
-    server: baopad.eu.org
+    server: hub.paotung.org
     port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: ""
-  - name: snap.linkpc.net
-    type: vmess
-    server: snap.linkpc.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: ""
-  - name: gcore.snap.publicvm.com
-    type: vmess
-    server: gcore.snap.publicvm.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: ""
+      path: /vmess
+  - name: baopad.eu.org
+    type: vmess
+    server: baopad.eu.org
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: cfp.paotung.org
+    type: vmess
+    server: cfp.paotung.org
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: ged.donpau.com
+    type: vmess
+    server: ged.donpau.com
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: aic.donpau.com
+    type: vmess
+    server: aic.donpau.com
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: imw.paotung.org
+    type: vmess
+    server: imw.paotung.org
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: snap.donpau.com/hub
+    type: vmess
+    server: snap.donpau.com
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+  - name: test.paotung.org
+    type: vmess
+    server: test.paotung.org
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
 proxy-groups:
-  - name: ⚖️ Balance
+  - name: Automatic
     proxies:
+      - hub.paotung.org
       - baopad.eu.org
-      - gcore.snap.publicvm.com
-      - snap.linkpc.net
+      - cfp.paotung.org
+      - ged.donpau.com
+      - aic.donpau.com
+      - snap.donpau.com/hub
+      - imw.paotung.org
+      - test.paotung.org
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: "600"
+  - name: Balance
+    proxies:
+      - hub.paotung.org
+      - baopad.eu.org
+      - cfp.paotung.org
+      - ged.donpau.com
+      - aic.donpau.com
+      - snap.donpau.com/hub
+      - imw.paotung.org
+      - test.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
 rules:
-  - MATCH,⚖️ Balance
+  - MATCH,Balance
