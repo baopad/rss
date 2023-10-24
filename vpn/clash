@@ -124,6 +124,6 @@ proxy-groups:
       - test.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: 600
+    interval: "600"
 rules:
   - MATCH,Balance
