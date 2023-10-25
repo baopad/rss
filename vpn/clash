@@ -26,7 +26,7 @@ proxies:
     server: baopad.eu.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
-    alterId: 0
+    alterId: "0"
     cipher: auto
     tls: true
     network: ws
@@ -48,7 +48,7 @@ proxies:
     server: ged.donpau.com
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
-    alterId: 0
+    alterId: "0"
     cipher: auto
     tls: true
     network: ws
@@ -66,7 +66,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 4
   - name: imw.paotung.org
     type: vmess
     server: imw.paotung.org
@@ -83,7 +82,7 @@ proxies:
     server: snap.donpau.com
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
-    alterId: 0
+    alterId: "0"
     cipher: auto
     tls: true
     network: ws
@@ -94,7 +93,7 @@ proxies:
     server: aws.paotung.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
-    alterId: 0
+    alterId: "0"
     cipher: auto
     tls: true
     network: ws
