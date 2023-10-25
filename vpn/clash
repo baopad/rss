@@ -62,9 +62,11 @@ proxies:
     alterId: "0"
     cipher: auto
     tls: true
+    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /vmess
+    _index: 4
   - name: imw.paotung.org
     type: vmess
     server: imw.paotung.org
@@ -89,7 +91,7 @@ proxies:
       path: /hub
   - name: test.paotung.org
     type: vmess
-    server: test.paotung.org
+    server: aws.paotung.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: 0
@@ -124,6 +126,6 @@ proxy-groups:
       - test.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
-    interval: "600"
+    interval: 600
 rules:
   - MATCH,Balance
