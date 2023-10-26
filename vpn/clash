@@ -90,7 +90,7 @@ proxies:
       path: /hub
   - name: test.paotung.org
     type: vmess
-    server: aws.paotung.org
+    server: test.paotung.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
