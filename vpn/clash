@@ -51,7 +51,6 @@ proxies:
     alterId: "0"
     cipher: auto
     tls: true
-    skip-cert-verify: true
     network: ws
     ws-opts:
       path: /vmess
