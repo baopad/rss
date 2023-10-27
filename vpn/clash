@@ -43,9 +43,9 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: ged.donpau.com
+  - name: gcw.donpau.com
     type: vmess
-    server: ged.donpau.com
+    server: gce.donpau.com
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
@@ -105,7 +105,7 @@ proxy-groups:
       - hub.paotung.org
       - baopad.eu.org
       - cfp.paotung.org
-      - ged.donpau.com
+      - gcw.donpau.com
       - aic.donpau.com
       - snap.donpau.com/hub
       - imw.paotung.org
@@ -118,7 +118,7 @@ proxy-groups:
       - hub.paotung.org
       - baopad.eu.org
       - cfp.paotung.org
-      - ged.donpau.com
+      - gcw.donpau.com
       - aic.donpau.com
       - snap.donpau.com/hub
       - imw.paotung.org
