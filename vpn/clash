@@ -45,7 +45,7 @@ proxies:
       path: /vmess
   - name: gcw.donpau.com
     type: vmess
-    server: gce.donpau.com
+    server: gcw.donpau.com
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
