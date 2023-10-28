@@ -10,7 +10,7 @@ mode: Global
 log-level: none
 external-controller: :9090
 proxies:
-  - name: hub.paotung.org
+  - name: "*hub.paotung.org"
     type: vmess
     server: hub.paotung.org
     port: "443"
@@ -102,7 +102,6 @@ proxies:
 proxy-groups:
   - name: Automatic
     proxies:
-      - hub.paotung.org
       - baopad.eu.org
       - cfp.paotung.org
       - gcw.donpau.com
@@ -115,7 +114,6 @@ proxy-groups:
     interval: "600"
   - name: Balance
     proxies:
-      - hub.paotung.org
       - baopad.eu.org
       - cfp.paotung.org
       - gcw.donpau.com
