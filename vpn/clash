@@ -64,9 +64,9 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: aic.donpau.com
+  - name: snap.linkpc.net
     type: vmess
-    server: aic.donpau.com
+    server: www.snap.linkpc.net
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
@@ -89,7 +89,7 @@ proxies:
       path: /vmess
   - name: test.paotung.org
     type: vmess
-    server: test.paotung.org
+    server: aws.paotung.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
@@ -104,7 +104,7 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - gcw.donpau.com
-      - aic.donpau.com
+      - snap.linkpc.net
       - imw.paotung.org
       - test.paotung.org
     type: url-test
@@ -115,11 +115,12 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - gcw.donpau.com
-      - aic.donpau.com
+      - snap.linkpc.net
       - imw.paotung.org
       - test.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
 rules:
+  - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
   - MATCH,Balance
