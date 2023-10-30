@@ -13,17 +13,16 @@ proxies:
   - name: "*hub.paotung.org"
     type: vmess
     server: hub.paotung.org
-    port: "443"
+    port: "8080"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
     cipher: auto
-    tls: true
     network: ws
     ws-opts:
-      path: /vmess
-  - name: baopad.eu.org
+      path: ""
+  - name: ^hub.paotung.org
     type: vmess
-    server: baopad.eu.org
+    server: hub.paotung.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
@@ -35,6 +34,17 @@ proxies:
   - name: cfp.paotung.org
     type: vmess
     server: cfp.paotung.org
+    port: "443"
+    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: baopad.eu.org
+    type: vmess
+    server: baopad.eu.org
     port: "443"
     uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
     alterId: "0"
@@ -77,17 +87,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: snap.donpau.com/hub
-    type: vmess
-    server: snap.donpau.com
-    port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hub
   - name: test.paotung.org
     type: vmess
     server: test.paotung.org
@@ -102,11 +101,10 @@ proxies:
 proxy-groups:
   - name: Automatic
     proxies:
-      - baopad.eu.org
       - cfp.paotung.org
+      - baopad.eu.org
       - gcw.donpau.com
       - aic.donpau.com
-      - snap.donpau.com/hub
       - imw.paotung.org
       - test.paotung.org
     type: url-test
@@ -114,11 +112,10 @@ proxy-groups:
     interval: "600"
   - name: Balance
     proxies:
-      - baopad.eu.org
       - cfp.paotung.org
+      - baopad.eu.org
       - gcw.donpau.com
       - aic.donpau.com
-      - snap.donpau.com/hub
       - imw.paotung.org
       - test.paotung.org
     type: load-balance
