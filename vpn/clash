@@ -14,17 +14,18 @@ proxies:
     type: vmess
     server: hub.paotung.org
     port: "8080"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     network: ws
     ws-opts:
       path: ""
+    _index: 0
   - name: ^hub.paotung.org
     type: vmess
     server: hub.paotung.org
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -35,7 +36,7 @@ proxies:
     type: vmess
     server: cfp.paotung.org
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -46,7 +47,7 @@ proxies:
     type: vmess
     server: baopad.eu.org
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -57,7 +58,7 @@ proxies:
     type: vmess
     server: gcw.donpau.com
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -68,7 +69,7 @@ proxies:
     type: vmess
     server: www.snap.linkpc.net
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -79,7 +80,7 @@ proxies:
     type: vmess
     server: imw.paotung.org
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
@@ -90,7 +91,7 @@ proxies:
     type: vmess
     server: test.paotung.org
     port: "443"
-    uuid: 3c02dc15-56ae-7889-8936-9a2ea8ff8666
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
     cipher: auto
     tls: true
