@@ -54,9 +54,9 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: gcw.donpau.com
+  - name: gcc.donpau.com Auto IP
     type: vmess
-    server: gcw.donpau.com
+    server: gcc.donpau.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -65,6 +65,19 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+  - name: gcc.donpau.com Tokyo IPv6
+    type: vmess
+    server: 2a03:90c0:111:2801:1::254
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        host: gcc.donpau.com
   - name: snap.linkpc.net
     type: vmess
     server: www.snap.linkpc.net
@@ -89,7 +102,7 @@ proxies:
       path: /vmess
   - name: test.paotung.org
     type: vmess
-    server: test.paotung.org
+    server: aws.paotung.org
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -103,7 +116,7 @@ proxy-groups:
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
-      - gcw.donpau.com
+      - gcc.donpau.com Tokyo IPv6
       - snap.linkpc.net
       - aic.donpau.com
       - test.paotung.org
@@ -114,7 +127,7 @@ proxy-groups:
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
-      - gcw.donpau.com
+      - gcc.donpau.com Tokyo IPv6
       - snap.linkpc.net
       - aic.donpau.com
       - test.paotung.org
