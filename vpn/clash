@@ -76,9 +76,9 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: aic.donpau.com
+  - name: www.donpau.com
     type: vmess
-    server: aic.donpau.com
+    server: www.donpau.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -86,7 +86,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /vmess
+      path: /hub
   - name: test.paotung.org
     type: vmess
     server: aws.paotung.org
@@ -105,7 +105,7 @@ proxy-groups:
       - baopad.eu.org
       - gcc.donpau.com
       - snap.linkpc.net
-      - aic.donpau.com
+      - www.donpau.com
       - test.paotung.org
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -116,7 +116,7 @@ proxy-groups:
       - baopad.eu.org
       - gcc.donpau.com
       - snap.linkpc.net
-      - aic.donpau.com
+      - www.donpau.com
       - test.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
