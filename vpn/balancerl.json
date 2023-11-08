@@ -1,0 +1,292 @@
+{
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    },
+    {
+      "tag": "http",
+      "port": 10809,
+      "listen": "127.0.0.1",
+      "protocol": "http",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ]
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {//Line1配置
+      "tag": "Line1",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {//Line2配置
+      "tag": "Line2",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/hub",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {//Line3配置
+      "tag": "Line3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {//Line4配置
+      "tag": "Line4",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/hub",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {//Line5配置
+      "tag": "Line5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {//Line6配置
+      "tag": "Line6",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.donpau.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/hub",
+          "headers": {}
+        }
+      },
+      "mux": {
+        "enabled": false,
+        "concurrency": -1
+      }
+    },
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ],
+  "observatory": {
+	"subjectSelector":[
+        "Line1","Line2","Line3","Line4","Line5","Line6"
+	],
+	"probeInterval":"8m"//探针,每隔8分钟测试一次
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+	"balancers": [
+      {
+        "tag": "balancer",
+        "selector": [
+          "Line1","Line2","Line3","Line4","Line5","Line6"
+        ],
+		"strategy": {//负载均衡策略对象,random随机选出出站连接,leastPing观测记录选择最快出站连接
+		  "type": "random"		
+		}
+      }
+    ],
+    "rules": [
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "balancerTag": "balancer"
+      }
+    ]
+  }
+}
