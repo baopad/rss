@@ -54,7 +54,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 3
   - name: gcc.donpau.com
     type: vmess
     server: gcc.donpau.com
@@ -66,7 +65,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 4
   - name: gcw.donpau.com
     type: vmess
     server: gcw.donpau.com
@@ -80,7 +78,6 @@ proxies:
       path: /vmess
       headers:
         host: gcc.donpau.com
-    _index: 5
   - name: www.donpau.com
     type: vmess
     server: www.donpau.com
