@@ -54,6 +54,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+    _index: 3
   - name: gcc.donpau.com
     type: vmess
     server: gcc.donpau.com
@@ -65,9 +66,10 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: snap.linkpc.net
+    _index: 4
+  - name: gcw.donpau.com
     type: vmess
-    server: www.snap.linkpc.net
+    server: gcw.donpau.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -76,6 +78,9 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+      headers:
+        host: gcc.donpau.com
+    _index: 5
   - name: www.donpau.com
     type: vmess
     server: www.donpau.com
@@ -87,9 +92,9 @@ proxies:
     network: ws
     ws-opts:
       path: /hub
-  - name: test.paotung.org
+  - name: snap.linkpc.net
     type: vmess
-    server: aws.paotung.org
+    server: snap.linkpc.net
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -98,15 +103,17 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+      headers:
+        host: baopad.eu.org
 proxy-groups:
   - name: Automatic
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
       - gcc.donpau.com
-      - snap.linkpc.net
+      - gcw.donpau.com
       - www.donpau.com
-      - test.paotung.org
+      - snap.linkpc.net
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
@@ -115,9 +122,9 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - gcc.donpau.com
-      - snap.linkpc.net
+      - gcw.donpau.com
       - www.donpau.com
-      - test.paotung.org
+      - snap.linkpc.net
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
