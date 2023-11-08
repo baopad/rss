@@ -140,7 +140,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "snap.linkpc.net",
+            "address": "cfp.paotung.org",
             "port": 443,
             "users": [
               {
@@ -172,7 +172,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "xxxx.paotung.org",
+            "address": "baopad.eu.org",
             "port": 443,
             "users": [
               {
