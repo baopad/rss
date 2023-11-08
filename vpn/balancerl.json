@@ -44,51 +44,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.donpau.com",
+            "address": "cfp.paotung.org",
             "port": 443,
             "users": [
               {
                 "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
                 "alterId": 0,
-                "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/vless",
-          "headers": {}
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {//Line2配置
-      "tag": "Line2",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.donpau.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto"
               }
             ]
           }
@@ -102,13 +65,41 @@
           "show": false
         },
         "wsSettings": {
-          "path": "/hub",
+          "path": "/vless",
           "headers": {}
         }
+      }
+    },
+    {//Line2配置
+      "tag": "Line2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "baopad.eu.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
       }
     },
     {//Line3配置
@@ -117,51 +108,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.donpau.com",
+            "address": "gcc.donpau.com",
             "port": 443,
             "users": [
               {
                 "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
                 "alterId": 0,
-                "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/vless",
-          "headers": {}
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {//Line4配置
-      "tag": "Line4",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.donpau.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto"
               }
             ]
           }
@@ -175,13 +129,41 @@
           "show": false
         },
         "wsSettings": {
-          "path": "/hub",
+          "path": "/vless",
           "headers": {}
         }
+      }
+    },
+    {//Line4配置
+      "tag": "Line4",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "snap.linkpc.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
       }
     },
     {//Line5配置
@@ -190,51 +172,14 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.donpau.com",
+            "address": "xxxx.paotung.org",
             "port": 443,
             "users": [
               {
                 "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
                 "alterId": 0,
-                "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/vless",
-          "headers": {}
-        }
-      },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
-      }
-    },
-    {//Line6配置
-      "tag": "Line6",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "www.donpau.com",
-            "port": 443,
-            "users": [
-              {
-                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto"
               }
             ]
           }
@@ -248,13 +193,41 @@
           "show": false
         },
         "wsSettings": {
-          "path": "/hub",
+          "path": "/vless",
           "headers": {}
         }
+      }
+    },
+    {//Line6配置
+      "tag": "Line6",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "aws.paotung.org",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a2cc75a-5fc1-4123-983b-7a1c86a10888",
+                "alterId": 0,
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
       },
-      "mux": {
-        "enabled": false,
-        "concurrency": -1
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {}
+        }
       }
     },
     {
