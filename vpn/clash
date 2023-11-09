@@ -127,4 +127,5 @@ proxy-groups:
     interval: 600
 rules:
   - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
+  - DOMAIN-KEYWORD,cdn.office.net,REJECT
   - MATCH,Balance
