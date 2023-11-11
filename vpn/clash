@@ -8,22 +8,11 @@ socks-port: 7891
 allow-lan: true
 mode: Global
 log-level: none
-external-controller: :9090
+external-controller: :9000
 proxies:
   - name: Origin line
     type: vmess
     server: hub.paotung.org
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-  - name: Backup line
-    type: vmess
-    server: oci.donpau.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -102,6 +91,17 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
+  - name: oci.cbu.net
+    type: vmess
+    server: oci.cbu.net
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
 proxy-groups:
   - name: Automatic
     proxies:
@@ -111,6 +111,7 @@ proxy-groups:
       - gcw.donpau.com
       - www.donpau.com
       - snap.linkpc.net
+      - oci.cbu.net
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
@@ -122,6 +123,7 @@ proxy-groups:
       - gcw.donpau.com
       - www.donpau.com
       - snap.linkpc.net
+      - oci.cbu.net
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
