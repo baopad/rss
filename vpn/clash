@@ -43,6 +43,17 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+  - name: www.donpau.com
+    type: vmess
+    server: www.donpau.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
   - name: gcc.donpau.com
     type: vmess
     server: gcc.donpau.com
@@ -67,9 +78,9 @@ proxies:
       path: /vmess
       headers:
         host: gcc.donpau.com
-  - name: www.donpau.com
+  - name: oci.cbu.net
     type: vmess
-    server: www.donpau.com
+    server: oci.cbu.net
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -78,6 +89,19 @@ proxies:
     network: ws
     ws-opts:
       path: /hub
+    _index: 6
+  - name: oci.publicvm.com
+    type: vmess
+    server: oci.publicvm.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+    _index: 7
   - name: snap.linkpc.net
     type: vmess
     server: snap.linkpc.net
@@ -91,8 +115,10 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
+    _index: 8
   - name: snap.mrcork.com
     type: vmess
+    server: snap.mrcork.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -103,36 +129,15 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
-  - name: oci.cbu.net
-    type: vmess
-    server: oci.cbu.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hub
-  - name: oci.publicvm.com
-    type: vmess
-    server: oci.publicvm.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hub
+    _index: 9
 proxy-groups:
   - name: Automatic
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
+      - www.donpau.com
       - gcc.donpau.com
       - gcw.donpau.com
-      - www.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
       - snap.linkpc.net
@@ -144,9 +149,9 @@ proxy-groups:
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
+      - www.donpau.com
       - gcc.donpau.com
       - gcw.donpau.com
-      - www.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
       - snap.linkpc.net
