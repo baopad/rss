@@ -91,9 +91,32 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
+  - name: snap.mrcork.com
+    type: vmess
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        host: baopad.eu.org
   - name: oci.cbu.net
     type: vmess
     server: oci.cbu.net
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+  - name: oci.publicvm.com
+    type: vmess
+    server: oci.publicvm.com
     port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
     alterId: "0"
@@ -110,8 +133,10 @@ proxy-groups:
       - gcc.donpau.com
       - gcw.donpau.com
       - www.donpau.com
-      - snap.linkpc.net
       - oci.cbu.net
+      - oci.publicvm.com
+      - snap.linkpc.net
+      - snap.mrcork.com
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
@@ -122,8 +147,10 @@ proxy-groups:
       - gcc.donpau.com
       - gcw.donpau.com
       - www.donpau.com
-      - snap.linkpc.net
       - oci.cbu.net
+      - oci.publicvm.com
+      - snap.linkpc.net
+      - snap.mrcork.com
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
