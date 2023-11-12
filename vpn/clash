@@ -21,6 +21,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+    _index: 0
   - name: cfp.paotung.org
     type: vmess
     server: cfp.paotung.org
@@ -32,6 +33,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+    _index: 1
   - name: baopad.eu.org
     type: vmess
     server: baopad.eu.org
@@ -43,6 +45,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+    _index: 2
   - name: www.donpau.com
     type: vmess
     server: www.donpau.com
@@ -54,6 +57,7 @@ proxies:
     network: ws
     ws-opts:
       path: /hub
+    _index: 3
   - name: gcc.donpau.com
     type: vmess
     server: gcc.donpau.com
@@ -65,6 +69,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+    _index: 4
   - name: gcw.donpau.com
     type: vmess
     server: gcw.donpau.com
@@ -78,6 +83,7 @@ proxies:
       path: /vmess
       headers:
         host: gcc.donpau.com
+    _index: 5
   - name: oci.cbu.net
     type: vmess
     server: oci.cbu.net
