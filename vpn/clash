@@ -166,6 +166,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
 rules:
-  - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
   - DOMAIN-KEYWORD,cdn.office.net,REJECT
+  - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
+  - DOMAIN-KEYWORD,download.windowsupdate.com,REJECT
   - MATCH,Balance
