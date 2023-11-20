@@ -23,7 +23,7 @@ proxies:
       path: /vless
     _index: 0
   #CDN
-  - {name: baopad.eu.org, server: baopad.eu.org, port: 443, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: baopad.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baopad.eu.org}}, udp: true}
+  - {name: 999baopad.eu.org, server: baopad.eu.org, port: 443, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: baopad.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baopad.eu.org}}, udp: true}
   - {name: 888www.donpau.com, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
   - {name: 888oci.cbu.net, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
   - name: cfp.paotung.org
