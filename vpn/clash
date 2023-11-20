@@ -21,7 +21,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 0
   - name: cfp.paotung.org
     type: vmess
     server: cfp.paotung.org
@@ -33,7 +32,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 1
   - name: baopad.eu.org
     type: vmess
     server: baopad.eu.org
@@ -45,7 +43,6 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-    _index: 2
   - name: www.donpau.com
     type: vmess
     server: www.donpau.com
@@ -57,7 +54,6 @@ proxies:
     network: ws
     ws-opts:
       path: /hubvm
-    _index: 3
   - name: gcc.donpau.com
     type: vmess
     server: gcc.donpau.com
@@ -83,7 +79,6 @@ proxies:
       path: /vmess
       headers:
         host: gcc.donpau.com
-    _index: 5
   - name: oci.cbu.net
     type: vmess
     server: oci.cbu.net
@@ -95,7 +90,6 @@ proxies:
     network: ws
     ws-opts:
       path: /hubvm
-    _index: 6
   - name: oci.publicvm.com
     type: vmess
     server: oci.publicvm.com
@@ -107,7 +101,6 @@ proxies:
     network: ws
     ws-opts:
       path: /hubvm
-    _index: 7
   - name: snap.linkpc.net
     type: vmess
     server: snap.linkpc.net
@@ -121,7 +114,6 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
-    _index: 8
   - name: snap.mrcork.com
     type: vmess
     server: snap.mrcork.com
@@ -135,7 +127,6 @@ proxies:
       path: /vmess
       headers:
         host: baopad.eu.org
-    _index: 9
 proxy-groups:
   - name: Automatic
     proxies:
