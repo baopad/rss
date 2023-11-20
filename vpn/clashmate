@@ -28,7 +28,7 @@ proxies:
   - {name: www.donpau.comR, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
   - {name: oci.cbu.netR, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
 proxy-groups:
-  - name: StaticIP
+  - name: Automatic
     proxies:
       - cfp.paotung.org
       - baopad.eu.org
@@ -60,10 +60,10 @@ proxy-groups:
     interval: 600
 rules:
   #StaticIP: Used for account service IP to jump randomly.
-  - DOMAIN-SUFFIX,google.com,StaticIP
-  - DOMAIN-SUFFIX,godaddy.com,StaticIP
-  - DOMAIN-SUFFIX,yahoo.com,StaticIP
-  - DOMAIN-SUFFIX,openai.com,StaticIP
+  - DOMAIN-SUFFIX,google.com,Automatic
+  - DOMAIN-SUFFIX,godaddy.com,Automatic
+  - DOMAIN-SUFFIX,yahoo.com,Automatic
+  - DOMAIN-SUFFIX,openai.com,Automatic
   #Direct: Websites that require domestic IP.
   - DOMAIN-SUFFIX,taobao.com,DIRECT
   - DOMAIN-SUFFIX,tmall.com,DIRECT
