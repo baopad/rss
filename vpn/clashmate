@@ -44,15 +44,7 @@ proxy-groups:
     interval: "600"
   - name: Balance
     proxies:
-      - cfp.paotung.org
-      - baopad.eu.org
-      - www.donpau.com
-      - gcc.donpau.com
-      - gcw.donpau.com
-      - oci.cbu.net
-      - oci.publicvm.com
-      - snap.linkpc.net
-      - snap.mrcork.com
+      - Automatic
       - www.donpau.comR
       - oci.cbu.netR
     type: load-balance
