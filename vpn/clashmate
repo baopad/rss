@@ -167,7 +167,22 @@ proxy-groups:
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
+  - name: StaticIP
+    proxies:
+      - cfp.paotung.org
+      - baopad.eu.org
+      - www.donpau.com
+      - gcc.donpau.com
+      - gcw.donpau.com
+      - oci.cbu.net
+      - oci.publicvm.com
+      - snap.linkpc.net
+      - snap.mrcork.com
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 600
 rules:
+  - DOMAIN-KEYWORD,google.com,StaticIP
   - DOMAIN-KEYWORD,cdn.office.net,REJECT
   - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
   - DOMAIN-KEYWORD,download.windowsupdate.com,REJECT
