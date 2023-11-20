@@ -39,20 +39,6 @@ proxy-groups:
       - oci.publicvm.com
       - snap.linkpc.net
       - snap.mrcork.com
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-  - name: Automatic
-    proxies:
-      - cfp.paotung.org
-      - baopad.eu.org
-      - www.donpau.com
-      - gcc.donpau.com
-      - gcw.donpau.com
-      - oci.cbu.net
-      - oci.publicvm.com
-      - snap.linkpc.net
-      - snap.mrcork.com
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: "600"
