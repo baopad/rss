@@ -22,43 +22,10 @@ proxies:
   - {name: snap.mrcork.com, server: snap.mrcork.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
   - {name: gcc.donpau.com, server: gcc.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: gcw.donpau.com, server: gcw.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: gcc.donpau.com}}}
-  - {name: 998baopad.eu.org, server: baopad.eu.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
-  - name: www.donpau.com
-    type: vmess
-    server: www.donpau.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hubvm
-    _index: 3
-  - name: oci.cbu.net
-    type: vmess
-    server: oci.cbu.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hubvm
-    _index: 6
-  - name: oci.publicvm.com
-    type: vmess
-    server: oci.publicvm.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hub
-    _index: 7
+  #Forward
+  - {name: www.donpau.com, server: www.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
+  - {name: oci.cbu.net, server: oci.cbu.net, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
+  - {name: oci.publicvm.com, server: oci.publicvm.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
 proxy-groups:
   - name: Automatic
     proxies:
