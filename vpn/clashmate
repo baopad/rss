@@ -11,7 +11,7 @@ log-level: none
 external-controller: :9000
 proxies:
   #Origin
-  - {name: Origin ws, server: hub.paotung.org, port: 8080, type: vmess, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, network: ws}
+  - {name: Origin ws, server: hub.paotung.org, port: 8080, type: vmess, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, network: ws, cipher: auto}
   - {name: Origin tls, server: hub.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   #CDN
   - {name: 888www.donpau.com, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
