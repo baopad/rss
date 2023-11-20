@@ -11,7 +11,7 @@ log-level: none
 external-controller: :9000
 proxies:
   #Origin
-  - {name: Origin ws, server: hub.paotung.org, port: 8080, alterId: "0", type: vmess, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, network: ws, cipher: auto}
+  - {name: Origin ws, server: hub.paotung.org, port: 8080, alterId: 0, type: vmess, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, network: ws, cipher: auto}
   - {name: Origin tls, server: hub.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   #CDN
   - {name: cfp.paotung.org, server: cfp.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
