@@ -1,0 +1,174 @@
+################################
+# Creator:baopad
+# Client:Clash for Windows
+# Mail:baopad@yahoo.com
+################################
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Global
+log-level: none
+external-controller: :9000
+proxies:
+  - name: Origin line
+    type: vless
+    server: hub.paotung.org
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+    _index: 0
+  - {name: 888www.donpau.com, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
+  - {name: 888oci.cbu.net, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
+  - name: cfp.paotung.org
+    type: vmess
+    server: cfp.paotung.org
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+    _index: 1
+  - name: baopad.eu.org
+    type: vless
+    server: baopad.eu.org
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+    _index: 2
+  - name: www.donpau.com
+    type: vmess
+    server: www.donpau.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+    _index: 3
+  - name: gcc.donpau.com
+    type: vless
+    server: gcc.donpau.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+    _index: 4
+  - name: gcw.donpau.com
+    type: vless
+    server: gcw.donpau.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        host: gcc.donpau.com
+    _index: 5
+  - name: oci.cbu.net
+    type: vmess
+    server: oci.cbu.net
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+    _index: 6
+  - name: oci.publicvm.com
+    type: vmess
+    server: oci.publicvm.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hub
+    _index: 7
+  - name: snap.linkpc.net
+    type: vless
+    server: snap.linkpc.net
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        host: baopad.eu.org
+    _index: 8
+  - name: snap.mrcork.com
+    type: vless
+    server: snap.mrcork.com
+    port: "443"
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        host: baopad.eu.org
+    _index: 9
+proxy-groups:
+  - name: Automatic
+    proxies:
+      - cfp.paotung.org
+      - baopad.eu.org
+      - www.donpau.com
+      - gcc.donpau.com
+      - gcw.donpau.com
+      - oci.cbu.net
+      - oci.publicvm.com
+      - snap.linkpc.net
+      - snap.mrcork.com
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: "600"
+  - name: Balance
+    proxies:
+      - cfp.paotung.org
+      - baopad.eu.org
+      - www.donpau.com
+      - gcc.donpau.com
+      - gcw.donpau.com
+      - oci.cbu.net
+      - oci.publicvm.com
+      - snap.linkpc.net
+      - snap.mrcork.com
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+rules:
+  - DOMAIN-KEYWORD,cdn.office.net,REJECT
+  - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
+  - DOMAIN-KEYWORD,download.windowsupdate.com,REJECT
+  - MATCH,Balance
