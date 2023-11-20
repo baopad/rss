@@ -18,6 +18,8 @@ proxies:
   - {name: 888oci.cbu.net, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
   - {name: cfp.paotung.org, server: cfp.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: baopad.eu.org, server: baopad.eu.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
+  - {name: snap.linkpc.net, server: snap.linkpc.net, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
+  - {name: snap.mrcork.com, server: snap.mrcork.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
   - {name: gcc.donpau.com, server: gcc.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: gcw.donpau.com, server: gcw.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: gcc.donpau.com}}}
   - {name: 998baopad.eu.org, server: baopad.eu.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
@@ -57,34 +59,6 @@ proxies:
     ws-opts:
       path: /hub
     _index: 7
-  - name: snap.linkpc.net
-    type: vless
-    server: snap.linkpc.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        host: baopad.eu.org
-    _index: 8
-  - name: snap.mrcork.com
-    type: vless
-    server: snap.mrcork.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        host: baopad.eu.org
-    _index: 9
 proxy-groups:
   - name: Automatic
     proxies:
