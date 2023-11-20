@@ -54,6 +54,8 @@ proxy-groups:
       - snap.linkpc.net
       - snap.mrcork.com
       - www.donpau.comR
+      - www.donpau.comR
+      - www.donpau.comR
       - oci.cbu.netR
     type: load-balance
     url: http://www.gstatic.com/generate_204
