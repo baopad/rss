@@ -73,10 +73,17 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
 rules:
+  #StaticIP: Used for account service IP to jump randomly.
   - DOMAIN-SUFFIX,google.com,StaticIP
   - DOMAIN-SUFFIX,godaddy.com,StaticIP
   - DOMAIN-SUFFIX,yahoo.com,StaticIP
   - DOMAIN-SUFFIX,openai.com,StaticIP
+  #Direct: Websites that require domestic IP.
+  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,tmall.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com,DIRECT
+  - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+  #Reject: Block system updates.
   - DOMAIN-KEYWORD,cdn.office.net,REJECT
   - DOMAIN-KEYWORD,mp.microsoft.com,REJECT
   - DOMAIN-KEYWORD,download.windowsupdate.com,REJECT
