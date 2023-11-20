@@ -46,7 +46,9 @@ proxy-groups:
     proxies:
       - Automatic
       - www.donpau.comR
+      - Automatic
       - oci.cbu.netR
+      - Automatic
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
