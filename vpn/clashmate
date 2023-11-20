@@ -14,8 +14,6 @@ proxies:
   - {name: Origin ws, server: hub.paotung.org, port: 8080, alterId: "0", type: vmess, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, network: ws, cipher: auto}
   - {name: Origin tls, server: hub.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   #CDN
-  - {name: 888www.donpau.com, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
-  - {name: 888oci.cbu.net, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
   - {name: cfp.paotung.org, server: cfp.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: baopad.eu.org, server: baopad.eu.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: snap.linkpc.net, server: snap.linkpc.net, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless, headers: {Host: baopad.eu.org}}}
@@ -26,6 +24,9 @@ proxies:
   - {name: www.donpau.com, server: www.donpau.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
   - {name: oci.cbu.net, server: oci.cbu.net, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
   - {name: oci.publicvm.com, server: oci.publicvm.com, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /hubvl}}
+  #Reality
+  - {name: www.donpau.comR, server: www.donpau.com, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: www.donpau.com, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: www.donpau.com}}, udp: true}
+  - {name: oci.cbu.netR, server: oci.cbu.net, port: 443, reality-opts: {public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE}, client-fingerprint: chrome, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, tfo: false, servername: oci.cbu.net, skip-cert-verify: false, network: ws, ws-opts: {path: /vless, headers: {Host: oci.cbu.net}}, udp: true}
 proxy-groups:
   - name: Automatic
     proxies:
@@ -52,6 +53,8 @@ proxy-groups:
       - oci.publicvm.com
       - snap.linkpc.net
       - snap.mrcork.com
+      - www.donpau.comR
+      - oci.cbu.netR
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
