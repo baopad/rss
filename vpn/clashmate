@@ -58,7 +58,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /hub
+      path: /hubvm
     _index: 3
   - name: gcc.donpau.com
     type: vless
@@ -96,7 +96,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /hub
+      path: /hubvm
     _index: 6
   - name: oci.publicvm.com
     type: vmess
