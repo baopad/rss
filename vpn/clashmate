@@ -83,6 +83,7 @@ rules:
   - DOMAIN-SUFFIX,tmall.com,DIRECT
   - DOMAIN-SUFFIX,mmstat.com,DIRECT
   - DOMAIN-SUFFIX,alicdn.com,DIRECT
+  - DOMAIN-SUFFIX,aliyun.com,DIRECT
   - DOMAIN-SUFFIX,jd.com,DIRECT
   - DOMAIN-SUFFIX,3.cn,DIRECT
   - DOMAIN-SUFFIX,360buyimg.com,DIRECT
