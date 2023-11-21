@@ -8,7 +8,6 @@ socks-port: 7891
 allow-lan: true
 mode: Global
 log-level: none
-external-controller: :9000
 proxies:
   - name: Origin line
     type: vmess
