@@ -62,6 +62,7 @@ proxy-groups:
 rules:
   #StaticIP: Used for account service IP to jump randomly.
   - DOMAIN-SUFFIX,google.com,Automatic
+  - DOMAIN-SUFFIX,googlevideo.com,Automatic
   - DOMAIN-SUFFIX,godaddy.com,Automatic
   - DOMAIN-SUFFIX,yahoo.com,Automatic
   - DOMAIN-SUFFIX,openai.com,Automatic
