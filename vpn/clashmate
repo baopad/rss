@@ -89,6 +89,5 @@ rules:
   - 'IP-CIDR,240.0.0.0/4,DIRECT'
   - 'IP-CIDR6,fe80::/10,DIRECT'
   # Global Defulte
-  - DOMAIN-SUFFIX,.cn,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Balance
