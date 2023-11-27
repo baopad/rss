@@ -156,4 +156,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 600
 rules:
+  - DOMAIN-SUFFIX,cdn.office.net,REJECT
+  - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
   - MATCH,Balance
