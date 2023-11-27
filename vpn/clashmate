@@ -11,7 +11,7 @@ log-level: none
 proxies:
   #Origin
   - {name: Origin ws, server: hub.paotung.org, port: 8080, type: vmess, network: ws, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, alterId: 0, cipher: auto}
-  - {name: Origin tls, server: hub.paotung.org, port: 443, type: vless, network: ws, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false}
+  - {name: Origin tls, server: hub.paotung.org, port: 443, type: vless, network: ws, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, ws-opts: {path: /vless}}
   #CDN
   - {name: cfp.paotung.org, server: cfp.paotung.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
   - {name: baopad.eu.org, server: baopad.eu.org, port: 443, type: vless, uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888, tls: true, skip-cert-verify: false, network: ws, udp: true, ws-opts: {path: /vless}}
