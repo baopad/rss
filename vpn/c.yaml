@@ -1,0 +1,79 @@
+################################
+##  Creator:baopad@yahoo.com  ##
+################################
+mixed-port: 7890
+mode: rule
+log-level: none
+proxies:
+  - name: ali.donpau.com
+    server: ali.donpau.com
+    port: 88
+    type: vless
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    network: tcp
+    servername: ali.donpau.com
+    udp: true
+  - name: www.donpau.com
+    server: www.donpau.com
+    port: 443
+    type: vless
+    network: tcp
+    flow: xtls-rprx-vision
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    servername: www.donpau.com
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: oci.cbu.net
+    server: oci.cbu.net
+    port: 443
+    type: vless
+    network: tcp
+    flow: xtls-rprx-vision
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    servername: oci.cbu.net
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: baopad.eu.org
+    type: vmess
+    server: baopad.eu.org
+    port: 443
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+proxy-groups:
+  - name: Automatic
+    proxies:
+      - ali.donpau.com
+      - www.donpau.com
+      - oci.cbu.net
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+  - name: Balance
+    proxies:
+      - ali.donpau.com
+      - www.donpau.com
+      - oci.cbu.net
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+rules:
+  - DOMAIN-SUFFIX,taobao.com,DIRECT #taobao vpn tip
+  - DOMAIN-SUFFIX,cdn.office.net,REJECT
+  - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
+  - geoip,cn,ali.donpau.com
+  - geosite,cn,ali.donpau.com
+  - MATCH,Balance
