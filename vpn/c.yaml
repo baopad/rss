@@ -56,16 +56,16 @@ proxy-groups:
   - name: Automatic
     proxies:
       - ali.donpau.com
-      - www.donpau.com
       - oci.cbu.net
+      - hub.paotung.org
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
   - name: Balance
     proxies:
       - ali.donpau.com
-      - www.donpau.com
       - oci.cbu.net
+      - hub.paotung.org
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
