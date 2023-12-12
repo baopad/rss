@@ -13,14 +13,13 @@ proxies:
     network: tcp
     servername: ali.donpau.com
     udp: true
-  - name: www.donpau.com
-    server: www.donpau.com
+  - name: hub.paotung.org
+    server: hub.paotung.org
     port: 443
     type: vless
     network: tcp
     flow: xtls-rprx-vision
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    servername: www.donpau.com
     tls: true
     skip-cert-verify: false
     reality-opts:
@@ -34,7 +33,6 @@ proxies:
     network: tcp
     flow: xtls-rprx-vision
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    servername: oci.cbu.net
     tls: true
     skip-cert-verify: false
     reality-opts:
