@@ -16,9 +16,9 @@ proxies:
     server: oci.cbu.net
     port: 443
     type: vless
-    network: tcp
-    flow: xtls-rprx-vision
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    flow: xtls-rprx-vision
+    network: tcp
     tls: true
     skip-cert-verify: false
     reality-opts:
@@ -29,9 +29,9 @@ proxies:
     server: hub.paotung.org
     port: 443
     type: vless
-    network: tcp
-    flow: xtls-rprx-vision
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    flow: xtls-rprx-vision
+    network: tcp
     tls: true
     skip-cert-verify: false
     reality-opts:
