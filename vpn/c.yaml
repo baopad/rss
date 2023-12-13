@@ -49,6 +49,17 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+  - name: origin oci
+    server: oci.cbu.net
+    port: 443
+    type: vmess
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
   - name:  snap.mrcork.com
     server: snap.mrcork.com
     port: 443
