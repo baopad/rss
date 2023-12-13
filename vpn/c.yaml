@@ -52,16 +52,16 @@ proxies:
   - name:  snap.mrcork.com
     server: snap.mrcork.com
     port: 443
-    type: vmess
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: 0
-    cipher: auto
-    tls: true
+    type: vless
     network: ws
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    tls: true
+    skip-cert-verify: false
     ws-opts:
-      path: /vmess
+      path: /vless
       headers:
         Host: baopad.eu.org
+    udp: true
 proxy-groups:
   - name: Automatic
     proxies:
