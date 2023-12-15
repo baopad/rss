@@ -45,6 +45,19 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
+  - name:  baopad.eu.org
+    server: baopad.eu.org
+    port: 443
+    type: vless
+    network: ws
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /vless
+      headers:
+        Host: baopad.eu.org
+    udp: true
   - name: gcc.donpau.com
     server: gcc.donpau.com
     port: 443
@@ -67,19 +80,17 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name:  baopad.eu.org
-    server: baopad.eu.org
+  - name: rn.local
+    server: www.donpua.com
     port: 443
-    type: vless
-    network: ws
+    type: vmess
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
     tls: true
-    skip-cert-verify: false
+    network: ws
     ws-opts:
-      path: /vless
-      headers:
-        Host: baopad.eu.org
-    udp: true
+      path: /vmess
 proxy-groups:
   - name: Automatic
     proxies:
@@ -87,6 +98,8 @@ proxy-groups:
       - oci.cbu.net
       - hub.paotung.org
       - cfp.paotung.org
+      - baopad.eu.org
+      - gcc.donpau.com
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
