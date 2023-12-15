@@ -56,7 +56,7 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: origin oci
+  - name: oci.local
     server: oci.cbu.net
     port: 443
     type: vmess
