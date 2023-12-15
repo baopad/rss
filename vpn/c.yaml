@@ -80,17 +80,15 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name: rn.local
-    server: www.donpua.com
+  - name: rnv.local
+    server: www.donpau.com
     port: 443
-    type: vmess
+    type: vless
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: 0
-    cipher: auto
+    network: tcp
     tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - name: Automatic
     proxies:
