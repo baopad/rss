@@ -56,8 +56,8 @@ proxies:
     network: ws
     ws-opts:
       path: /vmess
-  - name:  snap.mrcork.com
-    server: snap.mrcork.com
+  - name:  baopad.eu.org
+    server: baopad.eu.org
     port: 443
     type: vless
     network: ws
