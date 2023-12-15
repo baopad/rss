@@ -83,12 +83,14 @@ proxies:
   - name: rnv.local
     server: www.donpau.com
     port: 443
-    type: vless
+    type: vmess
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    network: tcp
+    alterId: 0
+    cipher: auto
     tls: true
-    skip-cert-verify: false
-    udp: true
+    network: ws
+    ws-opts:
+      path: /vmess
 proxy-groups:
   - name: Automatic
     proxies:
