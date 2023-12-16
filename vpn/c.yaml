@@ -102,7 +102,7 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - gcc.donpau.com
-    type: load-balance #url-test
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
   - name: Balance
