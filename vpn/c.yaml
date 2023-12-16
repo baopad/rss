@@ -110,7 +110,6 @@ proxy-groups:
       - ali.donpau.com
       - oci.cbu.net
       - hub.paotung.org
-      - gcc.donpau.com
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
