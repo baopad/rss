@@ -5,124 +5,121 @@ mixed-port: 7890
 mode: rule
 log-level: none
 proxies:
-- name: ali.donpau.com
-  server: ali.donpau.com
-  port: 88
-  type: vless
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  network: tcp
-  udp: true
-- name: oci.cbu.net
-  server: oci.cbu.net
-  port: 443
-  type: vless
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  flow: xtls-rprx-vision
-  network: tcp
-  tls: true
-  skip-cert-verify: false
-  reality-opts:
-    public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
-  client-fingerprint: chrome
-  udp: true
-- name: hub.paotung.org
-  server: hub.paotung.org
-  port: 443
-  type: vless
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  network: tcp
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: cfp.paotung.org
-  server: cfp.paotung.org
-  port: 443
-  type: vmess
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: baopad.eu.org
-  server: baopad.eu.org
-  port: 443
-  type: vless
-  network: ws
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  tls: true
-  skip-cert-verify: false
-  ws-opts:
-    path: /vless
-    headers:
-      Host: baopad.eu.org
-  udp: true
-- name: gcc.donpau.com
-  server: gcw.donpau.com
-  port: 443
-  type: vmess
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: gcc.donpau.com
-- name: oci.local
-  server: oci.cbu.net
-  port: 443
-  type: vmess
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: rnv.local
-  server: www.donpau.com
-  port: 443
-  type: vmess
-  uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /vmess
+  - name: ali.donpau.com
+    server: ali.donpau.com
+    port: 88
+    type: vless
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    network: tcp
+    udp: true
+  - name: oci.cbu.net
+    server: oci.cbu.net
+    port: 443
+    type: vless
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: hub.paotung.org
+    server: hub.paotung.org
+    port: 443
+    type: vless
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+    udp: true
+  - name: cfp.paotung.org
+    server: cfp.paotung.org
+    port: 443
+    type: vmess
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name:  baopad.eu.org
+    server: baopad.eu.org
+    port: 443
+    type: vless
+    network: ws
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /vless
+      headers:
+        Host: baopad.eu.org
+    udp: true
+  - name: gcc.donpau.com
+    server: gcw.donpau.com
+    port: 443
+    type: vmess
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gcc.donpau.com
+  - name: oci.local
+    server: oci.cbu.net
+    port: 443
+    type: vmess
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
+  - name: rnv.local
+    server: www.donpau.com
+    port: 443
+    type: vmess
+    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /vmess
 proxy-groups:
-- name: Automatic
-  proxies:
-  - ali.donpau.com
-  - oci.cbu.net
-  - hub.paotung.org
-  - cfp.paotung.org
-  - baopad.eu.org
-  - gcc.donpau.com
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 600
-- name: Balance
-  proxies:
-  - ali.donpau.com
-  - oci.cbu.net
-  - hub.paotung.org
-  - gcc.donpau.com
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 600
+  - name: Automatic
+    proxies:
+      - ali.donpau.com
+      - oci.cbu.net
+      - hub.paotung.org
+      - cfp.paotung.org
+      - baopad.eu.org
+      - gcc.donpau.com
+    type: load-balance #url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+  - name: Balance
+    proxies:
+      - ali.donpau.com
+      - oci.cbu.net
+      - hub.paotung.org
+      - gcc.donpau.com
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 600
 rules:
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,youku.com,DIRECT
-- DOMAIN-SUFFIX,cdn.office.net,REJECT
-- DOMAIN-SUFFIX,mp.microsoft.com,REJECT
-- DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
-- geoip,cn,ali.donpau.com
-- geosite,cn,ali.donpau.com
-- MATCH,Balance
+  - DOMAIN-SUFFIX,taobao.com,DIRECT #taobao vpn tip
+  - DOMAIN-SUFFIX,youku.com,DIRECT #taobao vpn tip
+  - DOMAIN-SUFFIX,cdn.office.net,REJECT
+  - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
   - geoip,cn,ali.donpau.com
   - geosite,cn,ali.donpau.com
   - MATCH,Balance
