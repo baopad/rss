@@ -121,4 +121,5 @@ rules:
   - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
   - geoip,cn,ali.donpau.com
   - geosite,cn,ali.donpau.com
-  - MATCH,Balance
+  #- MATCH,Balance
+  - MATCH,Automatic
