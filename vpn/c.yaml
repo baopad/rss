@@ -59,7 +59,7 @@ proxies:
         Host: baopad.eu.org
     udp: true
   - name: gcc.donpau.com
-    server: gcw.donpau.com
+    server: asia.a.gcdn.co
     port: 443
     type: vmess
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
@@ -70,7 +70,7 @@ proxies:
     ws-opts:
       path: /vmess
       headers:
-        Host: gcc.donpau.com
+        Host: gc.donpau.com
   - name: oci.local
     server: oci.cbu.net
     port: 443
