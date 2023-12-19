@@ -58,7 +58,7 @@ proxies:
       headers:
         Host: baopad.eu.org
     udp: true
-  - name: gcc.donpau.com
+  - name: gc.donpau.com
     server: asia.a.gcdn.co
     port: 443
     type: vmess
@@ -101,7 +101,7 @@ proxy-groups:
       - hub.paotung.org
       - cfp.paotung.org
       - baopad.eu.org
-      - gcc.donpau.com
+      - gc.donpau.com
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 600
