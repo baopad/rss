@@ -120,7 +120,7 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - www.donpau.com
-      - gcc.donpau.com
+      - gc.donpau.com
       - gcw.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
@@ -134,7 +134,7 @@ proxy-groups:
       - cfp.paotung.org
       - baopad.eu.org
       - www.donpau.com
-      - gcc.donpau.com
+      - gc.donpau.com
       - gcw.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
