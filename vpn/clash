@@ -53,31 +53,19 @@ proxies:
     network: ws
     ws-opts:
       path: /hubvm
-  - name: gcc.donpau.com
+  - name: gc.donpau.com
+    server: asia.a.gcdn.co
+    port: 443
     type: vmess
-    server: gcc.donpau.com
-    port: "443"
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-    _index: 4
-  - name: gcw.donpau.com
-    type: vmess
-    server: gcw.donpau.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
+    alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        host: gcc.donpau.com
+        Host: gc.donpau.com
   - name: oci.cbu.net
     type: vmess
     server: oci.cbu.net
