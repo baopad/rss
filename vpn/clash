@@ -121,7 +121,6 @@ proxy-groups:
       - baopad.eu.org
       - www.donpau.com
       - gc.donpau.com
-      - gcw.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
       - snap.linkpc.net
@@ -135,7 +134,6 @@ proxy-groups:
       - baopad.eu.org
       - www.donpau.com
       - gc.donpau.com
-      - gcw.donpau.com
       - oci.cbu.net
       - oci.publicvm.com
       - snap.linkpc.net
