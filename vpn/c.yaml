@@ -59,7 +59,7 @@ proxies:
         Host: baopad.eu.org
     udp: true
   - name: gc.donpau.com
-    server: asia.a.gcdn.co
+    server: gcc.donpau.com
     port: 443
     type: vmess
     uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
