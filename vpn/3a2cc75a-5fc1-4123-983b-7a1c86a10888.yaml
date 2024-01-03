@@ -1,143 +1,43 @@
-################################
-# Creator:baopad
-# Client:Clash for Windows
-# Mail:baopad@yahoo.com
-################################
 port: 7890
 socks-port: 7891
 allow-lan: true
-mode: Global
+mode: rule
 log-level: none
 proxies:
-  - name: Origin line
+  - name: ali.donpau.com
     type: vmess
-    server: hub.paotung.org
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    server: ali.donpau.com
+    port: "8086"
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: "0"
     cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
   - name: cfp.paotung.org
     type: vmess
     server: cfp.paotung.org
     port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: "0"
     cipher: auto
     tls: true
     network: ws
-    ws-opts:
-      path: /vmess
-  - name: baopad.eu.org
+  - name: gce.donpau.com
     type: vmess
-    server: baopad.eu.org
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-  - name: www.donpau.com
-    type: vmess
-    server: www.donpau.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hubvm
-  - name: gc.donpau.com
-    server: asia.a.gcdn.co
+    server: gcc.donpau.com
     port: 443
-    type: vmess
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
     tls: true
     network: ws
     ws-opts:
-      path: /vmess
       headers:
-        Host: gc.donpau.com
-  - name: oci.cbu.net
-    type: vmess
-    server: oci.cbu.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hubvm
-  - name: oci.publicvm.com
-    type: vmess
-    server: oci.publicvm.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /hubvm
-  - name: snap.linkpc.net
-    type: vmess
-    server: snap.linkpc.net
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        host: baopad.eu.org
-  - name: snap.mrcork.com
-    type: vmess
-    server: snap.mrcork.com
-    port: "443"
-    uuid: 3a2cc75a-5fc1-4123-983b-7a1c86a10888
-    alterId: "0"
-    cipher: auto
-    tls: true
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        host: baopad.eu.org
+        Host: gce.donpau.com
 proxy-groups:
-  - name: Automatic
-    proxies:
-      - cfp.paotung.org
-      - baopad.eu.org
-      - www.donpau.com
-      - gc.donpau.com
-      - oci.cbu.net
-      - oci.publicvm.com
-      - snap.linkpc.net
-      - snap.mrcork.com
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: "600"
   - name: Balance
     proxies:
+      - ali.donpau.com
       - cfp.paotung.org
-      - baopad.eu.org
-      - www.donpau.com
-      - gc.donpau.com
-      - oci.cbu.net
-      - oci.publicvm.com
-      - snap.linkpc.net
-      - snap.mrcork.com
+      - gce.donpau.com
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
