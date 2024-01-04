@@ -48,5 +48,5 @@ rules:
   - DOMAIN-SUFFIX,cdn.office.net,REJECT
   - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
   - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
-  - GeoSite,cn,ali.donpau.com    
+  - GEOIP,CN,ali.donpau.com    
   - MATCH,Balance
