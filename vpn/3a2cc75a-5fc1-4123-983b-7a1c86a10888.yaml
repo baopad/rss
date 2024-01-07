@@ -32,6 +32,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
+      path: /vmess
       headers:
         Host: gce.donpau.com
   - name: oci.cbu.net
