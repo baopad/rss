@@ -29,12 +29,15 @@ proxies:
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-    tls: true
+    servername: gce.donpau.com
     network: ws
+    tls: true
+    skip-cert-verify: false
     ws-opts:
       path: /vmess
       headers:
         Host: gce.donpau.com
+    udp: true
   - name: oci.publicvm.com
     server: oci.publicvm.com
     port: 443
