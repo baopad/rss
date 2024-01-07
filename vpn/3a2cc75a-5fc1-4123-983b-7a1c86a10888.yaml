@@ -37,16 +37,20 @@ proxies:
         Host: gce.donpau.com
   - name: oci.cbu.net
     server: oci.cbu.net
-    type: trojan
-    port: 1443
-    password: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    network: tcp
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
 proxy-groups:
   - name: Balance
     proxies:
       - ali.donpau.com
       - cfp.paotung.org
       - gce.donpau.com
+      - oci.cbu.net
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
