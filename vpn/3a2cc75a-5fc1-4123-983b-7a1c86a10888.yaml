@@ -47,6 +47,8 @@ proxies:
     cipher: auto
     tls: true
     network: ws
+    ws-opts:
+      path: /hubvm
 proxy-groups:
   - name: Balance
     proxies:
