@@ -22,15 +22,6 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: aws
-    server: cfp.paotung.org
-    type: vmess
-    port: 443
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
   - name: gce.donpau.com
     server: gcc.donpau.com
     type: vmess
@@ -65,7 +56,6 @@ proxy-groups:
       - cfp.paotung.org
       - gce.donpau.com
       - oci.publicvm.com
-      - aws
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
