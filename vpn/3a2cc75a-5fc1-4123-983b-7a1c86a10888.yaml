@@ -63,5 +63,6 @@ rules:
   - DOMAIN-SUFFIX,cdn.office.net,REJECT
   - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
   - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
+  - DOMAIN-KEYWORD,.google,Balance
   - GEOIP,CN,ali.donpau.com    
   - MATCH,Balance
