@@ -52,7 +52,6 @@ proxies:
 proxy-groups:
   - name: Balance
     proxies:
-      - ali.donpau.com
       - cfp.paotung.org
       - gce.donpau.com
       - oci.publicvm.com
