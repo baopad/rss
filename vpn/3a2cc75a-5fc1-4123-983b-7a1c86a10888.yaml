@@ -9,7 +9,7 @@ proxies:
   - name: ali.donpau.com
     server: ali.donpau.com
     type: vmess
-    port: 8086
+    port: 8080
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
