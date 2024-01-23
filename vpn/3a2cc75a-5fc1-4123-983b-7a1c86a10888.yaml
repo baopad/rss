@@ -5,14 +5,52 @@ mixed-port: 7890
 allow-lan: true
 mode: rule
 log-level: none
+dns:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:53
+  ipv6: true
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://dns.google/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns10.quad9.net/dns-query
+    - https://doh.opendns.com/dns-query
+    - tls://1.0.0.1:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
 proxies:
-  - name: ali.donpau.com
-    server: ali.donpau.com
+  - name: snap.linkpc.net
+    server: snap.linkpc.net
     type: vmess
     port: 8080
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
+  - name: aws.donpau.com
+    server: aws.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /hubvm
   - name: cfp.paotung.org
     server: cfp.paotung.org
     type: vmess
@@ -52,6 +90,7 @@ proxies:
 proxy-groups:
   - name: Balance
     proxies:
+      - aws.donpau.com
       - cfp.paotung.org
       - gce.donpau.com
       - oci.publicvm.com
@@ -62,6 +101,6 @@ rules:
   - DOMAIN-SUFFIX,cdn.office.net,REJECT
   - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
   - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
-  - DOMAIN-KEYWORD,.google,Balance
-  - GEOIP,CN,ali.donpau.com    
+  - DOMAIN-KEYWORD,google,Balance
+  - GEOIP,CN,snap.linkpc.net
   - MATCH,Balance
