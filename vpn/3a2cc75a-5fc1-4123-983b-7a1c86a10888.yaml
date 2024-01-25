@@ -76,6 +76,17 @@ proxies:
       headers:
         Host: gce.donpau.com
     udp: true
+  - name: oci.cbu.net
+    server: oci.cbu.net
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: none
+    tls: true
+    network: ws
+    ws-opts:
+      path: /hubvm
   - name: oci.publicvm.com
     server: oci.publicvm.com
     port: 443
@@ -93,6 +104,7 @@ proxy-groups:
       - aws.donpau.com
       - cfp.paotung.org
       - gce.donpau.com
+      - oci.cbu.net
       - oci.publicvm.com
     type: load-balance
     url: http://www.gstatic.com/generate_204
