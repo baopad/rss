@@ -1,0 +1,9 @@
+# NAME: reject
+# AUTHOR: baopad
+# REPO: https://rss.paotung.org/vpn/clash/rules/reject.yaml
+# UPDATED: 2024-03-11 00:00:00
+# README: Reject Link
+payload:
+  - DOMAIN-SUFFIX,download.windowsupdate.com
+  - DOMAIN-SUFFIX,mp.microsoft.com
+  - DOMAIN-SUFFIX,cdn.office.net
