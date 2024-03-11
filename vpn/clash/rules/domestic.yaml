@@ -5,10 +5,3 @@
 # README: Domestic Relay links
 payload:
   - DOMAIN-SUFFIX,jd.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,tmall.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-KEYWORD,icloud.com.akadns.net
