@@ -1,4 +1,4 @@
-##clash rules editor
+clash rules editor
 
 
 rules:
