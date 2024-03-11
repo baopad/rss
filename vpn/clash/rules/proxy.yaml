@@ -1,16 +1,7 @@
-# NAME: iCloud
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-01-08 15:57:05
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 57
-# TOTAL: 58
+# NAME: proxy
+# AUTHOR: baopad
+# REPO: https://rss.paotung.org/vpn/clash/rules/proxy.yaml
+# UPDATED: 2024-03-11 00:00:00
+# README: Proxy Links
 payload:
   - DOMAIN-SUFFIX,google.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,tmall.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-KEYWORD,icloud.com.akadns.net
