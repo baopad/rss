@@ -9,4 +9,6 @@ payload:
   - DOMAIN-SUFFIX,youku.com
   - DOMAIN-SUFFIX,taobao.com
   - DOMAIN-SUFFIX,youku.com
-
+  - IP-CIDR,8.128.0.0/10,DIRECT
+  - IP-CIDR,142.171.0.0/16,DIRECT
+  - IP-CIDR,35.209.176.128/32,DIRECT
