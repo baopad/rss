@@ -6,11 +6,11 @@
 # DOMAIN-SUFFIX: 57
 # TOTAL: 58
 payload:
-  - DOMAIN-SUFFIX,jd.com,snap.linkpc.net
-  - DOMAIN-SUFFIX,taobao.com,DIRECT
-  - DOMAIN-SUFFIX,tmall.com,DIRECT
-  - DOMAIN-SUFFIX,youku.com,DIRECT
-  - DOMAIN-SUFFIX,taobao.com,DIRECT
-  - DOMAIN-SUFFIX,youku.com,DIRECT
-  - DOMAIN-SUFFIX,taobao.com,DIRECT
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,taobao.com
   - DOMAIN-KEYWORD,icloud.com.akadns.net
