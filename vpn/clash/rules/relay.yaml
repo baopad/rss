@@ -5,3 +5,5 @@
 # README: Relay(domestic) links
 payload:
   - DOMAIN-SUFFIX,jd.com
+  - geosite,cn,snap.linkpc.net
+  - geoip,cn,snap.linkpc.net
