@@ -6,4 +6,3 @@
 payload:
   - DOMAIN-SUFFIX,jd.com
   - GEOIP,CN
-  - GEOIP,CN
