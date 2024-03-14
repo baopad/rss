@@ -5,5 +5,5 @@
 # README: Relay(domestic) links
 payload:
   - DOMAIN-SUFFIX,jd.com
-  - geosite,cn
-  - geoip,cn
+  - GEOIP,CN
+  - GEOIP,CN
