@@ -32,7 +32,7 @@ dns:
       - 0.0.0.0/32
       - 127.0.0.1/32
 proxies:
-  - name: ssssnap.linkpc.net
+  - name: snap.linkpc.net
     server: snap.linkpc.net
     type: vmess
     port: 8080
