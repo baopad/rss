@@ -1,5 +1,5 @@
 ## clash rules editor
-靠前优先级高
+--- 靠前优先级高
 
 reject.yaml
   存放拒绝连接的网站
