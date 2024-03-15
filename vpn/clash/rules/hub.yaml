@@ -1,0 +1,7 @@
+# NAME: hub
+# AUTHOR: baopad
+# REPO: https://rss.paotung.org/vpn/clash/rules/hub.yaml
+# UPDATED: 2024-03-11 00:00:00
+# README: Hub Links
+payload:
+  - DOMAIN-SUFFIX,googlevideo.com
