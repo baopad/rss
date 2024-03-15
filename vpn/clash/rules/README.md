@@ -12,3 +12,6 @@
   
 ### relay.yaml
 * 存放国内中转的网站
+
+### hub.yaml
+* 存放hub代理的网站
