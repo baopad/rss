@@ -1,4 +1,4 @@
-### clash rules editor
+## clash rules editor
 --- 靠前优先级高
 
 reject.yaml
