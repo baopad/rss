@@ -5,3 +5,4 @@
 # README: Proxy Links
 payload:
   - DOMAIN-SUFFIX,googletagmanager.com
+  - DOMAIN-SUFFIX,google-analytics.com
