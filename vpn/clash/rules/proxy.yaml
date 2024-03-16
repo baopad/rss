@@ -4,7 +4,7 @@
 # UPDATED: 2024-03-11 00:00:00
 # README: Proxy Links
 payload:
-  #- DOMAIN-SUFFIX,google.com
+  - DOMAIN-SUFFIX,adservice.google.com
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,googlesyndication.com
