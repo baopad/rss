@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,doubleclick.net
