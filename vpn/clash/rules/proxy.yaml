@@ -9,3 +9,4 @@ payload:
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN-SUFFIX,doubleclick.net
   - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,git.io
