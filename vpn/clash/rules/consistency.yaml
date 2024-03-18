@@ -1,8 +1,8 @@
-# NAME: hub
+# NAME: consistency
 # AUTHOR: baopad
-# REPO: https://rss.paotung.org/vpn/clash/rules/hub.yaml
+# REPO: https://rss.paotung.org/vpn/clash/rules/consistency.yaml
 # UPDATED: 2024-03-11 00:00:00
-# README: Hub Links
+# README: IP Consistency Links
 payload:
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,bing.com
