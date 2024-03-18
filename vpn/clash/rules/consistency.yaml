@@ -6,3 +6,4 @@
 payload:
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,openai.com
