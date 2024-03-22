@@ -233,6 +233,17 @@ proxy-groups:
 - name: 🌐 节点选择
   proxies:
   - 🇳🇱 NL-CF-WARP-1
+  - hub.paotung.org
+  - oci.cbu.net
+  - oci.publicvm.com
+  - aws.donpau.com
+  - cfp.paotung.org
+  - gco.donpau.com
+  - gvm.donpau.com
+  - gac.donpau.com
+  - ggc.donpau.com
+  - gcp.paotung.org
+  - gsc.donpau.com
   type: select
 rules:
 - GEOIP,CN,🇳🇱 NL-CF-WARP-1
