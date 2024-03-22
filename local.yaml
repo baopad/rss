@@ -27,7 +27,6 @@ dns:
   fallback-filter:
     domain:
     - +.google.com
-
     - +.proton.me
     geoip: true
     ipcidr:
@@ -73,10 +72,9 @@ proxies:
 proxy-groups:
 - name: 🌐 节点选择
   proxies:
-  - 💡 自动选择
   - 🇳🇱 NL-CF-WARP-1
   type: select
 rules:
-- GEOIP,CN,👉 国内网站
-- MATCH,👉 例外网站
+- GEOIP,CN,🇳🇱 NL-CF-WARP-1
+- MATCH,🇳🇱 NL-CF-WARP-1
 socks-port: 7891
