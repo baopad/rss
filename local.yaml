@@ -29,11 +29,11 @@ dns:
   - https://gvm.donpau.com/dns-query
   #- tls://dns.umbrella.com
   - https://doh.sb/dns-query
-  #fallback-filter:
-    #geoip: true
-    #geoip-code: CN
-    #ipcidr:
-    #- 240.0.0.0/4
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
 proxies:
 - name: "http.local"
   type: http
