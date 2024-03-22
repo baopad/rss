@@ -4,11 +4,11 @@
 # UPDATED: 2024-03-11 00:00:00
 # README: Local Direct Link
 payload:
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,tmall.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,youku.com
-  - IP-CIDR,8.128.0.0/10,DIRECT
+  #- DOMAIN-SUFFIX,taobao.com
+  #- DOMAIN-SUFFIX,tmall.com
+  #- DOMAIN-SUFFIX,youku.com
+  #- DOMAIN-SUFFIX,taobao.com
+  #- DOMAIN-SUFFIX,youku.com
+  #- IP-CIDR,8.128.0.0/10,DIRECT
   #- IP-CIDR,142.171.0.0/16,DIRECT
   #- IP-CIDR,35.209.176.128/32,DIRECT
