@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,download.windowsupdate.com
   - DOMAIN-SUFFIX,mp.microsoft.com
   - DOMAIN-SUFFIX,cdn.office.net
+  - DOMAIN-SUFFIX,salesmartly.com
