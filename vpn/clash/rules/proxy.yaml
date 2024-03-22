@@ -15,5 +15,6 @@ payload:
   - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,dl.google.com
   - DOMAIN-SUFFIX,git.io
+  - DOMAIN-SUFFIX,akstat.io
   - DOMAIN-SUFFIX,oracle.com
   - DOMAIN-SUFFIX,oraclecloud.com
