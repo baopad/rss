@@ -301,14 +301,14 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 600
 rules:
-- RULE-SET,consistency,hub.paotung.org
-- RULE-SET,reject,REJECT
-- RULE-SET,direct,DIRECT
-- RULE-SET,proxy,Balance
-- RULE-SET,relay,Relay
-- GEOSITE,CN,Relay
-- GEOIP,CN,Relay
-- MATCH,Balance
+  - RULE-SET,consistency,hub.paotung.org
+  - RULE-SET,reject,REJECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,Balance
+  - RULE-SET,relay,Relay
+  - GEOSITE,CN,Relay
+  - GEOIP,CN,Relay
+  - MATCH,Balance
 rule-providers:
   #Maintenance Address: https://github.com/baopad/rss/tree/main/vpn/clash/rules
   consistency:
