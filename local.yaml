@@ -195,6 +195,52 @@ proxies:
   network: ws
   tls: true
   skip-cert-verify: false
+proxy-providers:
+  provider-1:
+    type: http
+    url: "https://cdn.jsdelivr.net/gh/anaer/Sub@main/clash.yaml"
+    interval: 3600
+    path: ./profiles/a.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  provider-2:
+    type: http
+    url: "https://sub.maoxiongnet.com/sub?target=clash&new_name=true&url=https%3A%2F%2Fv2ray.neocities.org%2Fv2ray.txt&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini"
+    interval: 3600
+    path: ./profiles/a.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  provider-3:
+    type: http
+    url: "https://git.io/emzclash"
+    interval: 3600
+    path: ./profiles/a.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  provider-relay1:
+    type: http
+    url: "https://rss.paotung.org/vpn/clash/providers/relay.yaml"
+    interval: 3600
+    path: ./profiles/relay1.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: "https://www.baidu.com/"
+  provider-relay2:
+    type: http
+    url: "https://subs.zeabur.app/clash"
+    interval: 3600
+    path: ./profiles/relay2.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: "https://www.baidu.com/"
 proxy-groups:
 - name: 🌐 节点选择
   proxies:
