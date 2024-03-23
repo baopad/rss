@@ -40,7 +40,7 @@ proxies:
     remote-dns-resolve: true    
     udp: true
   - name: Cloudflare Warp+ IPv6
-    server: 2606:4700:d0::2c0e:5ac5:0a8b:9a88
+    server: [2606:4700:d0::2c0e:5ac5:0a8b:9a88]
     port: 1701
     type: wireguard
     ip: 172.16.0.2
