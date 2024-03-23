@@ -1,7 +1,7 @@
 proxies:
   - name: Cloudflare Warp+ 1
-    server: 188.114.99.144
-    port: 988
+    server: 188.114.98.120
+    port: 859
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
@@ -10,8 +10,8 @@ proxies:
     remote-dns-resolve: true    
     udp: true
   - name: Cloudflare Warp+ 2
-    server: 162.159.192.134
-    port: 988
+    server: 162.159.192.216
+    port: 1180
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
