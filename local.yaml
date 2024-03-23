@@ -1,11 +1,9 @@
 #external-controller: 127.0.0.1:9090
-#log-level: info
 port: 7890
 #socks-port: 7891
 mixed-port: 7892
 mode: Rule
-#mode: Rule
-#log-level: none
+log-level: none
 #tcp-concurrent: true
 #ipv6: false
 dns:
