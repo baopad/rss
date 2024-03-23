@@ -1,23 +1,21 @@
 proxies:
-  - ip: 172.16.0.2
+  - name: Cloudflare Warp+ 1
+    server: 188.114.99.144
+    port: 988
+    type: wireguard
+    ip: 172.16.0.2
     mtu: 1280
-    name: asdfghjk
-    port: 2371
     private-key: KI0CjIfMAkIPbkIWt/Snr87dGdqSPP8IW9Or0dJf+1M=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    remote-dns-resolve: true
-    server: 162.159.195.183
-    type: wireguard
+    remote-dns-resolve: true    
     udp: true
-  - name: "CFWarp-A"
+  - name: Cloudflare Warp+ 2
+    server: 162.159.192.134
+    port: 988
     type: wireguard
-    server: 162.159.195.130
-    port: 1070
     ip: 172.16.0.2
-    private-key: iG4IdUAX1ptRsh5uva3bN1x2KXpon9HZTURf0ZjSh2w=
+    mtu: 1280
+    private-key: uAiAOarWH1LY7EqS34PBhEU5CmGR2XsuOzjFKYgvkV8=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    remote-dns-resolve: false
+    remote-dns-resolve: true    
     udp: true
-  - {name: "CFWarp-B",type: wireguard,server: 188.114.96.167,port: 7281,ip: 172.16.0.2,private-key: iG4IdUAX1ptRsh5uva3bN1x2KXpon9HZTURf0ZjSh2w=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
-  - {name: "CFWarp-C",type: wireguard,server: 188.114.96.101,port: 7281,ip: 172.16.0.2,private-key: iG4IdUAX1ptRsh5uva3bN1x2KXpon9HZTURf0ZjSh2w=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
-  - {name: "CFWarp-D",type: wireguard,server: 162.159.192.110,port: 1070,ip: 172.16.0.2,private-key: iG4IdUAX1ptRsh5uva3bN1x2KXpon9HZTURf0ZjSh2w=,public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=,remote-dns-resolve: false,udp: true}
