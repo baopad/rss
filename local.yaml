@@ -27,8 +27,8 @@ dns:
   - https://dns.paotung.org/dns-query
   - https://hub.paotung.org/dns-query
   - https://gvm.donpau.com/dns-query
-  #- tls://dns.umbrella.com
-  - https://doh.sb/dns-query
+  - tls://dns.umbrella.com
+  #- https://doh.sb/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
