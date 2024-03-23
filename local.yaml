@@ -2,8 +2,8 @@
 external-controller: 127.0.0.1:9090
 log-level: info
 port: 7890
-mode: Rule
 mixed-port: 7892
+mode: Rule
 #mode: Rule
 #log-level: none
 #tcp-concurrent: true
