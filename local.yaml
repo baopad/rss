@@ -242,64 +242,64 @@ proxy-providers:
       interval: 600
       url: "https://www.baidu.com/"
 proxy-groups:
-- name: Provider
-  type: select
-  use:
-  - provider-1
-  - provider-2
-  - provider-3
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-- name: Relay
-  type: select
-  use:
-  - provider-relay1
-  - provider-relay2
-  proxies:
-  - snap.linkpc.net
-  url: "https://www.baidu.com/"
-  interval: 300
-- name: Chains
-  type: relay
-  proxies:
-  - Automatic
-  - hub.paotung.org
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-- name: Fallback
-  type: fallback
-  proxies:
-  - hub.paotung.org
-  - Automatic
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-- name: Automatic
-  type: url-test
-  proxies:
-  - hub.paotung.org
-  - oci.cbu.net
-  - oci.publicvm.com
-  - aws.donpau.com
-  - cfp.paotung.org
-  - gco.donpau.com
-  - gvm.donpau.com
-  - gac.donpau.com
-  - ggc.donpau.com
-  - gcp.paotung.org
-  - gsc.donpau.com
-  url: https://www.gstatic.com/generate_204
-  interval: 3600
-- name: Balance
-  type: load-balance
-  proxies:
-  - hub.paotung.org
-  - oci.publicvm.com
-  - aws.donpau.com
-  - cfp.paotung.org
-  - gco.donpau.com
-  - gsc.donpau.com
-  url: https://www.gstatic.com/generate_204
-  interval: 600
+  - name: Provider
+    type: select
+    use:
+      - provider-1
+      - provider-2
+      - provider-3
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+  - name: Relay
+    type: select
+    use:
+      - provider-relay1
+      - provider-relay2
+    proxies:
+      - snap.linkpc.net
+    url: "https://www.baidu.com/"
+    interval: 300
+  - name: Chains
+    type: relay
+    proxies:
+      - Automatic
+      - hub.paotung.org
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+  - name: Fallback
+    type: fallback
+    proxies:
+      - hub.paotung.org
+      - Automatic
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+  - name: Automatic
+    type: url-test
+    proxies:
+      - hub.paotung.org
+      - oci.cbu.net
+      - oci.publicvm.com
+      - aws.donpau.com
+      - cfp.paotung.org
+      - gco.donpau.com
+      - gvm.donpau.com
+      - gac.donpau.com
+      - ggc.donpau.com
+      - gcp.paotung.org
+      - gsc.donpau.com
+    url: https://www.gstatic.com/generate_204
+    interval: 3600
+  - name: Balance
+    type: load-balance
+    proxies:
+      - hub.paotung.org
+      - oci.publicvm.com
+      - aws.donpau.com
+      - cfp.paotung.org
+      - gco.donpau.com
+      - gsc.donpau.com
+    url: https://www.gstatic.com/generate_204
+    interval: 600
 rules:
   - RULE-SET,consistency,hub.paotung.org
   - RULE-SET,reject,REJECT
