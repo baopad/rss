@@ -11,6 +11,7 @@ payload:
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-SUFFIX,doubleclick.net
   - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,dl.google.com
