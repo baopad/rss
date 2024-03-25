@@ -14,4 +14,4 @@ payload:
   #- IP-CIDR,35.209.176.128/32,DIRECT
   - DOMAIN-SUFFIX,cidian.youdao.com
   - DOMAIN-SUFFIX,dict.youdao.com
-  - IP-CIDR,162.159.192.134/32,DIRECT
+  #- IP-CIDR,162.159.192.134/32,DIRECT
