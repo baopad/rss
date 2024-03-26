@@ -36,8 +36,8 @@ proxies:
     remote-dns-resolve: true    
     udp: true
   - name: Warp+ 3
-    server: 188.114.98.120
-    port: 859
+    server: 162.159.195.201
+    port: 2371
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
