@@ -1,5 +1,5 @@
 proxies:
-  - name: Cloudflare Warp+ 1
+  - name: Warp+ 1
     server: 162.159.192.134
     port: 988
     type: wireguard
@@ -12,42 +12,33 @@ proxies:
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     remote-dns-resolve: true    
     udp: true
-  - name: Cloudflare Warp+ 2
+  - name: Warp+ 2
     server: 162.159.192.216
     port: 1180
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
-    #dns:
-      #- 1.1.1.1
-      #- 8.8.4.4
     private-key: uAiAOarWH1LY7EqS34PBhEU5CmGR2XsuOzjFKYgvkV8=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     remote-dns-resolve: true    
     udp: true
-  - name: Cloudflare Warp+ 3
+  - name: Warp+ 3
     server: 188.114.98.120
     port: 859
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
-    #dns:
-      #- 1.0.0.1
-      #- 8.8.8.8
     private-key: KI0CjIfMAkIPbkIWt/Snr87dGdqSPP8IW9Or0dJf+1M=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     remote-dns-resolve: true    
     udp: true
-  - name: Cloudflare Warp+ 4
+  - name: Warp+ 4
     #V6x0B19m-417nrLS3-650XS2xa
     server: 188.114.98.120
     port: 859
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
-    #dns:
-      #- 1.0.0.1
-      #- 8.8.8.8
     private-key: aHjCPEV+6e6kpzzNy/g6WZng6KDctnY63Pmmrb61V2A=
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     remote-dns-resolve: true    
