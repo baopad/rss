@@ -51,3 +51,4 @@ proxies:
     alterId: 0
     cipher: auto
     network: tcp
+  - DIRECT
