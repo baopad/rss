@@ -43,11 +43,11 @@ proxies:
     public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
     remote-dns-resolve: true    
     udp: true
-  - name: snap.linkpc.net
-    server: snap.linkpc.net
-    port: 8080
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: tcp
+  #- name: snap.linkpc.net
+    #server: snap.linkpc.net
+    #port: 8080
+    #type: vmess
+    #uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    #alterId: 0
+    #cipher: auto
+    #network: tcp
