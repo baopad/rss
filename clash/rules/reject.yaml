@@ -9,3 +9,5 @@ payload:
   - DOMAIN-SUFFIX,cdn.office.net
   - DOMAIN-SUFFIX,salesmartly.com
   - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,gvt1.com       
+  - DOMAIN-SUFFIX,gvt2.com
