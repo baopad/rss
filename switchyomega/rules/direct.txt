@@ -14,7 +14,7 @@
 ! contact us regarding URL submission / removal,
 ! or suggestion / enhancement at issue tracker:
 ! https://github.com/gfwlist/gfwlist/issues/.
-@@||weibo.com
+@@||paotung.org
 
 
 
