@@ -1,11 +1,10 @@
 [AutoProxy 0.0.0]
 ! https://github.com/baopad/rss/edit/main/switchyomega/rules/autoproxy.txt
+||alicdn.com
 ||baidu.com
+||jd.com
 ||taobao.com
 ||tmall.com
-||alicdn.com
-||jd.com
-||360buy.com
 
 .xxx.com
 xxx.xxx.org
