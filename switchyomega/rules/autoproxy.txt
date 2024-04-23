@@ -2,9 +2,13 @@
 ! https://github.com/baopad/rss/edit/main/switchyomega/rules/autoproxy.txt
 ||alicdn.com
 ||baidu.com
+||bilibili.com
 ||jd.com
+||iqiyi.com
 ||taobao.com
 ||tmall.com
+||v.qq.com
+||youku.com
 
 .xxx.com
 xxx.xxx.org
