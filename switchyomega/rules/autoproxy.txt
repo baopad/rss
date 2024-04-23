@@ -1,6 +1,6 @@
 [AutoProxy 0.0.0]
 ! https://github.com/baopad/rss/edit/main/switchyomega/rules/autoproxy.txt
-||paotung.org
+||baidu.com
 ||taobao.com
 ||tmall.com
 ||alicdn.com
