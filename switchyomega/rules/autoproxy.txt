@@ -1,6 +1,7 @@
 [AutoProxy 0.0.0]
 ! https://github.com/baopad/rss/edit/main/switchyomega/rules/autoproxy.txt
 ! https://rss.paotung.org/switchyomega/rules/autoproxy.txt
+||360buyimg.com
 ||alicdn.com
 ||baidu.com
 ||bilibili.com
