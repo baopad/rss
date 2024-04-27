@@ -4,6 +4,7 @@
 ||360buyimg.com
 ||alicdn.com
 ||baidu.com
+||bdimg.com
 ||bilibili.com
 ||jd.com
 ||iqiyi.com
