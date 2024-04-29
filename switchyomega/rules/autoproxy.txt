@@ -13,11 +13,11 @@
 ||v.qq.com
 ||youku.com
 
-.xxx.com
-xxx.xxx.org
-|http://0.0.0.0/
-|http://www.xxx.com
-||xxx.com
-@@|http://blog.xxx.com
-@@||xxx.xxx.com
-0.0.0.0
+! .xxx.com
+! xxx.xxx.org
+! |http://0.0.0.0/
+! |http://www.xxx.com
+! ||xxx.com
+! @@|http://blog.xxx.com
+! @@||xxx.xxx.com
+! 0.0.0.0
