@@ -5,6 +5,7 @@
 ||alicdn.com
 ||baidu.com
 ||bdimg.com
+||bdstatic.com
 ||bilibili.com
 ||jd.com
 ||iqiyi.com
