@@ -9,6 +9,7 @@
 ||bdstatic.com
 ||bilibili.com
 ||jd.com
+||mmstat.com
 ||iqiyi.com
 ||taobao.com
 ||tmall.com
