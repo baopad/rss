@@ -13,8 +13,8 @@ proxies:
     remote-dns-resolve: true    
     udp: true
   - name: cloudflare warp 2
-    server: 162.159.192.216
-    port: 1180
+    server: 188.114.98.178
+    port: 1387
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
@@ -23,8 +23,8 @@ proxies:
     remote-dns-resolve: true    
     udp: true
   - name: cloudflare warp 3
-    server: 188.114.98.170
-    port: 928
+    server: 162.159.195.247
+    port: 3854
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
@@ -34,8 +34,8 @@ proxies:
     udp: true
   - name: cloudflare warp 4
     #V6x0B19m-417nrLS3-650XS2xa
-    server: 188.114.98.120
-    port: 859
+    server: 188.114.97.57
+    port: 1387
     type: wireguard
     ip: 172.16.0.2
     mtu: 1280
