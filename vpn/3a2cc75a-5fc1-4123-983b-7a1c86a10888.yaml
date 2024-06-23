@@ -116,7 +116,6 @@ proxies:
 proxy-groups:
   - name: Balance
     proxies:
-      - aws.donpau.com
       - cfp.paotung.org
       - gce.donpau.com
       - oci.cbu.net
