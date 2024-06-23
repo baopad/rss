@@ -123,6 +123,15 @@ proxy-groups:
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 600
+  - name: Automatic
+    type: url-test
+    proxies:
+      - cfp.paotung.org
+      - gce.donpau.com
+      - oci.cbu.net
+      - oci.publicvm.com
+    url: https://www.gstatic.com/generate_204
+    interval: 600
 rules:
   - DOMAIN-SUFFIX,cdn.office.net,REJECT
   - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
