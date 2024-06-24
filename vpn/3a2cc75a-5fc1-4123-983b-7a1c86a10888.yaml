@@ -39,25 +39,6 @@ proxies:
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-  - name: sdc.donpau.com
-    server: sdc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-  - name: cfp.paotung.org
-    server: cfp.paotung.org
-    type: vmess
-    port: 443
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
   - name: ccs.paotung.org
     server: ccs.paotung.org
     port: 443
@@ -68,13 +49,17 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-  - name: ccs.linkpc.net
-    server: ccs.linkpc.net
+  - name: oci.publicvm.com
+    server: oci.publicvm.com
     port: 443
-    type: vless
+    type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: none
     tls: true
-    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /hubvm
   - name: gce.donpau.com
     server: gcc.donpau.com
     type: vmess
@@ -91,19 +76,34 @@ proxies:
       headers:
         Host: gce.donpau.com
     udp: true
-  - name: oci.cbu.net
-    server: oci.cbu.net
+  - name: ccs.linkpc.net
+    server: ccs.linkpc.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
+  - name: cfp.paotung.org
+    server: cfp.paotung.org
+    type: vmess
+    port: 443
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+  - name: sdc.donpau.com
+    server: sdc.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: none
-    tls: true
+    cipher: auto
     network: ws
-    ws-opts:
-      path: /hubvm
-  - name: oci.publicvm.com
-    server: oci.publicvm.com
+    tls: true
+    skip-cert-verify: false
+  - name: oci.cbu.net
+    server: oci.cbu.net
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
