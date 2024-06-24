@@ -39,13 +39,6 @@ proxies:
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-  - name: ccs.linkpc.net
-    server: ccs.linkpc.net
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    tls: true
-    skip-cert-verify: false
   - name: sdc.donpau.com
     server: sdc.donpau.com
     port: 443
@@ -73,6 +66,13 @@ proxies:
     alterId: 0
     cipher: auto
     network: ws
+    tls: true
+    skip-cert-verify: false
+  - name: ccs.linkpc.net
+    server: ccs.linkpc.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     tls: true
     skip-cert-verify: false
   - name: gce.donpau.com
