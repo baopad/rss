@@ -92,16 +92,6 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: sdc.donpau.com
-    server: sdc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
   - name: oci.cbu.net
     server: oci.cbu.net
     port: 443
@@ -113,6 +103,16 @@ proxies:
     network: ws
     ws-opts:
       path: /hubvm
+  - name: sdc.donpau.com
+    server: sdc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
 proxy-groups:
   - name: Balance
     proxies:
