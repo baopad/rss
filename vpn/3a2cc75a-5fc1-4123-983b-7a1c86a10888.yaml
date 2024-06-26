@@ -103,7 +103,7 @@ proxies:
     tls: true
     network: ws
     ws-opts:
-      path: /hubvm
+      path: /ccsvm
   - name: sdc.donpau.com
     server: sdc.donpau.com
     port: 443
