@@ -17,14 +17,18 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    #- https://doh.pub/dns-query
+    #- https://dns.alidns.com/dns-query
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
   fallback:
-    - https://dns.google/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns10.quad9.net/dns-query
-    - https://doh.opendns.com/dns-query
-    - tls://1.0.0.1:853
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
+    #- https://dns.google/dns-query
+    #- https://dns.cloudflare.com/dns-query
+    #- https://dns10.quad9.net/dns-query
+    #- https://doh.opendns.com/dns-query
+    #- tls://1.0.0.1:853
   fallback-filter:
     geoip: true
     geoip-code: CN
