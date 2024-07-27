@@ -139,9 +139,9 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 600
 rules:
-  - DOMAIN-SUFFIX,cdn.office.net,REJECT
-  - DOMAIN-SUFFIX,mp.microsoft.com,REJECT
-  - DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
-  - DOMAIN-KEYWORD,google,ccs.linkpc.net
+  #- DOMAIN-SUFFIX,cdn.office.net,REJECT
+  #- DOMAIN-SUFFIX,mp.microsoft.com,REJECT
+  #- DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
+  - DOMAIN-KEYWORD,google,sdc.donpau.com
   - GEOIP,CN,snap.linkpc.net
   - MATCH,Balance
