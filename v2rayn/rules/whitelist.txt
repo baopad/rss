@@ -4,8 +4,8 @@
     "domain": [
       "taobao.com",
       "tmall.com",
-      "tmall.com",
-      "tmall.com",
+      "alicdn.com",
+      "mmstat.com",
       "tmall.com",
       "tmall.com",
       "tmall.com",
