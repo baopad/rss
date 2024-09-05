@@ -2,8 +2,7 @@
   {
     "outboundTag": "block",
     "domain": [
-      "geosite:category-ads-all",
-      "domain:block.example.com"
+      "geosite:category-ads-all"
     ],
     "ip": [
       "geoip:1.2.3.4"
