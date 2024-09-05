@@ -11,7 +11,7 @@
       "jd.com",
       "360buyimg.com",
       "aiqicha.baidu.com",
-      "tmall.com",
+      "bcebos.com",
       "tmall.com",
       "tmall.com",
       "tmall.com",
