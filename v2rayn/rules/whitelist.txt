@@ -42,6 +42,7 @@
     "outboundTag": "proxy",
     "domain": [
       "github.com/baopad/rss/edit/main/v2rayn/rules/whitelist.txt",
+      "rss.paotung.org/v2rayn/rules/whitelist.txt",
       "google.com",
       "youtube.com"
     ]
