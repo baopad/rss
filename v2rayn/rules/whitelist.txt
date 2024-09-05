@@ -11,8 +11,8 @@
   {
     "outboundTag": "direct",
     "domain": [
-      "domain:taobao.com",
-      "domain:tmall.com"
+      "taobao.com",
+      "tmall.com"
     ],
     "ip": [
       "8.134.19.54"
@@ -21,8 +21,8 @@
   {
     "outboundTag": "proxy",
     "domain": [
-      "domain:google.com",
-      "domain:youtube.com"
+      "google.com",
+      "youtube.com"
     ],
     "ip": [
       "8.8.8.8",
