@@ -12,8 +12,8 @@
   {
     "outboundTag": "direct",
     "domain": [
-      "domain:direct.example.com",
-      "domain:directexample2.com"
+      "domain:taobao.com",
+      "domain:tmall.com"
     ],
     "ip": [
       "ip:8.134.19.54"
