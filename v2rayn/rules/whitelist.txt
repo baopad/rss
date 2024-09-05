@@ -13,8 +13,8 @@
   {
     "outboundTag": "direct",
     "domain": [
-      "domain:example.com",
-      "domain:example2.com"
+      "domain:direct.example.com",
+      "domain:directexample2.com"
     ],
     "ip": [
       "geoip:private",
@@ -24,8 +24,8 @@
   {
     "outboundTag": "proxy",
     "domain": [
-      "domain:example.com",
-      "domain:example2.com"
+      "domain:proxy.example.com",
+      "domain:proxy.example2.com"
     ],
     "ip": [
       "geoip:private",
