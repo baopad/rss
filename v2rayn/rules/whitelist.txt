@@ -2,12 +2,11 @@
   {
     "outboundTag": "block",
     "domain": [
-      "domain:block.example.com",
-      "domain:block.example2.com"
+      "geosite:category-ads-all",
+      "domain:block.example.com"
     ],
     "ip": [
-      "geoip:private",
-      "geoip:cn"
+      "geoip:1.2.3.4"
     ]
   },
   {
@@ -17,19 +16,18 @@
       "domain:directexample2.com"
     ],
     "ip": [
-      "geoip:private",
-      "geoip:cn"
+      "ip:8.134.19.54"
     ]
   },
   {
     "outboundTag": "proxy",
     "domain": [
-      "domain:proxy.example.com",
-      "domain:proxy.example2.com"
+      "domain:google.com",
+      "domain:youtube.com"
     ],
     "ip": [
-      "geoip:private",
-      "geoip:cn"
+      "ip:8.8.8.8",
+      "ip:8.8.4.4"
     ]
   },
   {
