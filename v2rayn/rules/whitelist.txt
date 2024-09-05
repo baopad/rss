@@ -1,9 +1,9 @@
 [
   {
-    "outboundTag": "direct",
+    "outboundTag": "block",
     "domain": [
-      "domain:example.com",
-      "domain:example2.com"
+      "domain:block.example.com",
+      "domain:block.example2.com"
     ],
     "ip": [
       "geoip:private",
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "outboundTag": "block",
+    "outboundTag": "direct",
     "domain": [
       "domain:example.com",
       "domain:example2.com"
