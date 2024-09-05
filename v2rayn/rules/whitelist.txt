@@ -10,7 +10,7 @@
       "fliggy.com",
       "jd.com",
       "360buyimg.com",
-      "tmall.com",
+      "aiqicha.baidu.com",
       "tmall.com",
       "tmall.com",
       "tmall.com",
