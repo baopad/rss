@@ -1,11 +1,5 @@
 [
   {
-    "outboundTag": "block",
-    "domain": [
-      "geosite:category-ads-all"
-    ]
-  },
-  {
     "outboundTag": "direct",
     "domain": [
       "taobao.com",
@@ -36,6 +30,12 @@
     ],
     "ip": [
       "8.134.19.54"
+    ]
+  },
+  {
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all"
     ]
   },
   {
