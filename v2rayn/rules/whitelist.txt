@@ -2,6 +2,7 @@
   {
     "outboundTag": "direct",
     "domain": [
+      "rss.paotung.org/v2rayn/rules/whitelist.txt",
       "taobao.com",
       "tmall.com",
       "tmall.hk",
@@ -42,7 +43,6 @@
     "outboundTag": "proxy",
     "domain": [
       "github.com/baopad/rss/edit/main/v2rayn/rules/whitelist.txt",
-      "rss.paotung.org/v2rayn/rules/whitelist.txt",
       "google.com",
       "youtube.com"
     ]
