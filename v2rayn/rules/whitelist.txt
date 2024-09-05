@@ -5,7 +5,7 @@
       "geosite:category-ads-all"
     ],
     "ip": [
-      "geoip:1.2.3.4"
+      "ip:1.2.3.4"
     ]
   },
   {
