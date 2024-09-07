@@ -45,6 +45,13 @@
       "github.com/baopad/rss/edit/main/v2rayn/rules/whitelist.txt",
       "google.com",
       "youtube.com"
+    ],
+    "ip": [
+      "8.134.19.54"
+      "1.1.1.1",
+      "1.0.0.1",
+      "8.8.8.8",
+      "8.8.4.4
     ]
   },
   {
