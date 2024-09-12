@@ -4,6 +4,7 @@
     "domain": [
       "rss.paotung.org/v2rayn/rules/whitelist.txt",
       "1688.com",
+      "aliyuncs.com",
       "taobao.com",
       "tmall.com",
       "tmall.hk",
@@ -16,7 +17,6 @@
       "aiqicha.baidu.com",
       "bcebos.com",
       "1688.com",
-      "tmall.com",
       "tmall.com",
       "tmall.com",
       "tmall.com",
