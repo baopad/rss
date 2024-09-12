@@ -3,6 +3,7 @@
     "outboundTag": "direct",
     "domain": [
       "rss.paotung.org/v2rayn/rules/whitelist.txt",
+      "1688.com",
       "taobao.com",
       "tmall.com",
       "tmall.hk",
@@ -13,7 +14,7 @@
       "360buyimg.com",
       "aiqicha.baidu.com",
       "bcebos.com",
-      "tmall.com",
+      "1688.com",
       "tmall.com",
       "tmall.com",
       "tmall.com",
