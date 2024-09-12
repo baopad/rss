@@ -11,6 +11,7 @@
       "mmstat.com",
       "fliggy.com",
       "jd.com",
+      "jd.hk",
       "360buyimg.com",
       "aiqicha.baidu.com",
       "bcebos.com",
