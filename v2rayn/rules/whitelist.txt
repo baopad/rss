@@ -16,7 +16,7 @@
       "360buyimg.com",
       "aiqicha.baidu.com",
       "bcebos.com",
-      "1688.com",
+      "speedtest.cn",
       "tmall.com",
       "tmall.com",
       "tmall.com",
