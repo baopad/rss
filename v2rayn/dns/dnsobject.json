@@ -1,0 +1,12 @@
+{
+  "hosts": {
+    "hub.paotung.org": "142.171.139.141",
+    "dns.google": ["8.8.8.8", "8.8.4.4"]
+  },
+  "servers": [
+    "https://dns.paotung.org/dns-query",
+    "https://hub.paotung.org/dns-query",
+    "https://gvm.donpau.com/dns-query"     
+    "localhost"
+  ]
+}
