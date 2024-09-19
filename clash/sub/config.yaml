@@ -136,6 +136,13 @@ proxies:
     tls: true
     skip-cert-verify: false
 proxy-groups:
+  - name: Automatic
+    type: url-test
+    proxies:
+      - sdc.donpau.com
+      - snap.linkpc.net
+    url: https://www.gstatic.com/generate_204
+    interval: 600
   - name: Fallback
     type: fallback
     proxies:
