@@ -1,12 +1,39 @@
 payload:
-  #- DOMAIN-SUFFIX,taobao.com
-  #- DOMAIN-SUFFIX,tmall.com
-  #- DOMAIN-SUFFIX,youku.com
-  #- DOMAIN-SUFFIX,taobao.com
-  #- DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-SUFFIX,3.cn
+  - DOMAIN-SUFFIX,360buyimg.com
+  - DOMAIN-SUFFIX,aiqicha.baidu.com
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,aliyuncs.com
+  - DOMAIN-SUFFIX,bcebos.com
+  - DOMAIN-SUFFIX,bdimg.com
+  - DOMAIN-SUFFIX,bdstatic.com
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,fliggy.com
+  - DOMAIN-SUFFIX,hdslb.com
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,jd.hk
+  - DOMAIN-SUFFIX,jdcloud.com
+  - DOMAIN-SUFFIX,jdpay.com
+  - DOMAIN-SUFFIX,jdl.com
+  - DOMAIN-SUFFIX,jingdong.com
+  - DOMAIN-SUFFIX,jingxi.com
+  - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,speedtest.cn
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tmall.hk
+  - DOMAIN-SUFFIX,ykimg.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+
+
+  
   - IP-CIDR,8.128.0.0/10,DIRECT
   #- IP-CIDR,142.171.0.0/16,DIRECT
   #- IP-CIDR,35.209.176.128/32,DIRECT
-  - DOMAIN-SUFFIX,cidian.youdao.com
-  - DOMAIN-SUFFIX,dict.youdao.com
-  #- IP-CIDR,162.159.192.134/32,DIRECT
