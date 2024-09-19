@@ -151,7 +151,7 @@ rules:
   - RULE-SET,custom,sdc.donpau.com
   - RULE-SET,reject,REJECT
   - RULE-SET,direct,DIRECT
-  - RULE-SET,proxy,Balance
+  - RULE-SET,proxy,Fallback
   #- GEOSITE,CN,snap.linkpc.net
   #- GEOIP,CN,snap.linkpc.net
   - MATCH,Fallback
