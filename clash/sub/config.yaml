@@ -152,8 +152,8 @@ rules:
   - RULE-SET,reject,REJECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,proxy,Fallback
-  #- GEOSITE,CN,snap.linkpc.net
-  #- GEOIP,CN,snap.linkpc.net
+  #- GEOSITE,CN,DIRECT
+  #- GEOIP,CN,DIRECT
   - MATCH,Fallback
 rule-providers:
   #Maintenance Address: https://github.com/baopad/rss/tree/main/clash/rules
