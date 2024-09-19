@@ -148,6 +148,7 @@ proxy-groups:
     proxies:
       - sdc.donpau.com
       - snap.linkpc.net
+      - Automatic
     url: https://www.gstatic.com/generate_204
     interval: 300
 rules:
