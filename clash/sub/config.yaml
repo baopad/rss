@@ -58,43 +58,11 @@ dns:
 proxies:
   - name: snap.linkpc.net
     server: snap.linkpc.net
+    type: vmess
     port: 8080
-    type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-    network: tcp
-  - name: hub.paotung.org
-    server: hub.paotung.org
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    network: tcp
-    tls: true
-    skip-cert-verify: false
-  - name: snap.cloudns.org
-    server: snap.cloudns.org
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    tls: true
-    skip-cert-verify: false
-  - name: snap.donpau.com
-    server: snap.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-  - name: ccs.linkpc.net
-    server: ccs.linkpc.net
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    tls: true
-    skip-cert-verify: false
   - name: ccs.paotung.org
     server: ccs.paotung.org
     port: 443
@@ -105,122 +73,64 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-  - name: gco.donpau.com
-    server: gcc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-    ws-opts:
-      headers:
-        Host: gco.donpau.com
-  - name: sdc.donpau.com
-    server: sdc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-  - name: ccs.donpau.com
-    server: gcc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-    ws-opts:
-      headers:
-        Host: ccs.donpau.com
-  - name: oci.cbu.local
+  - name: oci.local
     server: oci.cbu.net
     port: 443
-    type: vmess
+    type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: zero
+    flow: xtls-rprx-vision
+    network: tcp
     tls: true
-    network: ws
     skip-cert-verify: false
-  - name: oci.publicvm.local
-    server: oci.publicvm.com
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: gce.donpau.com
+    server: gcc.donpau.com
+    type: vmess
     port: 443
-    type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: zero
+    cipher: auto
+    servername: gce.donpau.com
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: gce.donpau.com
+    udp: true
+  - name: ccs.linkpc.net
+    server: ccs.linkpc.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
+  - name: cfp.paotung.org
+    server: cfp.paotung.org
+    type: vmess
+    port: 443
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
     tls: true
     network: ws
-    skip-cert-verify: false
   - name: oci.cbu.net
     server: oci.cbu.net
     port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    skip-cert-verify: false
-    reality-opts:
-      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
-    client-fingerprint: chrome
-    udp: true
-  - name: oci.publicvm.com
-    server: oci.publicvm.com
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    flow: xtls-rprx-vision
-    network: tcp
-    tls: true
-    skip-cert-verify: false
-    reality-opts:
-      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
-    client-fingerprint: chrome
-    udp: true
-  - name: aws.donpau.com
-    server: aws.donpau.com
-    port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: auto
-    network: ws
+    cipher: none
     tls: true
-    skip-cert-verify: false
+    network: ws
     ws-opts:
-      path: /hubvm
-  - name: cfp.paotung.org
-    server: cfp.paotung.org
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-  - name: gsc.donpau.com
-    server: gsc.donpau.com
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
-  - name: cdn.ccs.byinter.net
-    server: cdn.ccs.byinter.net
+      path: /ccsvm
+  - name: sdc.donpau.com
+    server: sdc.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -233,39 +143,18 @@ proxy-groups:
   - name: Fallback
     type: fallback
     proxies:
-      - hub.paotung.org
-      - Automatic
+      - snap.donpau.com
+      - snap.linkpc.net
     url: https://www.gstatic.com/generate_204
     interval: 300
-  - name: Automatic
-    type: url-test
-    proxies:
-      - ccs.linkpc.net
-      - ccs.paotung.org
-      - ccs.donpau.com
-      - snap.cloudns.org
-      - snap.donpau.com
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-  - name: Balance
-    type: load-balance
-    proxies:
-      - ccs.linkpc.net
-      - ccs.paotung.org
-      - ccs.donpau.com
-      - snap.cloudns.org
-      - snap.donpau.com
-    url: https://www.gstatic.com/generate_204
-    interval: 600
 rules:
-  - RULE-SET,consistency,ccs.linkpc.net
+  - RULE-SET,custom,sdc.donpau.com
   - RULE-SET,reject,REJECT
   - RULE-SET,direct,DIRECT
   - RULE-SET,proxy,Balance
-  - RULE-SET,relay,snap.linkpc.net
-  - GEOSITE,CN,snap.linkpc.net
+  #- GEOSITE,CN,snap.linkpc.net
   #- GEOIP,CN,snap.linkpc.net
-  - MATCH,Balance
+  - MATCH,Fallback
 rule-providers:
   #Maintenance Address: https://github.com/baopad/rss/tree/main/clash/rules
   custom:
