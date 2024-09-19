@@ -1,8 +1,3 @@
-# NAME: proxy
-# AUTHOR: baopad
-# REPO: https://rss.paotung.org/vpn/clash/rules/proxy.yaml
-# UPDATED: 2024-03-11 00:00:00
-# README: Proxy Links
 payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleapis.com
