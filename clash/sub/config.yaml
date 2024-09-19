@@ -6,7 +6,7 @@
 ###  Reject Address:        https://github.com/baopad/rss/edit/main/clash/rules/reject.yaml
 ###  Proxy Address:         https://github.com/baopad/rss/edit/main/clash/rules/proxy.yaml
 ##################################
-mixed-port: 789o
+mixed-port: 7890
 mode: Rule
 log-level: silent
 tcp-concurrent: true
