@@ -161,7 +161,6 @@ rules:
   #- GEOIP,CN,DIRECT
   - MATCH,Fallback
 rule-providers:
-  #Maintenance Address: https://github.com/baopad/rss/tree/main/clash/rules
   custom:
     type: http
     behavior: classical
