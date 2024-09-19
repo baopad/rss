@@ -1,49 +1,95 @@
 ##################################
 ###  Creator:baopad@yahoo.com  ###
-#https://github.com/baopad/rss/edit/main/vpn/3a2cc75a-5fc1-4123-983b-7a1c86a10888.yaml
 ##################################
+#external-controller: 127.0.0.1:9090
+#port: 7891
+#socks-port: 7892
 mixed-port: 7890
-allow-lan: true
-mode: rule
-log-level: none
+mode: Rule
+log-level: silent
+tcp-concurrent: true
+#ipv6: false
 dns:
   enable: true
-  prefer-h3: true
   listen: 0.0.0.0:53
   ipv6: true
-  default-nameserver:
+  #prefer-h3: true
+  default-nameserver:             #解析nameserver服务器
     - 1.1.1.1
     - 8.8.8.8
+    #- 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  nameserver:
+  nameserver:                     #解析国(墙)内域名
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
     #- https://doh.pub/dns-query
     #- https://dns.alidns.com/dns-query
+    #- https://1.12.12.12/dns-query
+    #- https://120.53.53.53/dns-query
+    #- https://223.5.5.5/dns-query
+    #- https://223.6.6.6/dns-query
+  fallback:                       #解析回落国(墙)外域名,通过fallback-filter规则
     - https://dns.paotung.org/dns-query
     - https://hub.paotung.org/dns-query
-  fallback:
+    #- https://ccs.linkpc.net/dns-query
+    #- tls://dns.umbrella.com
+    #- https://doh.sb/dns-query
+  #nameserver-policy:             #指定域名解析服务器
+    #'www.baidu.com': '114.114.114.114'
+  proxy-server-nameserver:        #仅用于解析代理节点的域名
     - https://dns.paotung.org/dns-query
     - https://hub.paotung.org/dns-query
-    #- https://dns.google/dns-query
-    #- https://dns.cloudflare.com/dns-query
-    #- https://dns10.quad9.net/dns-query
-    #- https://doh.opendns.com/dns-query
-    #- tls://1.0.0.1:853
-  fallback-filter:
+  fallback-filter:                #解析规则
     geoip: true
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
+      #- 0.0.0.0/32
+    domain:                       #域名视为污染,fallback解析
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
 proxies:
   - name: snap.linkpc.net
     server: snap.linkpc.net
-    type: vmess
     port: 8080
+    type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
+    network: tcp
+  - name: hub.paotung.org
+    server: hub.paotung.org
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+  - name: snap.cloudns.org
+    server: snap.cloudns.org
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
+  - name: snap.donpau.com
+    server: snap.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+  - name: ccs.linkpc.net
+    server: ccs.linkpc.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
   - name: ccs.paotung.org
     server: ccs.paotung.org
     port: 443
@@ -54,7 +100,63 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-  - name: oci.local
+  - name: gco.donpau.com
+    server: gcc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      headers:
+        Host: gco.donpau.com
+  - name: sdc.donpau.com
+    server: sdc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+  - name: ccs.donpau.com
+    server: gcc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      headers:
+        Host: ccs.donpau.com
+  - name: oci.cbu.local
+    server: oci.cbu.net
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: zero
+    tls: true
+    network: ws
+    skip-cert-verify: false
+  - name: oci.publicvm.local
+    server: oci.publicvm.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: zero
+    tls: true
+    network: ws
+    skip-cert-verify: false
+  - name: oci.cbu.net
     server: oci.cbu.net
     port: 443
     type: vless
@@ -67,51 +169,53 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: gce.donpau.com
-    server: gcc.donpau.com
-    type: vmess
-    port: 443
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    servername: gce.donpau.com
-    network: ws
-    tls: true
-    skip-cert-verify: false
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: gce.donpau.com
-    udp: true
-  - name: ccs.linkpc.net
-    server: ccs.linkpc.net
+  - name: oci.publicvm.com
+    server: oci.publicvm.com
     port: 443
     type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    flow: xtls-rprx-vision
+    network: tcp
     tls: true
     skip-cert-verify: false
-  - name: cfp.paotung.org
-    server: cfp.paotung.org
-    type: vmess
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: aws.donpau.com
+    server: aws.donpau.com
     port: 443
+    type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-    tls: true
     network: ws
-  - name: oci.cbu.net
-    server: oci.cbu.net
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /hubvm
+  - name: cfp.paotung.org
+    server: cfp.paotung.org
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: none
-    tls: true
+    cipher: auto
     network: ws
-    ws-opts:
-      path: /ccsvm
-  - name: sdc.donpau.com
-    server: sdc.donpau.com
+    tls: true
+    skip-cert-verify: false
+  - name: gsc.donpau.com
+    server: gsc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+  - name: cdn.ccs.byinter.net
+    server: cdn.ccs.byinter.net
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -121,27 +225,71 @@ proxies:
     tls: true
     skip-cert-verify: false
 proxy-groups:
-  - name: Balance
+  - name: Fallback
+    type: fallback
     proxies:
-      - ccs.linkpc.net
-      - cfp.paotung.org
-      - sdc.donpau.com
-    type: load-balance
-    url: http://www.gstatic.com/generate_204
-    interval: 600
+      - hub.paotung.org
+      - Automatic
+    url: https://www.gstatic.com/generate_204
+    interval: 300
   - name: Automatic
     type: url-test
     proxies:
       - ccs.linkpc.net
-      - cfp.paotung.org
-      - oci.cbu.net
-      - sdc.donpau.com
+      - ccs.paotung.org
+      - ccs.donpau.com
+      - snap.cloudns.org
+      - snap.donpau.com
+    url: https://www.gstatic.com/generate_204
+    interval: 600
+  - name: Balance
+    type: load-balance
+    proxies:
+      - ccs.linkpc.net
+      - ccs.paotung.org
+      - ccs.donpau.com
+      - snap.cloudns.org
+      - snap.donpau.com
     url: https://www.gstatic.com/generate_204
     interval: 600
 rules:
-  #- DOMAIN-SUFFIX,cdn.office.net,REJECT
-  #- DOMAIN-SUFFIX,mp.microsoft.com,REJECT
-  #- DOMAIN-SUFFIX,download.windowsupdate.com,REJECT
-  - DOMAIN-KEYWORD,google,sdc.donpau.com
-  - GEOIP,CN,snap.linkpc.net
+  - RULE-SET,consistency,ccs.linkpc.net
+  - RULE-SET,reject,REJECT
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,Balance
+  - RULE-SET,relay,snap.linkpc.net
+  - GEOSITE,CN,snap.linkpc.net
+  #- GEOIP,CN,snap.linkpc.net
   - MATCH,Balance
+rule-providers:
+  #Maintenance Address: https://github.com/baopad/rss/tree/main/clash/rules
+  consistency:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/consistency.yaml"
+    path: ./rules/consistency.yaml
+    interval: 123456
+  reject:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/reject.yaml"
+    path: ./rules/reject.yaml
+    interval: 123456
+  direct:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/direct.yaml"
+    path: ./rules/direct.yaml
+    interval: 123456
+  proxy:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/proxy.yaml"
+    path: ./rules/proxy.yaml
+    interval: 123456
+  relay:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/relay.yaml"
+    path: ./rules/relay.yaml
+    interval: 123456
