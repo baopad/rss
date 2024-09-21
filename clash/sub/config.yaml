@@ -60,16 +60,17 @@ proxies:
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-  - name: "ccs.paotung.org"
-    server: ccs.paotung.org
+  - name: "oci.cbu.net"
+    server: oci.cbu.net
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: auto
-    network: ws
+    cipher: none
     tls: true
-    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ccsvm
   - name: "oci.local"
     server: oci.cbu.net
     port: 443
@@ -115,17 +116,6 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: "oci.cbu.net"
-    server: oci.cbu.net
-    port: 443
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: none
-    tls: true
-    network: ws
-    ws-opts:
-      path: /ccsvm
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
