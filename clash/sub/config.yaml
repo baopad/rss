@@ -53,7 +53,7 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
 proxies:
-  - name: "snap.linkpc.net"
+  - name: "Alternate network"
     server: snap.linkpc.net
     type: vmess
     port: 8080
