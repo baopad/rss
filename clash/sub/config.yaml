@@ -159,7 +159,7 @@ rules:
   - RULE-SET,proxy,Fallback
   #- GEOSITE,CN,DIRECT
   #- GEOIP,CN,DIRECT
-  - MATCH,Fallback
+  - MATCH,Automatic
 rule-providers:
   custom:
     type: http
