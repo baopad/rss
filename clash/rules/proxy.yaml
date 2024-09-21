@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,dl.google.com
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN-SUFFIX,googlesyndication.com
