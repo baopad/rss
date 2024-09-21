@@ -53,14 +53,14 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
 proxies:
-  - name: snap.linkpc.net
+  - name: "snap.linkpc.net"
     server: snap.linkpc.net
     type: vmess
     port: 8080
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-  - name: ccs.paotung.org
+  - name: "ccs.paotung.org"
     server: ccs.paotung.org
     port: 443
     type: vmess
@@ -70,7 +70,7 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-  - name: oci.local
+  - name: "oci.local"
     server: oci.cbu.net
     port: 443
     type: vless
@@ -83,7 +83,7 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: gce.donpau.com
+  - name: "gce.donpau.com"
     server: gcc.donpau.com
     type: vmess
     port: 443
@@ -99,14 +99,14 @@ proxies:
       headers:
         Host: gce.donpau.com
     udp: true
-  - name: ccs.linkpc.net
+  - name: "ccs.linkpc.net"
     server: ccs.linkpc.net
     port: 443
     type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     tls: true
     skip-cert-verify: false
-  - name: cfp.paotung.org
+  - name: "cfp.paotung.org"
     server: cfp.paotung.org
     type: vmess
     port: 443
@@ -115,7 +115,7 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: oci.cbu.net
+  - name: "oci.cbu.net"
     server: oci.cbu.net
     port: 443
     type: vmess
@@ -126,7 +126,7 @@ proxies:
     network: ws
     ws-opts:
       path: /ccsvm
-  - name: sdc.donpau.com
+  - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
     type: vmess
@@ -163,13 +163,13 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
-  - RULE-SET,custom,Balance
+  - RULE-SET,custom,Automatic
   - RULE-SET,direct,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,proxy,Fallback
   #- GEOSITE,CN,DIRECT
   #- GEOIP,CN,DIRECT
-  - MATCH,Automatic
+  - MATCH,Balance
 rule-providers:
   custom:
     type: http
