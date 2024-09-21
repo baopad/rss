@@ -149,6 +149,7 @@ proxy-groups:
       - sdc.donpau.com
       - ccs.linkpc.net
       - Automatic
+      - Balance
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
