@@ -19,12 +19,12 @@ payload:
   - DOMAIN-SUFFIX,jingdong.com
   - DOMAIN-SUFFIX,jingxi.com
   - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,speedtest.cn
   - DOMAIN-SUFFIX,taobao.com
   - DOMAIN-SUFFIX,tmall.hk
   - DOMAIN-SUFFIX,ykimg.com
-  - DOMAIN-SUFFIX,youku.com
-  - DOMAIN-SUFFIX,youku.com
   - DOMAIN-SUFFIX,youku.com
   - DOMAIN-SUFFIX,youku.com
   - DOMAIN-SUFFIX,youku.com
