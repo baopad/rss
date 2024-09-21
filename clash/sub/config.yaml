@@ -137,7 +137,7 @@ proxies:
     tls: true
     skip-cert-verify: false
 proxy-groups:
-  - name: Automatic
+  - name: "Automatic"
     type: url-test
     proxies:
       - sdc.donpau.com
@@ -146,14 +146,24 @@ proxy-groups:
       - snap.linkpc.net
     url: https://www.gstatic.com/generate_204
     interval: 600
-  - name: Fallback
+    tolerance: 50
+  - name: "Fallback"
     type: fallback
     proxies:
       - sdc.donpau.com
       - ccs.linkpc.net
       - Automatic
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+  - name: "Balance"
+    type: load-balance
+    proxies:
+      - sdc.donpau.com
+      - ccs.linkpc.net
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
 rules:
-  - RULE-SET,custom,Fallback
+  - RULE-SET,custom,Balance
   - RULE-SET,direct,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,proxy,Fallback
