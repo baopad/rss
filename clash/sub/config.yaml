@@ -152,8 +152,6 @@ proxy-groups:
       - sdc.donpau.com
       - ccs.linkpc.net
       - Automatic
-    url: https://www.gstatic.com/generate_204
-    interval: 300
 rules:
   - RULE-SET,custom,Fallback
   - RULE-SET,direct,DIRECT
