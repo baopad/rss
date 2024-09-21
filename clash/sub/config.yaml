@@ -133,7 +133,6 @@ proxy-groups:
       - sdc.donpau.com
       - cfp.paotung.org
       - ccs.linkpc.net
-      - snap.linkpc.net
     url: https://www.gstatic.com/generate_204
     interval: 600
     tolerance: 50
