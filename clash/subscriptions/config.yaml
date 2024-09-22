@@ -3,8 +3,8 @@
 ###  Subscription Address:  https://rss.paotung.org/clash/sub/config.yaml
 ###  Edit Address:          https://github.com/baopad/rss/edit/main/clash/sub/config.yaml
 ###  Custom Address:        https://github.com/baopad/rss/edit/main/clash/rules/custom.yaml
-###  Direct Address:        https://github.com/baopad/rss/edit/main/clash/rules/direct.yaml
 ###  Reject Address:        https://github.com/baopad/rss/edit/main/clash/rules/reject.yaml
+###  Direct Address:        https://github.com/baopad/rss/edit/main/clash/rules/direct.yaml
 ###  Proxy Address:         https://github.com/baopad/rss/edit/main/clash/rules/proxy.yaml
 ##############################################################################################
 mixed-port: 7890
@@ -167,17 +167,17 @@ rule-providers:
     url: "https://rss.paotung.org/clash/rules/custom.yaml"
     path: ./rules/custom.yaml
     interval: 604800
-  direct:
-    type: http
-    behavior: classical
-    url: "https://rss.paotung.org/clash/rules/direct.yaml"
-    path: ./rules/direct.yaml
-    interval: 604800
   reject:
     type: http
     behavior: classical
     url: "https://rss.paotung.org/clash/rules/reject.yaml"
     path: ./rules/reject.yaml
+    interval: 604800
+  direct:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clash/rules/direct.yaml"
+    path: ./rules/direct.yaml
     interval: 604800
   proxy:
     type: http
