@@ -34,7 +34,7 @@ dns:
   fallback:                       #解析回落国(墙)外域名,通过fallback-filter规则
     - https://dns.paotung.org/dns-query
     - https://hub.paotung.org/dns-query
-    #- https://ccs.linkpc.net/dns-query
+    #- https://ccs.kozow.com/dns-query
     #- tls://dns.umbrella.com
     #- https://doh.sb/dns-query
   #nameserver-policy:             #指定域名解析服务器
@@ -100,8 +100,8 @@ proxies:
       headers:
         Host: gce.donpau.com
     udp: true
-  - name: "ccs.linkpc.net"
-    server: ccs.linkpc.net
+  - name: "ccs.kozow.com"
+    server: ccs.kozow.com
     port: 443
     type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -132,7 +132,7 @@ proxy-groups:
     proxies:
       - sdc.donpau.com
       - cfp.paotung.org
-      - ccs.linkpc.net
+      - ccs.kozow.com
     url: https://www.gstatic.com/generate_204
     interval: 600
     tolerance: 50
@@ -140,14 +140,14 @@ proxy-groups:
     type: load-balance
     proxies:
       - sdc.donpau.com
-      - ccs.linkpc.net
+      - ccs.kozow.com
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
   - name: "Fallback"
     type: fallback
     proxies:
       - sdc.donpau.com
-      - ccs.linkpc.net
+      - ccs.kozow.com
       - Automatic
       - Balance
     url: 'http://www.gstatic.com/generate_204'
