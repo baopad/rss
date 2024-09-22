@@ -1,11 +1,11 @@
 ##############################################################################################
 ###  Creator:               email:baopad@yahoo.com
-###  Subscription Address:  https://rss.paotung.org/clash/sub/config.yaml
-###  Edit Address:          https://github.com/baopad/rss/edit/main/clash/sub/config.yaml
-###  Custom Address:        https://github.com/baopad/rss/edit/main/clash/rules/custom.yaml
-###  Reject Address:        https://github.com/baopad/rss/edit/main/clash/rules/reject.yaml
-###  Direct Address:        https://github.com/baopad/rss/edit/main/clash/rules/direct.yaml
-###  Proxy Address:         https://github.com/baopad/rss/edit/main/clash/rules/proxy.yaml
+###  Subscription Address:  https://rss.paotung.org/clashverge/subscriptions/config.yaml
+###  Edit Address:          https://github.com/baopad/rss/edit/main/clashverge/subscriptions/config.yaml
+###  Custom Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/custom.yaml
+###  Reject Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/reject.yaml
+###  Direct Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/direct.yaml
+###  Proxy Address:         https://github.com/baopad/rss/edit/main/clashverge/rules/proxy.yaml
 ##############################################################################################
 mixed-port: 7890
 mode: Rule
@@ -164,24 +164,24 @@ rule-providers:
   custom:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clash/rules/custom.yaml"
+    url: "https://rss.paotung.org/clashverge/rules/custom.yaml"
     path: ./rules/custom.yaml
     interval: 604800
   reject:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clash/rules/reject.yaml"
+    url: "https://rss.paotung.org/clashverge/rules/reject.yaml"
     path: ./rules/reject.yaml
     interval: 604800
   direct:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clash/rules/direct.yaml"
+    url: "https://rss.paotung.org/clashverge/rules/direct.yaml"
     path: ./rules/direct.yaml
     interval: 604800
   proxy:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clash/rules/proxy.yaml"
+    url: "https://rss.paotung.org/clashverge/rules/proxy.yaml"
     path: ./rules/proxy.yaml
     interval: 604800
