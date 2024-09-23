@@ -116,6 +116,16 @@ proxies:
     cipher: auto
     tls: true
     network: ws
+  - name: "sdcc.donpau.com"
+    server: sdc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
@@ -136,13 +146,13 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 600
     tolerance: 50
-  - name: "Balance"
-    type: load-balance
-    proxies:
-      - sdc.donpau.com
-      - ccs.kozow.com
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+  #- name: "Balance"
+    #type: load-balance
+    #proxies:
+      #- sdc.donpau.com
+      #- ccs.kozow.com
+    #url: 'http://www.gstatic.com/generate_204'
+    #interval: 300
   - name: "Fallback"
     type: fallback
     proxies:
