@@ -138,10 +138,8 @@ proxy-groups:
     type: url-test
     proxies:
       - sdc.donpau.com
-      - cfp.paotung.org
       - ccs.kozow.com
-      - cfp.paotung.org
-      - ccs.kozow.com
+      - gco.donpau.com
       - cfp.paotung.org
     url: https://www.gstatic.com/generate_204
     interval: 600
@@ -158,8 +156,8 @@ proxy-groups:
     proxies:
       - sdc.donpau.com
       - ccs.kozow.com
-      - cfp.paotung.org
       - gco.donpau.com
+      - cfp.paotung.org
       - cfp.paotung.org
       - Automatic
     url: 'http://www.gstatic.com/generate_204'
