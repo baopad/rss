@@ -84,21 +84,21 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "gce.donpau.com"
-    server: gcc.donpau.com
+  - name: "gco.donpau.com"
+    server: gco.donpau.com
     type: vmess
     port: 443
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
     cipher: auto
-    servername: gce.donpau.com
+    servername: gco.donpau.com
     network: ws
     tls: true
     skip-cert-verify: false
     ws-opts:
       path: /vmess
       headers:
-        Host: gce.donpau.com
+        Host: gco.donpau.com
     udp: true
   - name: "ccs.kozow.com"
     server: ccs.kozow.com
@@ -162,7 +162,7 @@ proxy-groups:
       - sdc.donpau.com
       - ccs.kozow.com
       - cfp.paotung.org
-      - ccs.kozow.com
+      - gco.donpau.com
       - cfp.paotung.org
       - Automatic
     url: 'http://www.gstatic.com/generate_204'
