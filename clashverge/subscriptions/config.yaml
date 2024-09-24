@@ -84,8 +84,8 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: gco.donpau.com
-    server: gcc.donpau.com
+  - name: "sdcc.donpau.com"
+    server: sdc.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -94,9 +94,6 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-    ws-opts:
-      headers:
-        Host: gco.donpau.com
   - name: "ccs.kozow.com"
     server: ccs.kozow.com
     port: 443
@@ -113,8 +110,8 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: "sdcc.donpau.com"
-    server: sdc.donpau.com
+  - name: gco.donpau.com
+    server: gcc.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -123,6 +120,9 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
+    ws-opts:
+      headers:
+        Host: gco.donpau.com
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
