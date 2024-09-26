@@ -166,10 +166,10 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
-  - RULE-SET,custom,Automatic
+  - RULE-SET,custom,Balance
   - RULE-SET,direct,DIRECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,proxy,Fallback
+  - RULE-SET,proxy,sdc.donpau.com
   #- GEOSITE,CN,DIRECT
   #- GEOIP,CN,DIRECT
   - MATCH,Fallback
