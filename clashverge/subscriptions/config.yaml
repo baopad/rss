@@ -53,24 +53,23 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
 proxies:
-  - name: "Alternate network"
-    server: snap.linkpc.net
-    type: vmess
-    port: 8080
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-  - name: "oci.cbu.net"
-    server: oci.cbu.net
+  - name: snap.donpau.com
+    server: snap.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
-    cipher: none
-    tls: true
+    cipher: auto
     network: ws
-    ws-opts:
-      path: /ccsvm
+    tls: true
+  - name: hub.paotung.org
+    server: hub.paotung.org
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    network: tcp
+    tls: true
+    skip-cert-verify: false
   - name: "oci.local"
     server: oci.cbu.net
     port: 443
@@ -84,8 +83,8 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "sdcc.donpau.com"
-    server: sdc.donpau.com
+  - name: aws.donpau.com
+    server: aws.donpau.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -94,6 +93,8 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
+    ws-opts:
+      path: /hubvm
   - name: "ccs.kozow.com"
     server: ccs.kozow.com
     port: 443
