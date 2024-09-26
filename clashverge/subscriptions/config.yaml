@@ -131,8 +131,20 @@ proxies:
     tls: true
     skip-cert-verify: false
 proxy-groups:
-  - name: "Automatic"
-    type: url-test
+  #- name: "Automatic"
+    #type: url-test
+    #proxies:
+      #- snap.cloudns.org
+      #- hub.paotung.org
+      #- aws.donpau.com
+      #- ccs.kozow.com
+      #- gco.donpau.com
+      #- sdc.donpau.com
+    #url: https://www.gstatic.com/generate_204
+    #interval: 600
+    #tolerance: 50
+  - name: "Balance"
+    type: load-balance
     proxies:
       - snap.cloudns.org
       - hub.paotung.org
@@ -140,16 +152,8 @@ proxy-groups:
       - ccs.kozow.com
       - gco.donpau.com
       - sdc.donpau.com
-    url: https://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 50
-  #- name: "Balance"
-    #type: load-balance
-    #proxies:
-      #- sdc.donpau.com
-      #- ccs.kozow.com
-    #url: 'http://www.gstatic.com/generate_204'
-    #interval: 300
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
   - name: "Fallback"
     type: fallback
     proxies:
