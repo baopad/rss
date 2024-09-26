@@ -162,7 +162,7 @@ proxy-groups:
       - sdc.donpau.com
       - gco.donpau.com
       - cfp.paotung.org
-      - Automatic
+      - Balance
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
