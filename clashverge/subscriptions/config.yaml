@@ -155,9 +155,9 @@ proxy-groups:
     proxies:
       - hub.paotung.org
       - ccs.kozow.com
+      - sdc.donpau.com
       - gco.donpau.com
       - cfp.paotung.org
-      - sdc.donpau.com
       - Automatic
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
