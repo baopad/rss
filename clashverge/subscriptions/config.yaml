@@ -53,7 +53,7 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
 proxies:
-  - name: "oci.local"
+  - name: "oci.cbu.net"
     server: oci.cbu.net
     port: 443
     type: vless
@@ -66,14 +66,14 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: snap.cloudns.org
+  - name: "snap.cloudns.org"
     server: snap.cloudns.org
     port: 443
     type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     tls: true
     skip-cert-verify: false
-  - name: hub.paotung.org
+  - name: "hub.paotung.org"
     server: hub.paotung.org
     port: 443
     type: vless
@@ -81,7 +81,7 @@ proxies:
     network: tcp
     tls: true
     skip-cert-verify: false
-  - name: aws.donpau.com
+  - name: "aws.donpau.com"
     server: aws.donpau.com
     port: 443
     type: vmess
@@ -107,7 +107,7 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: gco.donpau.com
+  - name: "gco.donpau.com"
     server: gcc.donpau.com
     port: 443
     type: vmess
@@ -134,10 +134,12 @@ proxy-groups:
   - name: "Automatic"
     type: url-test
     proxies:
-      - sdc.donpau.com
+      - snap.cloudns.org
+      - hub.paotung.org
+      - aws.donpau.com
       - ccs.kozow.com
       - gco.donpau.com
-      - cfp.paotung.org
+      - sdc.donpau.com
     url: https://www.gstatic.com/generate_204
     interval: 600
     tolerance: 50
@@ -151,11 +153,11 @@ proxy-groups:
   - name: "Fallback"
     type: fallback
     proxies:
-      - sdc.donpau.com
+      - hub.paotung.org
       - ccs.kozow.com
       - gco.donpau.com
       - cfp.paotung.org
-      - cfp.paotung.org
+      - sdc.donpau.com
       - Automatic
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
