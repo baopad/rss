@@ -1,7 +1,0 @@
-# NAME: relay
-# AUTHOR: baopad
-# REPO: https://rss.paotung.org/vpn/clash/rules/relay.yaml
-# UPDATED: 2024-03-11 00:00:00
-# README: Relay(domestic) links
-payload:
-  #- DOMAIN-SUFFIX,jd.com
