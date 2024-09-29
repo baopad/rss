@@ -38,7 +38,29 @@ proxy-groups:
       - cfp.paotung.org
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
+rule-providers:
+  reject:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clashverge/rules/reject.yaml"
+    path: ./rules/reject.yaml
+    interval: 604800
+  direct:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clashverge/rules/direct.yaml"
+    path: ./rules/direct.yaml
+    interval: 604800
+  proxy:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clashverge/rules/proxy.yaml"
+    path: ./rules/proxy.yaml
+    interval: 604800
 rules:
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,Fallback
+  - RULE-SET,reject,REJECT
   - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Fallback
