@@ -3,10 +3,10 @@ payload:
   - DOMAIN-SUFFIX,3.cn
   - DOMAIN-SUFFIX,360buyimg.com
   - DOMAIN-SUFFIX,aiqicha.baidu.com
-  - DOMAIN-SUFFIX,alicdn.com
-  - DOMAIN-SUFFIX,aliyuncs.com
-  - DOMAIN-SUFFIX,bcebos.com
-  - DOMAIN-SUFFIX,bdimg.com
+  - DOMAIN-SUFFIX,alicdn.com                    # alibaba
+  - DOMAIN-SUFFIX,aliyuncs.com                  # alibaba
+  - DOMAIN-SUFFIX,bcebos.com                    # baidu
+  - DOMAIN-SUFFIX,bdimg.com                     # baidu
   - DOMAIN-SUFFIX,bdstatic.com
   - DOMAIN-SUFFIX,bilibili.com
   - DOMAIN-SUFFIX,fliggy.com
@@ -22,8 +22,8 @@ payload:
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
   - DOMAIN-SUFFIX,speedtest.cn
-  - DOMAIN-SUFFIX,taobao.com
-  - DOMAIN-SUFFIX,tmall.hk
+  - DOMAIN-SUFFIX,taobao.com                    # alibaba
+  - DOMAIN-SUFFIX,tmall.hk                      # alibaba
   - DOMAIN-SUFFIX,ykimg.com
   - DOMAIN-SUFFIX,youku.com
   - DOMAIN-SUFFIX,youku.com
