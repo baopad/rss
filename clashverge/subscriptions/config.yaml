@@ -52,8 +52,8 @@ rules:
   - RULE-SET,direct,DIRECT
   - RULE-SET,proxy,Fallback
   - RULE-SET,reject,REJECT
-  - GEOSITE,CN,DIRECT
-  - GEOIP,CN,DIRECT
+  - GEOSITE,cn,DIRECT
+  - GEOIP,cn,DIRECT
   - MATCH,Fallback
 rule-providers:
   custom:
