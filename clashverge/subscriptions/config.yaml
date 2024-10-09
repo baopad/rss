@@ -67,6 +67,7 @@ rule-providers:
     path: ./rules/proxy.yaml
     interval: 604800
 rules:
+  - RULE-SET,custom,Fallback
   - RULE-SET,direct,DIRECT
   - RULE-SET,proxy,Fallback
   - RULE-SET,reject,REJECT
