@@ -48,11 +48,11 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rule-providers:
-  reject:
+  custom:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clashverge/rules/reject.yaml"
-    path: ./rules/reject.yaml
+    url: "https://rss.paotung.org/clashverge/rules/custom.yaml"
+    path: ./rules/custom.yaml
     interval: 604800
   direct:
     type: http
@@ -65,6 +65,12 @@ rule-providers:
     behavior: classical
     url: "https://rss.paotung.org/clashverge/rules/proxy.yaml"
     path: ./rules/proxy.yaml
+    interval: 604800
+  reject:
+    type: http
+    behavior: classical
+    url: "https://rss.paotung.org/clashverge/rules/reject.yaml"
+    path: ./rules/reject.yaml
     interval: 604800
 rules:
   - RULE-SET,custom,Fallback
