@@ -11,13 +11,13 @@ payload:
   - DOMAIN-SUFFIX,bilibili.com
   - DOMAIN-SUFFIX,fliggy.com
   - DOMAIN-SUFFIX,hdslb.com
-  - DOMAIN-SUFFIX,jd.com
-  - DOMAIN-SUFFIX,jd.hk
-  - DOMAIN-SUFFIX,jdcloud.com
-  - DOMAIN-SUFFIX,jdpay.com
-  - DOMAIN-SUFFIX,jdl.com
-  - DOMAIN-SUFFIX,jingdong.com
-  - DOMAIN-SUFFIX,jingxi.com
+  - DOMAIN-SUFFIX,jd.com                        # jd
+  - DOMAIN-SUFFIX,jd.hk                         # jd
+  - DOMAIN-SUFFIX,jdcloud.com                   # jd
+  - DOMAIN-SUFFIX,jdpay.com                     # jd
+  - DOMAIN-SUFFIX,jdl.com                       # jd
+  - DOMAIN-SUFFIX,jingdong.com                  # jd
+  - DOMAIN-SUFFIX,jingxi.com                    # jd   
   - DOMAIN-SUFFIX,mmstat.com
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
