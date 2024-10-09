@@ -1,13 +1,13 @@
 payload:
   - DOMAIN-SUFFIX,1688.com                      # alibaba
-  - DOMAIN-SUFFIX,3.cn
-  - DOMAIN-SUFFIX,360buyimg.com
-  - DOMAIN-SUFFIX,aiqicha.baidu.com
+  - DOMAIN-SUFFIX,3.cn                          # jd
+  - DOMAIN-SUFFIX,360buyimg.com                 # jd
+  - DOMAIN-SUFFIX,aiqicha.baidu.com             # baidu
   - DOMAIN-SUFFIX,alicdn.com                    # alibaba
   - DOMAIN-SUFFIX,aliyuncs.com                  # alibaba
   - DOMAIN-SUFFIX,bcebos.com                    # baidu
   - DOMAIN-SUFFIX,bdimg.com                     # baidu
-  - DOMAIN-SUFFIX,bdstatic.com
+  - DOMAIN-SUFFIX,bdstatic.com                  # baidu
   - DOMAIN-SUFFIX,bilibili.com
   - DOMAIN-SUFFIX,fliggy.com
   - DOMAIN-SUFFIX,hdslb.com
