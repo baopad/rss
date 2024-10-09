@@ -1,3 +1,12 @@
+##############################################################################################
+###  Creator:               email:baopad@yahoo.com
+###  Subscription Address:  https://rss.paotung.org/clashverge/subscriptions/config.yaml
+###  Edit Address:          https://github.com/baopad/rss/edit/main/clashverge/subscriptions/config.yaml
+###  Custom Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/custom.yaml
+###  Reject Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/reject.yaml
+###  Direct Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/direct.yaml
+###  Proxy Address:         https://github.com/baopad/rss/edit/main/clashverge/rules/proxy.yaml
+##############################################################################################
 mixed-port: 7890
 mode: Rule
 log-level: silent
