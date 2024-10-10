@@ -23,7 +23,7 @@ proxies:
     tls: true
     skip-cert-verify: false
     ws-opts:
-      path: /ccs
+      path: '/ccs'
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
@@ -58,7 +58,7 @@ proxy-groups:
       - ccs.kozow.com
       - cfp.paotung.org
       - ccs.mrcork.com
-    url: https://www.gstatic.com/generate_204
+    url: 'https://www.gstatic.com/generate_204'
     interval: 300
   - name: "Fallback"
     type: fallback
@@ -81,24 +81,24 @@ rule-providers:
   custom:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clashverge/rules/custom.yaml"
+    url: 'https://rss.paotung.org/clashverge/rules/custom.yaml'
     path: ./rules/custom.yaml
     interval: 604800
   direct:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clashverge/rules/direct.yaml"
+    url: 'https://rss.paotung.org/clashverge/rules/direct.yaml'
     path: ./rules/direct.yaml
     interval: 604800
   proxy:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clashverge/rules/proxy.yaml"
+    url: 'https://rss.paotung.org/clashverge/rules/proxy.yaml'
     path: ./rules/proxy.yaml
     interval: 604800
   reject:
     type: http
     behavior: classical
-    url: "https://rss.paotung.org/clashverge/rules/reject.yaml"
+    url: 'https://rss.paotung.org/clashverge/rules/reject.yaml'
     path: ./rules/reject.yaml
     interval: 604800
