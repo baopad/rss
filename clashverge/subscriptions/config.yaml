@@ -14,7 +14,7 @@ tcp-concurrent: true
 proxies:
   - name: "ccs.mrcork.com"
     server: ccs.mrcork.com
-    port: 443
+    port: 1000
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     alterId: 0
