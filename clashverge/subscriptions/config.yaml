@@ -22,8 +22,6 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-    ws-opts:
-      path: '/ccs'
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
