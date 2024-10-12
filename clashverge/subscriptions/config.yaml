@@ -66,7 +66,7 @@ proxy-groups:
     type: url-test
     proxies:
       - sdc.donpau.com
-      - ccs.kozow.com
+      - gco.donpau.com
       - cfp.paotung.org
       - ccs.mrcork.com
     url: 'https://www.gstatic.com/generate_204'
