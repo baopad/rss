@@ -12,7 +12,7 @@ mode: Rule
 log-level: silent
 tcp-concurrent: true
 proxies:
-  - name: "hub.kozow.com"
+  - name: "gco.donpau.com"
     server: gcc.donpau.com
     port: 443
     type: vmess
@@ -24,7 +24,7 @@ proxies:
     skip-cert-verify: false
     ws-opts:
       headers:
-        Host: hub.kozow.com
+        Host: gco.donpau.com
   - name: "ccs.mrcork.com"
     server: ccs.mrcork.com
     port: 1000
