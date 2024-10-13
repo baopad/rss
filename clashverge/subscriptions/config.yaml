@@ -60,6 +60,13 @@ proxies:
     skip-cert-verify: false
     ws-opts:
       path: /ccs
+  - name: "ccs.kozow.com"
+    server: ccs.kozow.com
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
   - name: "gco.donpau.com"
     server: gcc.donpau.com
     port: 443
@@ -73,13 +80,6 @@ proxies:
     ws-opts:
       headers:
         Host: gco.donpau.com
-  - name: "ccs.kozow.com"
-    server: ccs.kozow.com
-    port: 443
-    type: vless
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    tls: true
-    skip-cert-verify: false
   - name: "cfp.paotung.org"
     server: cfp.paotung.org
     type: vmess
