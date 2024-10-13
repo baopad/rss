@@ -12,6 +12,45 @@ mode: Rule
 log-level: silent
 tcp-concurrent: true
 proxies:
+  - name: "1oci.cbu.net"
+    server: oci.cbu.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: "2oci.cbu.net"
+    server: oci.cbu.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
+  - name: "3oci.cbu.net"
+    server: oci.cbu.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+    reality-opts:
+      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
+    client-fingerprint: chrome
+    udp: true
   - name: "gco.donpau.com"
     server: gcc.donpau.com
     port: 443
