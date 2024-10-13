@@ -80,8 +80,8 @@ proxies:
     skip-cert-verify: false
     ws-opts:
       path: /ccs
-  - name: "cfp.paotung.org"
-    server: cfp.paotung.org
+  - name: "ccs.paotung.org"
+    server: ccs.paotung.org
     type: vmess
     port: 443
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -105,7 +105,7 @@ proxy-groups:
     proxies:
       - sdc.donpau.com
       - gco.donpau.com
-      - cfp.paotung.org
+      - ccs.paotung.org
       - ccs.mrcork.com
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
@@ -114,7 +114,7 @@ proxy-groups:
     proxies:
       - sdc.donpau.com
       - gco.donpau.com
-      - cfp.paotung.org
+      - ccs.paotung.org
       - ccs.mrcork.com
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
