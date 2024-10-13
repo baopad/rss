@@ -67,6 +67,15 @@ proxies:
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
     tls: true
     skip-cert-verify: false
+  - name: "cfp.paotung.org"
+    server: cfp.paotung.org
+    type: vmess
+    port: 443
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
   - name: "gco.donpau.com"
     server: gcc.donpau.com
     port: 443
@@ -80,15 +89,6 @@ proxies:
     ws-opts:
       headers:
         Host: gco.donpau.com
-  - name: "cfp.paotung.org"
-    server: cfp.paotung.org
-    type: vmess
-    port: 443
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
   - name: "sdc.donpau.com"
     server: sdc.donpau.com
     port: 443
