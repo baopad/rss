@@ -12,7 +12,7 @@ mode: Rule
 log-level: silent
 tcp-concurrent: true
 proxies:
-  - name: "1oci.cbu.net"
+  - name: "oci.cbu.net"
     server: oci.cbu.net
     port: 443
     type: vless
