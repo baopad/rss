@@ -132,22 +132,22 @@ rule-providers:
     behavior: classical
     url: 'https://rss.paotung.org/clashverge/rules/custom.yaml'
     path: ./rules/custom.yaml
-    interval: 604800
+    interval: 86400
   direct:
     type: http
     behavior: classical
     url: 'https://rss.paotung.org/clashverge/rules/direct.yaml'
     path: ./rules/direct.yaml
-    interval: 604800
+    interval: 86400
   proxy:
     type: http
     behavior: classical
     url: 'https://rss.paotung.org/clashverge/rules/proxy.yaml'
     path: ./rules/proxy.yaml
-    interval: 604800
+    interval: 86400
   reject:
     type: http
     behavior: classical
     url: 'https://rss.paotung.org/clashverge/rules/reject.yaml'
     path: ./rules/reject.yaml
-    interval: 604800
+    interval: 86400
