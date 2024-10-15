@@ -25,15 +25,6 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "ccs.byinter.net/ipv6"
-    server: ipv6.ccs.byinter.net
-    type: vmess
-    port: 1000
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    tls: true
-    network: ws
   - name: "ccs.mrcork.com"
     server: ccs.mrcork.com
     port: 1000
@@ -57,6 +48,15 @@ proxies:
     ws-opts:
       headers:
         Host: gco.donpau.com
+  - name: "ccs.byinter.net/ipv6"
+    server: ipv6.ccs.byinter.net
+    type: vmess
+    port: 1000
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
   - name: "ccs.byinter.net"
     server: ccs.byinter.net
     port: 443
