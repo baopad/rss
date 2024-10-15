@@ -25,19 +25,13 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "3oci.cbu.net"
-    server: oci.cbu.net
+  - name: "ipv6.ccs.byinter.net"
+    server: ipv6.ccs.byinter.net
     port: 443
     type: vless
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    flow: xtls-rprx-vision
-    network: tcp
     tls: true
     skip-cert-verify: false
-    reality-opts:
-      public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
-    client-fingerprint: chrome
-    udp: true
   - name: "ccs.mrcork.com"
     server: ccs.mrcork.com
     port: 1000
@@ -104,18 +98,22 @@ proxy-groups:
     type: url-test
     proxies:
       - ccs.kozow.com
+      - ccs.byinter.net
       - gco.donpau.com
       - ccs.paotung.org
-      - ccs.mrcork.com
+      - oci.cbu.net/ccs
+      - ipv6.ccs.byinter.net
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
   - name: "Fallback"
     type: fallback
     proxies:
       - ccs.kozow.com
+      - ccs.byinter.net
       - gco.donpau.com
       - ccs.paotung.org
-      - ccs.mrcork.com
+      - oci.cbu.net/ccs
+      - ipv6.ccs.byinter.net
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
