@@ -89,8 +89,8 @@ proxies:
     cipher: auto
     tls: true
     network: ws
-  - name: "sdc.donpau.com"
-    server: sdc.donpau.com
+  - name: "ccs.kozow.com"
+    server: ccs.kozow.com
     port: 443
     type: vmess
     uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
@@ -103,7 +103,7 @@ proxy-groups:
   - name: "Automatic"
     type: url-test
     proxies:
-      - sdc.donpau.com
+      - ccs.kozow.com
       - gco.donpau.com
       - ccs.paotung.org
       - ccs.mrcork.com
@@ -112,7 +112,7 @@ proxy-groups:
   - name: "Fallback"
     type: fallback
     proxies:
-      - sdc.donpau.com
+      - ccs.kozow.com
       - gco.donpau.com
       - ccs.paotung.org
       - ccs.mrcork.com
