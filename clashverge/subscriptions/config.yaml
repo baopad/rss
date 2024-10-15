@@ -25,7 +25,7 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "ccs.byinter.net(ipv6)"
+  - name: "ccs.byinter.net/ipv6"
     server: ipv6.ccs.byinter.net
     type: vmess
     port: 1000
@@ -104,7 +104,7 @@ proxy-groups:
       - gco.donpau.com
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - ipv6.ccs.byinter.net
+      - ccs.byinter.net/ipv6
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
   - name: "Fallback"
@@ -115,7 +115,7 @@ proxy-groups:
       - gco.donpau.com
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - ipv6.ccs.byinter.net
+      - ccs.byinter.net/ipv6
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
