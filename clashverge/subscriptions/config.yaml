@@ -61,7 +61,7 @@ proxies:
     ws-opts:
       headers:
         Host: gco.donpau.com
-  - name: "ccs.kozow.com"
+  - name: "ccs.byinter.net"
     server: ccs.byinter.net
     port: 443
     type: vless
