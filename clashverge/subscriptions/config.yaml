@@ -35,7 +35,7 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-  - name: "gco.donpau.com"
+  - name: "cdn.ccs.byinter.net"
     server: gcc.donpau.com
     port: 443
     type: vmess
@@ -47,8 +47,8 @@ proxies:
     skip-cert-verify: false
     ws-opts:
       headers:
-        Host: gco.donpau.com
-  - name: "ccs.byinter.net/ipv6"
+        Host: cdn.ccs.byinter.net
+  - name: "ipv6.ccs.byinter.net"
     server: ipv6.ccs.byinter.net
     type: vmess
     port: 1000
@@ -101,10 +101,10 @@ proxy-groups:
     proxies:
       - ccs.kozow.com
       - ccs.byinter.net
-      - gco.donpau.com
+      - cdn.ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - ccs.byinter.net/ipv6
+      - ipv6.ccs.byinter.net
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
   - name: "Fallback"
@@ -112,10 +112,10 @@ proxy-groups:
     proxies:
       - ccs.kozow.com
       - ccs.byinter.net
-      - gco.donpau.com
+      - cdn.ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - ccs.byinter.net/ipv6
+      - ipv6.ccs.byinter.net
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
 rules:
