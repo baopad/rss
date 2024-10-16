@@ -1,0 +1,38 @@
+payload:
+  - DOMAIN-SUFFIX,1688.com                      # alibaba
+  - DOMAIN-SUFFIX,3.cn                          # jd
+  - DOMAIN-SUFFIX,360buyimg.com                 # jd
+  - DOMAIN-SUFFIX,aiqicha.baidu.com             # baidu
+  - DOMAIN-SUFFIX,alicdn.com                    # alibaba
+  - DOMAIN-SUFFIX,aliyuncs.com                  # alibaba
+  - DOMAIN-SUFFIX,bcebos.com                    # baidu
+  - DOMAIN-SUFFIX,bdimg.com                     # baidu
+  - DOMAIN-SUFFIX,bdstatic.com                  # baidu
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,fliggy.com
+  - DOMAIN-SUFFIX,hdslb.com
+  - DOMAIN-SUFFIX,jd.com                        # jd
+  - DOMAIN-SUFFIX,jd.hk                         # jd
+  - DOMAIN-SUFFIX,jdcloud.com                   # jd
+  - DOMAIN-SUFFIX,jdpay.com                     # jd
+  - DOMAIN-SUFFIX,jdl.com                       # jd
+  - DOMAIN-SUFFIX,jingdong.com                  # jd
+  - DOMAIN-SUFFIX,jingxi.com                    # jd   
+  - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN-SUFFIX,speedtest.cn
+  - DOMAIN-SUFFIX,taobao.com                    # alibaba
+  - DOMAIN-SUFFIX,tmall.hk                      # alibaba
+  - DOMAIN-SUFFIX,ykimg.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,youku.com
+
+  - IP-CIDR,192.227.237.26/32,DIRECT
+  - IP-CIDR,8.128.0.0/10,DIRECT
+  #- IP-CIDR,142.171.0.0/16,DIRECT
+  #- IP-CIDR,35.209.176.128/32,DIRECT
