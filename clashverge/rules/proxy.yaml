@@ -1,5 +1,4 @@
 payload:
-  - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleapis.com
   - DOMAIN-SUFFIX,googlevideo.com
