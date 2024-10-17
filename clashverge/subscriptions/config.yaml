@@ -25,16 +25,6 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "ccs.mrcork.com"
-    server: ccs.mrcork.com
-    port: 1000
-    type: vmess
-    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
-    alterId: 0
-    cipher: auto
-    network: ws
-    tls: true
-    skip-cert-verify: false
   - name: "cdn.ccs.byinter.net"
     server: gcc.donpau.com
     port: 443
@@ -107,6 +97,15 @@ proxy-groups:
       - ipv6.ccs.byinter.net
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
+  - name: "Balance"
+    type: load-balance
+    proxies:
+      - ccs.kozow.com
+      - ccs.byinter.net
+      - ccs.paotung.org
+      - oci.cbu.net/ccs
+      - cdn.ccs.byinter.net
+      - ipv6.ccs.byinter.net
   - name: "Fallback"
     type: fallback
     proxies:
