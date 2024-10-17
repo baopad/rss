@@ -112,9 +112,9 @@ proxy-groups:
     proxies:
       - ccs.kozow.com
       - ccs.byinter.net
-      - cdn.ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
+      - cdn.ccs.byinter.net
       - ipv6.ccs.byinter.net
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
