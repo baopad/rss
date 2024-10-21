@@ -25,7 +25,7 @@ proxies:
       public-key: JGBxyfUHKZYihtDUcZHHP9nYOnE-rGulm94Fag2tsmE
     client-fingerprint: chrome
     udp: true
-  - name: "cdn.ccs.byinter.net"
+  - name: "ccs.gleeze.com"
     server: gcc.donpau.com
     port: 443
     type: vmess
@@ -37,7 +37,7 @@ proxies:
     skip-cert-verify: false
     ws-opts:
       headers:
-        Host: cdn.ccs.byinter.net
+        Host: ccs.gleeze.com
   - name: "ipv6.ccs.byinter.net"
     server: ipv6.ccs.byinter.net
     type: vmess
@@ -93,7 +93,7 @@ proxy-groups:
       - ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - cdn.ccs.byinter.net
+      - ccs.gleeze.com
       - ipv6.ccs.byinter.net
     url: 'https://www.gstatic.com/generate_204'
     interval: 300
@@ -104,7 +104,7 @@ proxy-groups:
       - ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - cdn.ccs.byinter.net
+      - ccs.gleeze.com
       - ipv6.ccs.byinter.net
   - name: "Fallback"
     type: fallback
@@ -113,7 +113,7 @@ proxy-groups:
       - ccs.byinter.net
       - ccs.paotung.org
       - oci.cbu.net/ccs
-      - cdn.ccs.byinter.net
+      - ccs.gleeze.com
       - ipv6.ccs.byinter.net
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
