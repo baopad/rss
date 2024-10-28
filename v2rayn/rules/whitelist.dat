@@ -2,7 +2,7 @@
   {
     "outboundTag": "direct",
     "domain": [
-      "rss.paotung.org/v2rayn/rules/whitelist.txt",
+      "rss.paotung.org/v2rayn/rules/whitelist.dat",
       "1688.com",
       "3.cn",
       "360buyimg.com",
@@ -77,7 +77,7 @@
   {
     "outboundTag": "proxy",
     "domain": [
-      "github.com/baopad/rss/edit/main/v2rayn/rules/whitelist.txt",
+      "github.com/baopad/rss/edit/main/v2rayn/rules/whitelist.dat",
       "google.com",
       "youtube.com"
     ],
