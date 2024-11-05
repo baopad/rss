@@ -8,7 +8,8 @@ payload:
   - DOMAIN-SUFFIX,bcebos.com                    # baidu
   - DOMAIN-SUFFIX,bdimg.com                     # baidu
   - DOMAIN-SUFFIX,bdstatic.com                  # baidu
-  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,bilibili.com                  # bilibili
+  - DOMAIN-SUFFIX,bilivideo.com                 # bilibili
   - DOMAIN-SUFFIX,fliggy.com
   - DOMAIN-SUFFIX,hdslb.com
   - DOMAIN-SUFFIX,jd.com                        # jd
