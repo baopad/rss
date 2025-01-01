@@ -1,0 +1,189 @@
+##############################################################################################
+###  Creator:               email:baopad@yahoo.com
+###  Subscription Address:  https://rss.paotung.org/clashverge/subscriptions/config.yaml
+###  Edit Address:          https://github.com/baopad/local/edit/main/subscriptions/clashverge/config.yaml
+###  Custom Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/custom1.yaml
+###  Direct Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/direct1.yaml
+###  Reject Address:        https://github.com/baopad/rss/edit/main/clashverge/rules/reject1.yaml
+##############################################################################################
+mixed-port: 7890
+mode: Rule
+log-level: silent
+tcp-concurrent: true
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true
+  #prefer-h3: true
+  default-nameserver:             #解析nameserver服务器
+    - 1.1.1.1
+    - 8.8.8.8
+    #- 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:                     #解析国(墙)内域名
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
+    #- https://doh.pub/dns-query
+    #- https://dns.alidns.com/dns-query
+    #- https://1.12.12.12/dns-query
+    #- https://120.53.53.53/dns-query
+    #- https://223.5.5.5/dns-query
+    #- https://223.6.6.6/dns-query
+  fallback:                       #解析回落国(墙)外域名,通过fallback-filter规则
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
+    #- https://ccs.kozow.com/dns-query
+    #- tls://dns.umbrella.com
+    #- https://doh.sb/dns-query
+  #nameserver-policy:             #指定域名解析服务器
+    #'www.baidu.com': '114.114.114.114'
+  proxy-server-nameserver:        #仅用于解析代理节点的域名
+    - https://dns.paotung.org/dns-query
+    - https://hub.paotung.org/dns-query
+  fallback-filter:                #解析规则
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      #- 0.0.0.0/32
+    domain:                       #域名视为污染,fallback解析
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+proxies:
+  - name: "snap.cloudns.org"
+    server: snap.cloudns.org
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
+  - name: "ccs.byinter.net"
+    server: ccs.byinter.net
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    tls: true
+    skip-cert-verify: false
+  - name: "oci.cbu.net/hub"
+    server: oci.cbu.net
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      path: /hub
+  - name: "aws.donpau.com"
+    server: aws.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+  - name: "hub.paotung.org"
+    server: hub.paotung.org
+    port: 443
+    type: vless
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    network: tcp
+    tls: true
+    skip-cert-verify: false
+  - name: "cfp.paotung.org"
+    server: cfp.paotung.org
+    type: vmess
+    port: 443
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    tls: true
+    network: ws
+  - name: "gco.donpau.com"
+    server: gcc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    ws-opts:
+      headers:
+        Host: gco.donpau.com
+  - name: "sdc.donpau.com"
+    server: sdc.donpau.com
+    port: 443
+    type: vmess
+    uuid: 87ae2ebc-3e45-33d9-8ed3-61a337d88888
+    alterId: 0
+    cipher: auto
+    network: ws
+    tls: true
+    skip-cert-verify: false
+proxy-groups:
+  #- name: "Automatic"
+    #type: url-test
+    #proxies:
+      #- hub.paotung.org
+      #- sdc.donpau.com
+      #- gco.donpau.com
+      #- cfp.paotung.org
+      #- aws.donpau.com
+      #- oci.cbu.net/hub
+    #url: 'https://www.gstatic.com/generate_204'
+    #interval: 600
+    #tolerance: 50
+  - name: "Balance"
+    type: load-balance
+    proxies:
+      - sdc.donpau.com
+      - hub.paotung.org
+      - gco.donpau.com
+      - cfp.paotung.org
+      - aws.donpau.com
+      - oci.cbu.net/hub
+    #url: 'http://www.gstatic.com/generate_204'
+    #interval: 300
+  - name: "Fallback"
+    type: fallback
+    proxies:
+      - sdc.donpau.com
+      - hub.paotung.org
+      - gco.donpau.com
+      - cfp.paotung.org
+      - aws.donpau.com
+      - oci.cbu.net/hub
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+rules:
+  - RULE-SET,custom,Fallback
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,reject,REJECT
+  - MATCH,Fallback
+rule-providers:
+  custom:
+    type: http
+    behavior: classical
+    url: 'https://rss.paotung.org/clashverge/rules/custom1.yaml'
+    path: ./rules/custom1.yaml
+    interval: 604800
+  direct:
+    type: http
+    behavior: classical
+    url: 'https://rss.paotung.org/clashverge/rules/direct1.yaml'
+    path: ./rules/direct1.yaml
+    interval: 604800
+  reject:
+    type: http
+    behavior: classical
+    url: 'https://rss.paotung.org/clashverge/rules/reject1.yaml'
+    path: ./rules/reject1.yaml
+    interval: 604800
